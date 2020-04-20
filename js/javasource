@@ -19,7 +19,7 @@ mdSec = sec[lastModified.getSeconds()];
 
 function copyYear() {
     document.getElementById("copyright").innerHTML = " " + year;
-    document.getElementById("lastestUpdate").innerHTML = "Last Updated: " + mdMonth + "/" + mdDay + "/" + mdYear + " " + mdHour + ":" + mdMin + ":" + mdSec;
+    document.getElementById("latestUpdate").innerHTML = "Last Updated: " + mdMonth + "/" + mdDay + "/" + mdYear + " " + mdHour + ":" + mdMin + ":" + mdSec;
 };
 
 function createNumArray(start, count) {
