@@ -25,3 +25,7 @@ footer {
   background-color: deepskyblue;
   padding: 60px 0px;
 }
+#lastUpdate {
+  font-size: 0.8em;
+  padding-top: 3px;
+}

@@ -8,18 +8,18 @@ let hours = createNumArray(0, 24);
 let min = createNumArray(0, 60);
 let sec = createNumArray(0, 60);
 
-var mdDay, mdMonth, mdYear, mdHour, mdMin, mdSec;
+var modDay, modMonth, modYear, modHour, modMin, modSec;
 
-mdDay = daysInMonth[lastModified.getDate()];
-mdMonth = months[lastModified.getMonth()];
-mdYear = lastModified.getFullYear();
-mdHour = hours[lastModified.getHours()];
-mdMin = min[lastModified.getMinutes()];
-mdSec = sec[lastModified.getSeconds()];
+modDay = daysInMonth[lastModified.getDate()];
+modMonth = months[lastModified.getMonth()];
+modYear = lastModified.getFullYear();
+modHour = hours[lastModified.getHours()];
+modMin = min[lastModified.getMinutes()];
+modSec = sec[lastModified.getSeconds()];
 
 function copyYear() {
     document.getElementById("copyright").innerHTML = " " + year;
-    document.getElementById("latestUpdate").innerHTML = "Last Updated: " + mdMonth + "/" + mdDay + "/" + mdYear + " " + mdHour + ":" + mdMin + ":" + mdSec;
+    document.getElementById("lastUpdate").innerHTML = "Last Updated: " + modMonth + "/" + modDay + "/" + modYear + " " + modHour + ":" + modMin + ":" + modSec;
 };
 
 function createNumArray(start, count) {
