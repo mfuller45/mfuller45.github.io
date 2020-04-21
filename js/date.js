@@ -2,8 +2,8 @@ var today = new Date();
 var year = today.getFullYear();
 var lastModified = new Date(document.lastModified);
 
-let daysInMonth = createNumArray(0, 31);
-let months = createNumArray(0, 12);
+let daysInMonth = createNumArray(0, 32);
+let months = createNumArray(0, 13);
 let hours = createNumArray(0, 24);
 let min = createNumArray(0, 60);
 let sec = createNumArray(0, 60);
