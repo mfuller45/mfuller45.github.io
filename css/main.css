@@ -56,9 +56,9 @@ ul {
 #myself {
   position: absolute;
   top: 10px;
-  left: 600px;
-  max-width: 150%;
-  max-height: 150%;
+  left: 750px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #copyright {
