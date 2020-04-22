@@ -1,11 +1,21 @@
 header {
   border-radius: 15px;
   background-color: deepskyblue;
-  height: 120px;
-  margin-top: 10px;
+  height: 65px;
+  color: black;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 main {
@@ -16,23 +26,22 @@ main {
 }
 
 hr {
-  width: 70%;
-  margin-right: 20%;
-  margin-top: -15px;
+  margin-top: -25px;
+  margin-bottom: -15px;
 }
 
 footer {
   border-radius: 12px;
   background-color: deepskyblue;
-  height: 90px;
-  width: 100%;
+  height: 40px;
   color: black;
   font-size: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 60px 0px;
+  text-align: center;
+}
+
+#myself {
+  top: 10px;
+  align-content: margin-right;
 }
 
 #lastUpdate {
