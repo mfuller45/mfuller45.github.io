@@ -1,10 +1,9 @@
 header {
-  display: block;
   border-radius: 15px;
   background-color: deepskyblue;
   height: 90px;
   color: black;
-  display: flex;
+  display: block;
   justify-content: space-between;
   flex-wrap: wrap;
 }
