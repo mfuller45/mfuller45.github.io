@@ -1,6 +1,7 @@
 body {
   width: 750px;
   margin: 0 auto;
+  font-family: 'Baloo Bhaina 2', cursive;
 }
 
 header {
@@ -14,7 +15,7 @@ header {
 }
 
 h1 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Baloo Paaji 2', cursive;
   font-size: 2.5em;
   padding-top: 5px;
   width: 700px;
@@ -23,6 +24,7 @@ h1 {
 
 h2 {
   font-size: 1.8em;
+  font-family: 'Baloo Bhaina 2', cursive;
 }
 
 main {
@@ -58,11 +60,11 @@ ul {
 }
 
 #copyright {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Baloo Bhaina 2', cursive;
 }
 
 #lastUpdate {
   font-size: 1.0em;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Baloo Bhaina 2', cursive;
   padding-top: 5px;
 }
