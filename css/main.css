@@ -15,7 +15,7 @@ header {
 
 h1 {
   padding-top: 5px;
-  width: 600px;
+  width: 625px;
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ main {
 hr {
   margin-top: -25px;
   margin-bottom: -15px;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
 }
 
 footer {
