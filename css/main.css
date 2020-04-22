@@ -44,8 +44,12 @@ footer {
   align-content: margin-right;
 }
 
+#copyright {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 #lastUpdate {
   font-size: 1.0em;
-  font-style: Arial;
+  font-family: 'Courier New', Courier, monospace;
   padding-top: 5px;
 }
