@@ -22,7 +22,6 @@ h1 {
 
 h2 {
   font-size: 1em;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 main {
@@ -30,6 +29,7 @@ main {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 30px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 hr {
@@ -49,7 +49,7 @@ footer {
 }
 
 ul {
-  font-family: 'Courier New', Courier, monospace;
+
 }
 
 #myself {
