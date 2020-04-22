@@ -46,7 +46,8 @@ footer {
 
 #myself {
   top: 10px;
-
+  max-width: 50%;
+  max-height: 50%;
 }
 
 #copyright {
