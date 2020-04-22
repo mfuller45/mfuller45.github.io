@@ -1,9 +1,8 @@
 header {
   border-radius: 15px;
   background-color: deepskyblue;
-  height: 80px;
+  height: 90px;
   color: black;
-  text-align: center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -32,9 +31,9 @@ hr {
 }
 
 footer {
-  border-radius: 12px;
+  border-radius: 15px;
   background-color: deepskyblue;
-  height: 40px;
+  height: 55px;
   color: black;
   font-size: 1em;
   text-align: center;
