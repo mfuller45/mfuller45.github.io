@@ -5,6 +5,7 @@ body {
 }
 
 header {
+  position: relative;
   border-radius: 15px;
   background-color: deepskyblue;
   height: 90px;
@@ -18,7 +19,7 @@ h1 {
   font-family: 'Baloo Paaji 2', cursive;
   font-size: 3em;
   padding-bottom: 15px;
-  width: 700px;
+  width: 100%;
   text-align: center;
 }
 
@@ -56,9 +57,8 @@ ul {
 #myself {
   position: absolute;
   top: 10px;
-  left: 850px;
-  max-width: 40%;
-  max-height: 40%;
+  right: 10px;
+  height: 200%;
 }
 
 #copyright {
