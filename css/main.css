@@ -1,8 +1,9 @@
 header {
   border-radius: 15px;
   background-color: deepskyblue;
-  height: 65px;
+  height: 80px;
   color: black;
+  text-align: center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
