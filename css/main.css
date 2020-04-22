@@ -15,7 +15,7 @@ header {
 
 h1 {
   padding-top: 5px;
-  width: 675px;
+  width: 700px;
   text-align: center;
 }
 
@@ -38,7 +38,7 @@ hr {
 }
 
 footer {
-  border-radius: 15px;
+  border-radius: 17px;
   background-color: deepskyblue;
   height: 55px;
   color: black;
