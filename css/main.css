@@ -16,7 +16,7 @@ header {
 
 h1 {
   font-family: 'Baloo Paaji 2', cursive;
-  font-size: 2.5em;
+  font-size: 3em;
   padding-top: 5px;
   width: 700px;
   text-align: center;
@@ -46,7 +46,7 @@ footer {
   color: black;
   font-size: 1em;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 ul {
