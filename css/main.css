@@ -14,8 +14,9 @@ header {
 }
 
 h1 {
-  padding-top: 10px;
-  align-items: center;
+  padding-top: 5px;
+  width: 100%;
+  text-align: center;
 }
 
 h2 {
@@ -46,8 +47,8 @@ footer {
 
 #myself {
   top: 10px;
-  max-width: 75%;
-  max-height: 75%;
+  max-width: 120%;
+  max-height: 120%;
 }
 
 #copyright {
