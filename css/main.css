@@ -3,7 +3,7 @@ header {
   background-color: deepskyblue;
   height: 90px;
   color: black;
-  display: block;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -42,7 +42,7 @@ footer {
 
 #myself {
   top: 10px;
-  align-content: margin-right;
+
 }
 
 #copyright {
