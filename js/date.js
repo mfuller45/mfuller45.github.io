@@ -10,5 +10,5 @@ function writedate() {
         timeOfDay = 'PM';
     }
     document.getElementById("copyright").innerHTML = date.getFullYear();
-    document.getElementById("lastUpdate").innerHTML = (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear() + ' ' + hourText + ':' + date.getMinutes() + ':' + date.getSeconds() + ' ' + timeOfDay;
+    document.getElementById("lastUpdate").innerHTML = document.lastModified;
 }
