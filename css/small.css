@@ -10,7 +10,6 @@ body {
 
 header {
   position: relative;
-  border-radius: 15px;
   background-color: cornflowerblue;
   height: 90px;
   color: black;
@@ -44,7 +43,6 @@ hr {
 }
 
 footer {
-  border-radius: 17px;
   background-color: cornflowerblue;
   height: 55px;
   color: black;
