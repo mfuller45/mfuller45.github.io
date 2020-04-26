@@ -7,13 +7,24 @@
   h1 {
     font-size: 3em;
   }
-  
+
+  #myself {
+    height: 180px;
+    width: auto;
+    float: right;
+  }
+
   h2 {
     font-size: 1.8em;
   }
 
-  header, footer {
+  header{
     border-radius: 15px;
+  }
+
+  footer {
+    border-radius: 15px;
+    height: 55px;
   }
   
 }
