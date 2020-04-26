@@ -1,5 +1,10 @@
 @media only screen and (min-width: 32.5em) {
 
+  body {
+    width: 750px;
+  }
+  
+  }
   h1 {
     font-size: 3em;
   }
