@@ -19,6 +19,8 @@
   }
 
   header{
+    height: 90px;
+    flex-wrap: wrap;
     border-radius: 15px;
   }
 
