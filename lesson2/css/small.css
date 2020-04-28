@@ -5,7 +5,6 @@ a:link {
 header {
   background-color: cornflowerblue;
   color: black;
-  display: flex;
   justify-content: space-between;
   
 }
