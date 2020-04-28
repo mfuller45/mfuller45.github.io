@@ -2,11 +2,6 @@ a:link {
   color: purple;
 }
 
-body {
-  margin: 0 auto;
-  font-family: 'Baloo Bhaina 2', cursive;
-}
-
 header {
   background-color: cornflowerblue;
   color: black;
@@ -27,15 +22,14 @@ h2 {
   font-family: 'Baloo Bhaina 2', cursive;
 }
 
-hr {
-  margin-top: -20px;
-  margin-bottom: -15px;
-}
 
 main {
   margin-top: 10px;
   margin-left: 15px;
   margin-right: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin:auto;
 }
 
 footer {
@@ -44,17 +38,6 @@ footer {
   font-size: 1em;
   text-align: center;
   padding-top: 25px;
-}
-
-ul {
-  margin-top: 25px;
-}
-
-#myself {
-  height: 180px;
-  width: auto;
-  margin-top: 10px;
-  margin-right: 15px;
 }
 
 #copyright {

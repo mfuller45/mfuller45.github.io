@@ -10,6 +10,11 @@
     margin-left: 5%;
   }
 
+  main {
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+}
+
   #myself {
     height: 180px;
     width: auto;
