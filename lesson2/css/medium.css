@@ -25,5 +25,15 @@
     border-radius: 15px;
     height: 55px;
   }
+
+  section:nth-child(1) {
+    grid-column: span 1;
+    margin-top: 20px;
+}
+
+  section:nth-child(2) {
+    grid-column: span 1;
+    margin-top: 20px;
+}
   
 }
