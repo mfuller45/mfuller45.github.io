@@ -3,7 +3,7 @@
   body {
     width: 750px;
   }
-  
+
   h1 {
     font-size: 3.5em;
     margin-top: 17px;
@@ -28,6 +28,9 @@
     border-radius: 15px;
     height: 55px;
   }
+
+  nav ul { display: flex; }
+  nav ul li { flex: 1 1 100%; }
 
   section:nth-child(1) {
     grid-column: span 1;
