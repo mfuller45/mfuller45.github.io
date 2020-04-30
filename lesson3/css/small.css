@@ -3,6 +3,11 @@ a {
   font-weight: bold;
 }
 
+body {
+  margin: 0 auto;
+  font-family: 'Baloo Bhaina 2', cursive;
+}
+
 header {
   background-color: #1E90FF;
   color: black;
@@ -34,6 +39,11 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   margin:auto;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
 }
 
 p {
