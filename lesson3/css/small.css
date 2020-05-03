@@ -64,7 +64,6 @@ nav ul li a {
 	font-size: 0.95rem;
 }
 
-
 p {
   font-size: 1em;
   font-weight: bold;
@@ -76,6 +75,12 @@ section {
   border-radius: 15px;
   text-align: center;
   margin: 10px;
+}
+
+table, th, td {
+  width: 100%;
+  border: 1px solid black;
+  padding: 15px;
 }
 
 footer {
