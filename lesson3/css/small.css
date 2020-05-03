@@ -31,10 +31,10 @@ h3{
   padding-bottom: 8px;
 }
 
-img {
-  margin-top: 8px;
+#logo {
+  height: 180px;
+  width: auto;
 }
-
 main {
   display: grid;
   grid-template-columns: 1fr;
