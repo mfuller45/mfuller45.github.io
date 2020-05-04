@@ -80,7 +80,8 @@ section {
 table, th, td {
   width: 100%;
   border: 1px solid black;
-  padding: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
 footer {
