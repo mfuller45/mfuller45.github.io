@@ -27,8 +27,11 @@ h2 {
   font-family: 'Baloo Bhaina 2', cursive;
 }
 
-h3{
+h3 {
   padding-bottom: 8px;
+}
+
+h4 {text-decoration: underline;
 }
 
 #logo {
