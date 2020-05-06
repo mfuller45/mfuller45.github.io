@@ -5,7 +5,7 @@ a {
 
 body {
   margin: 0 auto;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   background-color: darkgray;
 }
 
@@ -26,17 +26,17 @@ h1 {
 
 h2 {
   font-size: 1.3em;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h3 {
   padding-bottom: 8px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h4 {
   text-decoration: underline;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 #logo {
@@ -73,7 +73,7 @@ nav ul li a {
 }
 
 p {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-size: 1em;
   font-weight: bold;
   color:	black;
@@ -102,11 +102,11 @@ footer {
 }
 
 #copyright {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 #lastUpdate {
   font-size: 1.0em;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   padding-top: 5px;
 }
