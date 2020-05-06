@@ -19,14 +19,14 @@
   }
 
   header{
-    height: 50px;
+    height: 40px;
     flex-wrap: wrap;
     border-radius: 15px;
   }
 
   footer {
     border-radius: 15px;
-    height: 55px;
+    height: 40px;
   }
 
   nav ul { display: flex; }

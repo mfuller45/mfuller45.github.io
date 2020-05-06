@@ -14,7 +14,7 @@ header {
   color: whitesmoke;
   justify-content: space-between;
   border-radius: 15px;
-  padding-bottom: 12px;
+  padding-bottom: 17px;
 }
 
 h1 {
@@ -43,6 +43,7 @@ h4 {
   height: 180px;
   width: auto;
 }
+
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -108,7 +109,7 @@ footer {
   color: whitesmoke;
   font-size: 1em;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 10px;
 }
 
 #copyright {
