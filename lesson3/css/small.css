@@ -79,6 +79,16 @@ p {
   color:	black;
 }
 
+#persona1 {
+  height: 180px;
+  width: auto;
+}
+
+#persona2 {
+  height: 180px;
+  width: auto;
+}
+
 section {
   background-color: #4682B4;
   border-radius: 15px;
