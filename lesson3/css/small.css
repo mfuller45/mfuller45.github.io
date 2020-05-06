@@ -14,14 +14,14 @@ header {
   color: whitesmoke;
   justify-content: space-between;
   border-radius: 15px;
-  padding-bottom: 17px;
+  padding-bottom: 22px;
 }
 
 h1 {
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.5em;
   padding-top: 15px;
-  text-align: center;
+  margin-left: 500px;
 }
 
 h2 {
