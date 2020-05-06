@@ -1,5 +1,5 @@
 a {
-  color: #FFFF66;
+  color: blue;
   font-weight: bold;
 }
 
@@ -9,8 +9,8 @@ body {
 }
 
 header {
-  background-color: #1E90FF;
-  color: black;
+  background-color: black;
+  color: whitesmoke;
   justify-content: space-between;
   border-radius: 15px;
 }
@@ -47,7 +47,7 @@ main {
 nav {
   width: 100%;
   margin: 0 auto;
-  background-color: #36454f;
+  background-color: lightslategray;
 	text-align: center;
 	box-shadow: 0 2px 15px gray;
 }
@@ -70,7 +70,7 @@ nav ul li a {
 p {
   font-size: 1em;
   font-weight: bold;
-  color:	blueviolet;
+  color:	black;
 }
 
 section {
@@ -88,8 +88,8 @@ table, th, td {
 }
 
 footer {
-  background-color: #1E90FF;
-  color: black;
+  background-color: black;
+  color: whitesmoke;
   font-size: 1em;
   text-align: center;
   padding-top: 25px;
