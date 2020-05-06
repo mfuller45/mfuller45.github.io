@@ -5,7 +5,7 @@ a {
 
 body {
   margin: 0 auto;
-  font-family: 'Baloo Bhaina 2', cursive;
+  font-family: 'Rubik', sans-serif;
   background-color: darkgray;
 }
 
@@ -18,7 +18,7 @@ header {
 }
 
 h1 {
-  font-family: 'Baloo Paaji 2', cursive;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 1.5em;
   padding-top: 15px;
   text-align: center;
@@ -26,14 +26,17 @@ h1 {
 
 h2 {
   font-size: 1.3em;
-  font-family: 'Baloo Bhaina 2', cursive;
+  font-family: 'Rubik', sans-serif;
 }
 
 h3 {
   padding-bottom: 8px;
+  font-family: 'Rubik', sans-serif;
 }
 
-h4 {text-decoration: underline;
+h4 {
+  text-decoration: underline;
+  font-family: 'Rubik', sans-serif;
 }
 
 #logo {
@@ -70,6 +73,7 @@ nav ul li a {
 }
 
 p {
+  font-family: 'Rubik', sans-serif;
   font-size: 1em;
   font-weight: bold;
   color:	black;
@@ -98,11 +102,11 @@ footer {
 }
 
 #copyright {
-  font-family: 'Baloo Bhaina 2', cursive;
+  font-family: 'Rubik', sans-serif;
 }
 
 #lastUpdate {
   font-size: 1.0em;
-  font-family: 'Baloo Bhaina 2', cursive;
+  font-family: 'Rubik', sans-serif;
   padding-top: 5px;
 }
