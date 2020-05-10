@@ -1,0 +1,123 @@
+a {
+  color: blue;
+  font-weight: bold;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: darkgray;
+}
+
+header {
+  background-color: black;
+  color: whitesmoke;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding-bottom: 22px;
+}
+
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2.5em;
+  padding-top: 15px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h3 {
+  padding-bottom: 8px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h4 {
+  text-decoration: underline;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#logo {
+  height: 180px;
+  width: auto;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin:auto;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: lightslategray;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color:	black;
+}
+
+#persona1 {
+  height: 180px;
+  width: auto;
+}
+
+#persona2 {
+  height: 180px;
+  width: auto;
+}
+
+section {
+  background-color: #4682B4;
+  border-radius: 15px;
+  text-align: center;
+  margin: 10px;
+}
+
+table, th, td {
+  width: 100%;
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: black;
+  color: whitesmoke;
+  font-size: 1em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#copyright {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#lastUpdate {
+  font-size: 1.0em;
+  font-family: 'Titillium Web', sans-serif;
+  padding-top: 5px;
+}
