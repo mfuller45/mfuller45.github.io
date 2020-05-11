@@ -21,7 +21,7 @@ header {
 
 h1 {
   font-family: Century-Schoolbook;
-  font-size: 2em;
+  font-size: 1.8em;
   padding-top: 15px;
   text-align: center;
 }
@@ -74,7 +74,7 @@ nav ul li a {
 	padding: 0.75rem;
   text-decoration: none;
   font-family: Century-Schoolbook;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 p {
