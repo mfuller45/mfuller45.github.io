@@ -5,8 +5,9 @@ a {
 
 body {
   margin: 0 auto;
-  font-family: 'Titillium Web', sans-serif;
-  background-color: darkgray;
+  font-family: Century-Schoolbook;
+  font-size: 16px;
+  background-color: #EDF5E1;
 }
 
 header {
@@ -15,23 +16,26 @@ header {
   justify-content: space-between;
   border-radius: 15px;
   padding-bottom: 22px;
+  font-family: Century-Gothic;
+  font-size: 40px;
 }
 
 h1 {
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 2.5em;
+  font-family: Century-Schoolbook;
+  font-size: 2em;
   padding-top: 15px;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.3em;
-  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.5em;
+  font-family: Century-Schoolbook;
 }
 
 h3 {
   padding-bottom: 8px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: Century-Schoolbook;
+  font-size: 1.2em;
 }
 
 h4 {
@@ -69,8 +73,9 @@ nav ul li a {
 	color: #fff;
 	text-align: center;
 	padding: 0.75rem;
-	text-decoration: none;
-	font-size: 0.95rem;
+  text-decoration: none;
+  font-family: Century-Schoolbook;
+	font-size: 25px;
 }
 
 p {
@@ -107,7 +112,8 @@ table, th, td {
 footer {
   background-color: black;
   color: whitesmoke;
-  font-size: 1em;
+  font-family: Century-Gothic;
+  font-size: 18px;
   text-align: center;
   padding-top: 10px;
 }
