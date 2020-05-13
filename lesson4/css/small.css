@@ -40,6 +40,20 @@ h4 {
   font-family: 'Titillium Web', sans-serif;
 }
 
+.section_head {
+  text-align: center;
+}
+
+.contents{
+  display: block;
+  margin: 10px auto;
+  border: 1px dashed black;
+  padding: 15px;
+  background-color: lightslategray;
+  color: black;
+  font-style: italic;
+}
+
 #logo {
   height: 80px;
   width: auto;
@@ -47,9 +61,8 @@ h4 {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin:auto;
+  width: 1000px;
+  margin: auto;
 }
 
 #motto {
@@ -59,6 +72,10 @@ main {
 nav {
 	margin: 0 auto;
 	background-color: #5CDB95;
+}
+
+nav ul li a.active{
+  background-color: #379683;
 }
 
 .navigation {
