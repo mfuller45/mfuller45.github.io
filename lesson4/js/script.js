@@ -1,7 +1,6 @@
-const hamburgerbutton = document.querySelector('.hamburger');
-const mainnav = document.querySelector('.navigation')
-
-hamburgerbutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+function toggleMenu() {
+    document.getElementsByClassName("nav_bar")[0].classList.toggle("responsive");
+  }
 
 let date = new Date();
 

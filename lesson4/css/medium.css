@@ -29,20 +29,20 @@
     height: 55px;
   }
 
-  .navigation {
+  .nav_bar {
 		display: flex;
   }
   
-	.navigation li {
+	.nav_bar li {
 		display: block; 
 		flex: 1 1 auto;
   }
   
-	.navigation a {
+	.nav_bar a {
 		text-align: center;
   }
   
-	.navigation li:first-child {
+	.nav_bar li:first-child {
 		display: none;
   }
   
