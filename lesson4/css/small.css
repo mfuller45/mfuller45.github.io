@@ -15,29 +15,30 @@ header {
   justify-content: center;
   display: flex;
   padding: 5px 0;
-  padding-bottom: 22px;
   font-family: Century-Gothic;
 }
 
 header img {
   height: 80px;
   width: auto;
+  padding-right: 10px;
 }
 
 .heading {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .heading h1 {
   font-size: 1.8em;
   font-family: Century-Schoolbook;
+  margin-bottom: 0px;
 }
 
 h1 {
   font-family: Century-Schoolbook;
   font-size: 1.8em;
-  padding-top: 15px;
 }
 
 h2 {
@@ -46,7 +47,6 @@ h2 {
 }
 
 h3 {
-  padding-bottom: 8px;
   font-family: Century-Schoolbook;
   font-size: 1.2em;
 }
@@ -58,6 +58,7 @@ h4 {
 
 .section_head {
   text-align: center;
+  color: #5CDB95;
 }
 
 .contents{
