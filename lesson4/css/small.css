@@ -12,18 +12,16 @@ body {
 header {
   /*background-color: black;*/
   color: #5CDB95;
-  justify-content: space-between;
-  border-radius: 15px;
+  justify-content: center;
+  display: flex;
   padding-bottom: 22px;
   font-family: Century-Gothic;
-  text-align: right;
 }
 
 h1 {
   font-family: Century-Schoolbook;
   font-size: 1.8em;
   padding-top: 15px;
-  text-align: center;
 }
 
 h2 {
@@ -45,12 +43,17 @@ h4 {
 #logo {
   height: 80px;
   width: auto;
+  padding-top: 15px;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr;
   margin:auto;
+}
+
+#motto {
+  text-align: center;
 }
 
 nav {
@@ -82,16 +85,6 @@ p {
   font-size: 1em;
   font-weight: bold;
   color:	black;
-}
-
-#persona1 {
-  height: 180px;
-  width: auto;
-}
-
-#persona2 {
-  height: 180px;
-  width: auto;
 }
 
 section {

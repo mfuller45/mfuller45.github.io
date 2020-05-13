@@ -7,7 +7,6 @@
   h1 {
     font-size: 2.5em;
     margin-top: 17px;
-    margin-left: 500px;
   }
 
   main {
@@ -21,7 +20,7 @@
 
   header{
     height: 100px;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     border-radius: 15px;
   }
 
@@ -41,6 +40,12 @@
   section:nth-child(2) {
     grid-column: span 1;
     margin-top: 20px;
+}
+
+#logo {
+}
+
+#motto {
 }
   
 }
