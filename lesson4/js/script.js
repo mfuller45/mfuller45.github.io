@@ -1,3 +1,8 @@
+const hamburgerbutton = document.querySelector('.hamburger');
+const mainnav = document.querySelector('.navigation')
+
+hamburgerbutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+
 let date = new Date();
 
 function writedate() {

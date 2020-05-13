@@ -57,28 +57,42 @@ main {
 }
 
 nav {
-  width: 100%;
-  margin: 0 auto;
-  background-color: lightslategray;
-	text-align: center;
-	box-shadow: 0 2px 15px gray;
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: #5CDB95;
 }
 
-nav ul {
-	list-style-type: none;
-	margin: 0;
+.navigation {
+	list-style: none;
 	padding: 0;
-	overflow: hidden;
 }
-nav ul li a {
+
+.navigation li:first-child {
 	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 0.75rem;
-  text-decoration: none;
-  font-family: Century-Schoolbook;
-	font-size: 20px;
 }
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #05386B;
+	font-weight: 700;
+}
+
+.navigation a:hover {
+	color: white;
+	background-color: black;
+}
+
+.responsive li {
+	display: block;
+}
+
 
 p {
   font-family: 'Titillium Web', sans-serif;
