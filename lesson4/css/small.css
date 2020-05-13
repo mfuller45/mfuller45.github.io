@@ -10,13 +10,13 @@ body {
 }
 
 header {
-  background-color: black;
-  color: whitesmoke;
+  /*background-color: black;*/
+  color: #5CDB95;
   justify-content: space-between;
   border-radius: 15px;
   padding-bottom: 22px;
   font-family: Century-Gothic;
-  font-size: 40px;
+  text-align: right;
 }
 
 h1 {
@@ -43,7 +43,7 @@ h4 {
 }
 
 #logo {
-  height: 180px;
+  height: 80px;
   width: auto;
 }
 
