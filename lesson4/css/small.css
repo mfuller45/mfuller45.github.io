@@ -1,5 +1,5 @@
 a {
-  color: blue;
+  color: #05386B;
   font-weight: bold;
 }
 
@@ -58,7 +58,6 @@ main {
 
 nav {
 	margin: 0 auto;
-	max-width: 760px;
 	background-color: #5CDB95;
 }
 
@@ -93,12 +92,11 @@ nav {
 	display: block;
 }
 
-
 p {
   font-family: 'Titillium Web', sans-serif;
   font-size: 1em;
   font-weight: bold;
-  color:	black;
+  color:	#5CDB95;
 }
 
 section {
@@ -108,19 +106,14 @@ section {
   margin: 10px;
 }
 
-table, th, td {
-  width: 100%;
-  border: 1px solid black;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
 footer {
-  background-color: black;
-  color: whitesmoke;
+  background-color:#379683;
+  color: #05386B;
   font-family: Century-Gothic;
   font-size: 16px;
   text-align: center;
+  width: 1000px;
+  margin: 0 auto;
   padding-top: 10px;
 }
 

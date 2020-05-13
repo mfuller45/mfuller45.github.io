@@ -1,9 +1,5 @@
 @media only screen and (min-width: 32.5em) {
 
-  body {
-    width: 1000px;
-  }
-
   h1 {
     font-size: 2.5em;
     margin-top: 17px;
@@ -31,14 +27,17 @@
 
   .navigation {
 		display: flex;
-	}
+  }
+  
 	.navigation li {
 		display: block; /* change state in small view */
 		flex: 1 1 auto;
-	}
+  }
+  
 	.navigation a {
 		text-align: center;
-	}
+  }
+  
 	.navigation li:first-child {
 		display: none;
   }
