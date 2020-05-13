@@ -9,11 +9,15 @@
     font-size: 1.8em;
   }
 
-  header{
-    height: 100px;
-    /*flex-wrap: wrap;*/
-    border-radius: 15px;
-  }
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
 
   footer {
     border-radius: 15px;
