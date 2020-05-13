@@ -101,8 +101,8 @@ nav ul li a.active{
 }
 
 .navigation a:hover {
-	color: white;
-	background-color: black;
+	color: #05386B;
+	background-color: #8EE4AF;
 }
 
 .responsive li {
@@ -114,13 +114,6 @@ p {
   font-size: 1em;
   font-weight: bold;
   color:	#5CDB95;
-}
-
-section {
-  background-color: #4682B4;
-  border-radius: 15px;
-  text-align: center;
-  margin: 10px;
 }
 
 footer {
