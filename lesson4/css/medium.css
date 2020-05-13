@@ -9,8 +9,14 @@
     font-size: 1.8em;
   }
 
+  header img {
+    height: 120px;
+    width: auto;
+    padding-right: 10px;
+  }
+
 	.heading h1 {
-		font-size: 3em;
+		font-size: 2.5em;
 	}
 
 	.motto {
