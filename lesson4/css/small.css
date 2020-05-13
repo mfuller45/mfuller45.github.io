@@ -24,12 +24,12 @@ header img {
   width: auto;
 }
 
-.headings {
+.heading {
   display: flex;
   flex-direction: column;
 }
 
-.headings h1 {
+.heading h1 {
   font-size: 1.8em;
   font-family: Century-Schoolbook;
 }
