@@ -5,11 +5,6 @@
     margin-top: 17px;
   }
 
-  main {
-    grid-template-columns: 1fr 1fr;
-    max-width: 900px;
-}
-
   h2 {
     font-size: 1.8em;
   }
@@ -30,7 +25,7 @@
   }
   
 	.navigation li {
-		display: block; /* change state in small view */
+		display: block; 
 		flex: 1 1 auto;
   }
   
@@ -41,15 +36,5 @@
 	.navigation li:first-child {
 		display: none;
   }
-  
-  section:nth-child(1) {
-    grid-column: span 1;
-    margin-top: 20px;
-}
-
-  section:nth-child(2) {
-    grid-column: span 1;
-    margin-top: 20px;
-}
   
 }
