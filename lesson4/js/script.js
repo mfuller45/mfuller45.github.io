@@ -7,10 +7,10 @@ const month1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 var d = new Date();
 var day = d.getDay() 
 var date = d.getDate();
-var month = d.getMonth() + 1;
+var month = d.getMonth();
 var year = d.getFullYear();
 
 var dateStr = day1[day] + ', ' + date + " " + month1[month] + " " + year;
 document.getElementById("dates").innerHTML = dateStr;
 
-document.getElementById("copyright").innerHTML = date.getFullYear();
+document.getElementById("copyright").innerHTML = year
