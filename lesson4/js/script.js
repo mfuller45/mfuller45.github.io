@@ -7,7 +7,7 @@ const month1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 var d = new Date();
 var day = d.getDay() 
 var date = d.getDate();
-var month = d.getMonth() + 1; // Since getMonth() returns month from 0-11 not 1-12
+var month = d.getMonth() + 1;
 var year = d.getFullYear();
 
 var dateStr = day1[day] + ', ' + date + " " + month1[month] + " " + year;
