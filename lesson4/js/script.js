@@ -4,7 +4,7 @@ function toggleMenu() {
  let date = new Date() 
 
 
-    var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 
     document.getElementById("copyright").innerHTML = date.getFullYear();
