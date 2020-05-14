@@ -1,11 +1,16 @@
 function toggleMenu() {
     document.getElementsByClassName("nav_bar")[0].classList.toggle("responsive");
   }
- let date = new Date() 
+ 
+const day1 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const month1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var d = new Date();
+var day = d.getDay() 
+var date = d.getDate();
+var month = d.getMonth() + 1; // Since getMonth() returns month from 0-11 not 1-12
+var year = d.getFullYear();
 
+var dateStr = day1[day] + ', ' + date + " " + month1[month] + " " + year;
+document.getElementById("dates").innerHTML = dateStr;
 
-    const day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-
-    document.getElementById("copyright").innerHTML = date.getFullYear();
-    document.getElementById("dates").innerHTML = day + ', ' + date + ' ' + month + ' ' + year;
+document.getElementById("copyright").innerHTML = date.getFullYear();
