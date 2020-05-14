@@ -84,7 +84,8 @@ main {
 
 nav {
 	margin: 0 auto;
-	background-color: #5CDB95;
+  background-color: #5CDB95;
+  border-radius: 15px;
 }
 
 nav ul li a.active{
@@ -138,6 +139,7 @@ footer {
   text-align: center;
   margin: 0 auto;
   padding-top: 10px;
+  border-radius: 15px;
 }
 
 #copyright {
