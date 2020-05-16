@@ -125,9 +125,8 @@ nav ul li a.active{
 }
 
 p {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: Century-Schoolbook;
   font-size: 1em;
-  font-weight: bold;
   color:	#5CDB95;
 }
 
@@ -146,7 +145,7 @@ footer {
   font-family: 'Titillium Web', sans-serif;
 }
 
-#lastUpdate {
+#dates {
   font-size: 1.0em;
   font-family: 'Titillium Web', sans-serif;
   padding-top: 5px;
