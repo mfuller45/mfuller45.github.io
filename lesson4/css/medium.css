@@ -27,11 +27,11 @@
   footer {
     border-radius: 15px;
     height: 55px;
-    width: 1000px;
+    max-width: 1000px;
   }
 
   main {
-    width: 1000px;
+    max-width: 1000px;
   }
 
   .nav_bar {
