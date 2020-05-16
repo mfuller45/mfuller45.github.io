@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Fuller">
+    <meta name="description" content="Michael Fuller's Weather Site Project Plan Home Page">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans%7cTitillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/lesson5/css/normalize.css">
+    <link rel="stylesheet" href="/lesson5/css/small.css">
+    <link rel="stylesheet" href="/lesson5/css/medium.css">
+    <link rel="stylesheet" href="/lesson5/css/large.css">      
+    <title>Preston Town Weather</title>
+  </head>
+  <body onload="writedate()">
+    <header>
+      <picture>
+        <img src="/lesson5/images/weather_logo2.png" alt="Weather Site Logo">
+      </picture>
+      <section class="heading">
+        <h1>Good Time Weather</h1>
+        <div class="motto">"All the weather for those good times"</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="nav_bar">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a class="active" href="/lesson5/preston-5.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class= "section_head">Preston</h2>
+      <div class="contents">Hero w/ weather summary</div>
+      <div class="contents">5 day forecast</div>
+      <div class="contents">Articles</div>
+      <div class="contents">Contact Information</div>
+    </main>
+    <footer>
+      <div>
+        &copy;<span id="copyright"></span> | Michael Fuller | Arizona | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      </div>
+      <span id="dates"></span>
+    </footer>
+    <script src="/lesson5/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+a {
+  color: #05386B;
+  font-weight: bold;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Century-Schoolbook;
+  background-color: #EDF5E1;
+}
+
+header {
+  color: #5CDB95;
+  align-items:center;
+  justify-content: center;
+  display: flex;
+  padding: 5px 0;
+  font-family: Century-Gothic;
+}
+
+header img {
+  height: 80px;
+  width: auto;
+  padding-right: 10px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading h1 {
+  font-size: 1.8em;
+  font-family: Century-Schoolbook;
+  margin-bottom: 0px;
+}
+
+h1 {
+  font-family: Century-Schoolbook;
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: Century-Schoolbook;
+}
+
+h3 {
+  font-family: Century-Schoolbook;
+  font-size: 1.2em;
+}
+
+h4 {
+  text-decoration: underline;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.section_head {
+  text-align: center;
+  color: #5CDB95;
+}
+
+.contents{
+  display: block;
+  margin: 10px auto;
+  border: 1px dashed black;
+  padding: 15px;
+  background-color: lightslategray;
+  color: white;
+  font-style: italic;
+}
+
+main {
+  margin: auto;
+}
+
+.motto {
+  font-style: italic;
+  font-size: .9em;
+  letter-spacing: 1pt;
+  color: #379683;
+}
+
+nav {
+	margin: 0 auto;
+  background-color: #5CDB95;
+  border-radius: 15px;
+}
+
+nav ul li a.active{
+  background-color: #379683;
+}
+
+.nav_bar {
+  list-style: none;
+  text-align: center;
+	padding: 0;
+}
+
+.nav_bar li:first-child {
+	display: block;
+}
+
+.nav_bar li {
+	display: none;
+}
+
+.nav_bar a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: #05386B;
+	font-weight: 700;
+}
+
+.nav_bar a:hover {
+	color: #05386B;
+	background-color: #8EE4AF;
+}
+
+.responsive li {
+	display: block;
+}
+
+p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color:	#5CDB95;
+}
+
+footer {
+  background-color:#379683;
+  color: #05386B;
+  font-family: Century-Gothic;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  border-radius: 15px;
+}
+
+#copyright {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#lastUpdate {
+  font-size: 1.0em;
+  font-family: 'Titillium Web', sans-serif;
+  padding-top: 5px;
+}
