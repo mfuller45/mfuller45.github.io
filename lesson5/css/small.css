@@ -32,7 +32,8 @@ body {
 }
 
 .contact_info h3, .contact_info h4 {
-	text-align: center;
+  text-align: center;
+  color: #5CDB95;
 }
 
 .contactdiv img {
@@ -54,8 +55,7 @@ body {
   margin: 10px auto;
   border: 1px dashed black;
   padding: 15px;
-  background-color: lightslategray;
-  color: white;
+  color: #5CDB95;
   font-style: italic;
 }
 
