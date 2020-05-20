@@ -109,7 +109,7 @@ h3 {
   font-family: Century-Schoolbook;
   font-size: 1.2em;
   color: #5cdb95;
-  text-shadow: 1px 1px 1px #05386b;
+  text-shadow: .5px .5px .5px #05386b;
 }
 
 .forecastdiv h3, .articlediv h3 {
