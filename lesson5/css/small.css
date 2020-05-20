@@ -31,11 +31,12 @@ body {
   margin: auto;
 }
 
-.contact_info h3, .contact_info p {
+.contact_info h3, .contact_info h4 {
 	text-align: center;
 }
 
 .contactdiv img {
+  height: 200px;
   margin: auto;
 }
 
