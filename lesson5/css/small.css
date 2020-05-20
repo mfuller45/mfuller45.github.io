@@ -35,6 +35,10 @@ body {
 	text-align: center;
 }
 
+.contactdiv img {
+  margin: auto;
+}
+
 .contactdiv {
 	display: grid;
 	grid-template-columns: 1fr;
