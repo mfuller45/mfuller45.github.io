@@ -26,11 +26,11 @@ body {
   background-color: #EDF5E1;
 }
 
-#contact_info {
+.contact_info {
 	grid-column: 1;
 }
 
-#contact_info h3, #contact_info p {
+.contact_info h3, .contact_info p {
 	text-align: center;
 }
 
@@ -38,8 +38,12 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin-top: 15px;
-	padding: 10px;
+  padding: 10px;
 	border: 1px solid #000;
+}
+
+.contactdiv img {
+  display: none;
 }
 
 #day1, #day2, #day3, #day4, #day5{
@@ -133,10 +137,6 @@ h4 {
 
 main {
   margin: auto;
-}
-
-#map {
-	grid-column: 1;
 }
 
 .motto {

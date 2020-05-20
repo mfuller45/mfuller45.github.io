@@ -8,8 +8,12 @@
     grid-column: 2;
   }
 
-  #contact_info {
+  .contact_info {
     grid-column: 2;
+  }
+
+  .contactdiv img {
+    grid-column: 1;
   }
 
   h1 {
@@ -50,10 +54,6 @@
     max-width: 1000px;
   }
 
-  #map {
-    grid-column: 1;
-  }
-  
   .nav_bar {
 		display: flex;
   }
