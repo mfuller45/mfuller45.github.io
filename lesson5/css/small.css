@@ -3,6 +3,23 @@ a {
   font-weight: bold;
 }
 
+.articlediv p {
+  grid-column: 1;
+}
+
+.articlediv {
+	display: grid;
+  grid-template-columns: 3fr 2fr;
+	margin-top: 15px;
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+#article_img {
+  grid-column: 1;
+  width: 100%;
+}
+
 body {
   margin: 0 auto;
   font-family: Century-Schoolbook;
@@ -19,7 +36,7 @@ body {
   font-style: italic;
 }
 
-.forecastdiv{
+.forecastdiv {
   display: none;
 }
 
@@ -65,7 +82,7 @@ h3 {
   font-size: 1.2em;
 }
 
-.forecastdiv h3{
+.forecastdiv h3, .articlediv h3 {
   text-align: center;
 }
 
