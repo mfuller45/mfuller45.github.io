@@ -27,7 +27,8 @@ body {
 }
 
 .contact_info {
-	grid-column: 1;
+  grid-column: 1;
+  margin: auto;
 }
 
 .contact_info h3, .contact_info p {
@@ -36,7 +37,7 @@ body {
 
 .contactdiv {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 10px;
