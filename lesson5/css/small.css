@@ -37,13 +37,10 @@ body {
 .contactdiv {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	margin-top: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 10px;
 	border: 1px solid #000;
-}
-
-.contactdiv img {
-  display: none;
 }
 
 #day1, #day2, #day3, #day4, #day5{
