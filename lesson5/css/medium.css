@@ -22,7 +22,11 @@
 	.motto {
 		letter-spacing: 1.5pt;
 		font-size: larger;
-	}
+  }
+  
+  .forecastdiv {
+    display: block;
+  }
 
   footer {
     border-radius: 15px;

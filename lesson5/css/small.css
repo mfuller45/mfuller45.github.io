@@ -9,6 +9,20 @@ body {
   background-color: #EDF5E1;
 }
 
+#day1, #day2, #day3, #day4, #day5{
+  display: block;
+  margin: 10px auto;
+  border: 1px dashed black;
+  padding: 15px;
+  background-color: lightslategray;
+  color: white;
+  font-style: italic;
+}
+
+.forecastdiv{
+  display: none;
+}
+
 header {
   color: #5CDB95;
   align-items:center;
@@ -49,6 +63,10 @@ h2 {
 h3 {
   font-family: Century-Schoolbook;
   font-size: 1.2em;
+}
+
+.forecastdiv h3{
+  text-align: center;
 }
 
 h4 {
