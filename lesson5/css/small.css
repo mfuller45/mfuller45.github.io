@@ -26,6 +26,22 @@ body {
   background-color: #EDF5E1;
 }
 
+#contact_info {
+	grid-column: 1;
+}
+
+#contact_info h3, #contact_info p {
+	text-align: center;
+}
+
+.contactdiv {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 15px;
+	padding: 10px;
+	border: 1px solid #000;
+}
+
 #day1, #day2, #day3, #day4, #day5{
   display: block;
   margin: 10px auto;
@@ -117,6 +133,10 @@ h4 {
 
 main {
   margin: auto;
+}
+
+#map {
+	grid-column: 1;
 }
 
 .motto {

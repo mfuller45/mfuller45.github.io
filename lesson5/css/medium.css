@@ -8,6 +8,10 @@
     grid-column: 2;
   }
 
+  #contact_info {
+    grid-column: 2;
+  }
+
   h1 {
     font-size: 2.5em;
     margin-top: 0px;
@@ -46,6 +50,10 @@
     max-width: 1000px;
   }
 
+  #map {
+    grid-column: 1;
+  }
+  
   .nav_bar {
 		display: flex;
   }
