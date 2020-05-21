@@ -16,8 +16,8 @@ document.getElementById("copyright").innerHTML = year;
 
 if (day1[day] == 'Friday') {
     document.getElementById("announce").innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
-    document.getElementById("announce").classList.add("show");
+    document.getElementById("announce").day1[day].style.display = "show";
 }
 else {
-    document.getElementById("announce").classList.add("hide");
+    document.getElementById("announce").day1[day].style.display = "none";
 }
