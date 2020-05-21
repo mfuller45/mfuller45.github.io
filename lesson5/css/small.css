@@ -4,11 +4,12 @@ a {
 }
 
 #announcement {
-    background-color: #5cdb95;
-    color: #05386B;
-    text-align: center;
-    padding: 5px;
-    font-weight: bold;
+  height: 50px;
+  background-color: #5cdb95;
+  color: #05386B;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
 }
 
 .articlediv p {

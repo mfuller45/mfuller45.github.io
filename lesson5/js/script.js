@@ -15,15 +15,3 @@ document.getElementById("dates").innerHTML = dateStr;
 
 document.getElementById("copyright").innerHTML = year
 
-document.getElementById("announcement").innerHTML = announcement();
-function announcement() {
-    var today = new Date();
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var day = days[today.getDay()];
-    if (day == "Wednesday") {
-        document.getElementById("announcement").style.display="flex";
-    } else {
-        document.getElementById("announcement").style.display="none";
-    }
-    return "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion."
-}
