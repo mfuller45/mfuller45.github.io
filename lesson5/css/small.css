@@ -3,6 +3,15 @@ a {
   font-weight: bold;
 }
 
+#announcement {
+    display: none;
+    background-color: #5cdb95;
+    color: #05386B;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
 .articlediv p {
   grid-column: 1;
   color: #05386B;
