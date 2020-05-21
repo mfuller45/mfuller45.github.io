@@ -9,9 +9,14 @@ var day = d.getDay()
 var date = d.getDate();
 var month = d.getMonth();
 var year = d.getFullYear();
-
 var dateStr = day1[day] + ', ' + date + " " + month1[month] + " " + year;
 document.getElementById("dates").innerHTML = dateStr;
-
 document.getElementById("copyright").innerHTML = year
 
+function announce() {
+  if (day1[day] == 'Friday') {
+    document.getElementById("announce").innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
+    document.getElementById("announce").classList.add("show");
+  }
+
+}
