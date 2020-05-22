@@ -19,5 +19,5 @@ if (day1[day] == 'Friday') {
     document.getElementById("announce").day1[day].style.display = "show";
 }
 else {
-    document.getElementById("announce").day1[day].style.display = "none";
+    document.getElementById("announce").day1[day].style.display = "block";
 }

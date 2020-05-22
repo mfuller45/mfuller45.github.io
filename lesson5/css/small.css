@@ -4,10 +4,11 @@ a {
 }
 
 #announce {
-  height: 50px;
+  height: 25px;
   background-color: #5cdb95;
   color: #05386B;
   text-align: center;
+  font-size: 1.2em;
   padding: 5px;
   font-weight: bold;
 }
