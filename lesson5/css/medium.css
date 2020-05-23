@@ -1,15 +1,12 @@
 @media only screen and (min-width: 32.5em) {
 
-  .articlediv p {
-    grid-column: 1;
-  }
-
   #announce {
     height: 25px;
   }
 
   #article_img {
-    grid-column: 2;
+    float: right;
+    width: 35%;
   }
 
   .contact_info {
