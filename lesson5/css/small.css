@@ -64,9 +64,9 @@ body {
 }
 
 #fiveDay {
-margin: 0 auto;
-width: 500px;
-border-collapse: collapse;
+  margin: 0 auto;
+  width: 500px;
+  border-collapse: collapse;
 }
 
 .forecastdiv {
