@@ -5,7 +5,6 @@ a {
 
 #announce {
   display: none;
-  height: 25px;
   background-color: #5cdb95;
   color: #05386B;
   text-align: center;
@@ -155,11 +154,11 @@ h4 {
 
 .summary {
 	position: absolute;
-	top: 25px;
-	left: 50px;
+  top: 0px;
+  font-size: .75em;
 	background: radial-gradient(#eee, #EDF5E1);
 	border: 1px solid #000;
-	padding: 1rem;
+	padding: 5px;
 	box-shadow: 0 0 30px #111;
 	opacity: .8;
 }
