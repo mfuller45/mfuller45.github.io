@@ -73,6 +73,11 @@ body {
   display: none;
 }
 
+#forecastDay {
+  background-color: #8ee4af;
+  color: #05386b;
+}
+
 header {
   color: #5CDB95;
   align-items:center;
