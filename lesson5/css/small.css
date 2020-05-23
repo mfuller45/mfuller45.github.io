@@ -63,13 +63,10 @@ body {
 	border: 1px solid #000;
 }
 
-#day1, #day2, #day3, #day4, #day5{
-  display: block;
-  margin: 10px auto;
-  border: 1px dashed black;
-  padding: 15px;
-  color: #05386B;
-  font-style: italic;
+#fiveDay {
+margin: 0 auto;
+width: 500px;
+border-collapse: collapse;
 }
 
 .forecastdiv {
