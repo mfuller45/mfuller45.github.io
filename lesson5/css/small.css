@@ -131,6 +131,12 @@ h3 {
   text-align: center;
 }
 
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:280px;
+  width:265px;}
+
 h4 {
   text-decoration: underline;
   font-family: 'Titillium Web', sans-serif;
@@ -174,6 +180,12 @@ main {
   font-size: .9em;
   letter-spacing: 1pt;
   color: #379683;
+}
+
+.mapouter {
+  text-align:right;
+  height:280px;
+  width:265px;
 }
 
 #map {
