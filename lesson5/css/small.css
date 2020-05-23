@@ -59,15 +59,15 @@ body {
 	border: 1px solid #000;
 }
 
-#fiveDay #degrees {
+#degrees1, #degrees2, #degrees3, #degrees4, #degrees5 {
   color: #05386b;
 }
 
 #fiveDay {
   margin: 0 auto;
   width: 700px;
-  border-collapse: collapse;
   text-align: center;
+  color: #05386b;
 }
 
 .forecastdiv {
@@ -131,12 +131,6 @@ h3 {
   text-align: center;
 }
 
-.gmap_canvas {
-  overflow:hidden;
-  background:none!important;
-  height:280px;
-  width:265px;}
-
 h4 {
   text-decoration: underline;
   font-family: 'Titillium Web', sans-serif;
@@ -182,14 +176,9 @@ main {
   color: #379683;
 }
 
-.mapouter {
-  text-align:right;
-  height:280px;
-  width:265px;
-}
-
 #map {
   margin: auto;
+  border: 2px solid #05386b;
 }
 
 nav {
