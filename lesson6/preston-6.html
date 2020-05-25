@@ -16,9 +16,7 @@
   <body onload="writedate()">
     <div id="announce" style="display: block;"></div>
     <header>
-      <picture>
-        <img src="/lesson6/images/weather_logo2.png" alt="Weather Site Logo">
-      </picture>
+      <img src="/lesson6/images/weather_logo2.png" alt="Weather Site Logo">
       <section class="heading">
         <h1>Good Time Weather</h1>
         <div class="motto">"All the weather for those good times"</div>
@@ -38,15 +36,19 @@
     <main>
       <h2 class= "section_head">Preston</h2>
       <div class="herodiv">
-				<img src="/lesson6/images/sunny.jpg" alt="beautiful_clouds">
-				  <section class="summary">
-   			    <h3>Weather Summary</h3>
-   				  <p>Currently: Cloudy</p>
-   				  <p>High: 70 °F</p>
-   				  <p>Wind Chill: °F</p>
-            <p>Humidity: 40%</p>
-            <p>Wind Speed: 4 mph</p>
-  				</section>
+        <picture>
+          <source media="(max-width: 400px)" srcset="/lesson6/images/sunny_400.jpg">
+          <source media="(max-width: 800px)" srcset="/lesson6/images/sunny_800px">
+          <img src="/lesson6/images/sunny_1200.jpg" alt="Beautiful Sunny Skies">
+        </picture>
+				<section class="summary">
+   			  <h3>Weather Summary</h3>
+   				<p>Currently: Cloudy</p>
+   				<p>High: 70 °F</p>
+   				<p>Wind Chill: °F</p>
+          <p>Humidity: 40%</p>
+          <p>Wind Speed: 4 mph</p>
+  			</section>
 			</div>
       <div class="forecastdiv">
 				<h3>5 Day Forecast</h3>
