@@ -21,10 +21,3 @@ if (day1[day] == 'Friday') {
 else {
     document.getElementById("announce").style.display = "none";
 }
-
-setTimeout(function() {
-    var g = document.querySelectorAll('iframe')[0];
-    g.src = 'https://maps.google.com/maps?q=Preston%20Idaho&t=&z=13&ie=UTF8&iwloc=&output=embed';
-    console.log('Gmap loaded after 2s');
-    }, 2000);
-    console.log('Started');
