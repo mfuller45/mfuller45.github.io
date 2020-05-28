@@ -57,6 +57,10 @@
     max-width: 1000px;
   }
 
+  #map_link {
+    margin: auto;
+  }
+
   #map {
     grid-column: 1;
     grid-row: 1;
