@@ -68,6 +68,7 @@ h4 {
 
 main {
   margin: auto;
+  max-width: 400px;
 }
 
 .motto {
@@ -81,6 +82,15 @@ p {
   font-family: Century-Schoolbook;
   font-size: 1em;
   color:	#5CDB95;
+}
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
 }
 
 footer {
