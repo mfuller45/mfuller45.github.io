@@ -1,12 +1,4 @@
-let options = {
-  root: document.querySelector('#scrollArea'),
-  rootMargin: '0px',
-  threshold: 1.0
-}
-
-let observer = new IntersectionObserver(callback, options);
-
-const images = document.querySelectorAll("[data-src]");
+const images = document.querySelectorAll("img[data-src]");
 
 function preloadImage(img) {
   const src = img.getAttribute("data-src");
