@@ -12,12 +12,3 @@ var year = d.getFullYear();
 var dateStr = day1[day] + ', ' + date + ' ' + month1[month] + ' ' + year;
 document.getElementById("dates").innerHTML = dateStr;
 document.getElementById("copyright").innerHTML = year;
-
-
-if (day1[day] == 'Friday') {
-    document.getElementById("announce").innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
-    document.getElementById("announce").style.display = "block";
-}
-else {
-    document.getElementById("announce").style.display = "none";
-}
