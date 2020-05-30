@@ -4,9 +4,11 @@ a {
 }
 
 body {
+  max-width: 400px;
   margin: 0 auto;
   font-family: Century-Schoolbook;
   background-color: #EDF5E1;
+  text-align: center;
 }
 
 [data-src] {
