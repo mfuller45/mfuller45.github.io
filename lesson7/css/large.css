@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #gallery-imgs figure:hover {
+  #gallery_imgs figure:hover {
     box-shadow: 0 0 50px #05386B;
   }
 
