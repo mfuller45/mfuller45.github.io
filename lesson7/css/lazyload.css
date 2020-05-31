@@ -86,11 +86,11 @@ p {
   color:	#5CDB95;
 }
 
-picture img[data-src] {
+img[data-src] {
   filter: blur(0.1em);
 }
 
-picture img {
+img {
   filter: blur(0em);
   transition: filter 0.5s;
   margin-top: 50px;
