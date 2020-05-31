@@ -45,11 +45,6 @@ body {
   color: #05386B;
 }
 
-/*.contactdiv img {
-  height: 200px;
-  margin: auto;
-} */
-
 .contactdiv {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -78,6 +73,27 @@ body {
   background-color: #8ee4af;
   color: #05386b;
   font-family: Century-Gothic;
+}
+
+#gallery_imgs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+#gallery_imgs figure {
+  margin: 0;
+  padding: 0;
+}
+
+#gallery_imgs figcaption {
+  font-family: Century-Schoolbook;
+  font-size: 1em;
+  color: #05386B;
+}
+
+.galleryImage {
+  width: 100%;
 }
 
 header {
@@ -134,6 +150,15 @@ h3 {
 h4 {
   text-decoration: underline;
   font-family: 'Titillium Web', sans-serif;
+}
+
+img[data-src] {
+  filter: blur(0.4em);
+}
+
+img {
+  filter: blur(0em);
+  transition: filter 0.5s;
 }
 
 .section_head {

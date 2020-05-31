@@ -1,5 +1,9 @@
 @media only screen and (min-width: 60em) {
   
+  #gallery_imgs {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .heading h1 {
 		font-size: 3em;
   }
