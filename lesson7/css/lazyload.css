@@ -87,7 +87,7 @@ p {
 }
 
 img[data-src] {
-  filter: blur(1em);
+  filter: blur(.8em);
 }
 
 img {
