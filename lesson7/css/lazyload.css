@@ -86,7 +86,7 @@ p {
   color:	#5CDB95;
 }
 
-img[data-src] {
+picture img[data-src] {
   filter: blur(0.1em);
 }
 
