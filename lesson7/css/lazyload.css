@@ -87,12 +87,13 @@ p {
 }
 
 picture img[data-src] {
-  filter: blur(0em);
+  filter: blur(0.1em);
 }
 
 picture img {
   filter: blur(0em);
   transition: filter 0.5s;
+  margin-top: 50px;
 }
 
 footer {
