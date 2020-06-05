@@ -1,0 +1,13 @@
+
+#fiveDay {
+  margin: 0 auto;
+  width: 700px;
+  text-align: center;
+  color: #05386b;
+}
+
+#forecastDay {
+  background-color: #8ee4af;
+  color: #05386b;
+  font-family: Century-Gothic;
+}
