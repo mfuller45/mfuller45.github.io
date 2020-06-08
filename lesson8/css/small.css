@@ -3,16 +3,6 @@ a {
   font-weight: bold;
 }
 
-#announce {
-  display: none;
-  background-color: #5cdb95;
-  color: #05386B;
-  text-align: center;
-  font-size: 1.2em;
-  padding: 5px;
-  font-weight: bold;
-}
-
 .articlediv p {
   color: #05386B;
 }
