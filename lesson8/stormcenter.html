@@ -37,10 +37,10 @@
           <fieldset>
             <legend>Your Information</legend>
             <label class="info">
-            *First Name: <input type="text" name="fname" required>
+              *Full Name: <input type="text" name="fullname" pattern="^[a-zA-Z\s]{5,}$" title="Must be at least 5 letters" required>
             </label>
             <label class="info">
-            *Last Name: <input type="text" name="lname" required>
+              *Phone: <input type="tel" name="phone" title="Please write 10 numbers or more" pattern="[0-9]{10,}" placeholder="123-456-7890" required>
             </label>
           </fieldset>
         </form>
