@@ -64,6 +64,18 @@
                   <option value="Tornado">
                 </datalist>
               </label>
+              <label class="storm">
+                Storm Severity: <input type="range" name="storm_severity" id="storm_severity" min="1" max="10" step="1" value="5" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                <span id="ratingvalue">5</span>
+              </label>
+              <label class="storm">
+                Storm Region: <select name="storm_region" id="storm_region">
+                <option selected disabled>Select Region....</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda_Springs">Soda Springs</option>
+                <option value="Fish_Haven">Fish Haven</option>
+                </select>
+              </label>
           </fieldset>
         </form>
     </main>
