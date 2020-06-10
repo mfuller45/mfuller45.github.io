@@ -37,7 +37,7 @@
           <fieldset>
             <legend>Your Information</legend>
             <label class="info">
-              *Full Name: <input type="text" name="fullname" id="fullname pattern="^[a-zA-Z\s]{5,}$" title="Must be at least 5 letters" required>
+              *Full Name: <input type="text" name="fullname" id="fullname" title="Please have at least 3 letters entered" pattern="^[a-zA-Z\s\-\.]{3,}$" required>
             </label>
             <label class="info">
               Email: <input type="email" name="email" id="email" placeholder="info@storm.com">
@@ -45,7 +45,23 @@
               *Phone: <input type="tel" name="phone" id="phone" title="Please write 10 numbers or more" placeholder="123-456-7890" required>
             </label>
             <label class="info">
-              *Zip Code: <input type="number" name="zipcode" id="zipcode required>
+              *Zip Code: <input type="number" name="zipcode" id="zipcode" required>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Storm Information</legend>
+            <label class="storm">
+              Storm Date: <input type="date" name="storm_date" id="storm_date">
+            </label>
+            <label class="storm">
+              Storm Type: <input list="storm_type" type="list" name="storm_type" id="storm_type">
+                <datalist id="storm_type">
+                  <option value="Flash Flood">
+                  <option value="Hail">
+                  <option value="Hurricane">
+                  <option value="Thunderstorm">
+                  <option value="Tornado">
+                </datalist>
             </label>
           </fieldset>
         </form>
