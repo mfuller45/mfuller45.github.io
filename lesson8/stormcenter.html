@@ -37,25 +37,25 @@
           <fieldset>
             <legend>Your Information</legend>
               <label class="info">
-              *Full Name: <input type="text" name="fullname" id="fullname" title="Please have at least 3 letters entered" pattern="^[a-zA-Z\s\-\.]{3,}$" required>
+              *Full Name: <input type="text" name="fullname" title="Please have at least 3 letters entered" pattern="^[a-zA-Z\s\-\.]{3,}$" required>
               </label>
               <label class="info">
-              Email: <input type="email" name="email" id="email" placeholder="info@storm.com">
+              Email: <input type="email" name="email" placeholder="info@storm.com">
               </label>  
               <label class="info">
-              *Phone: <input type="tel" name="phone" id="phone" title="Please write 10 numbers or more" placeholder="123-456-7890" required>
+              *Phone: <input type="tel" name="phone" title="Please write 10 numbers or more" placeholder="123-456-7890" required>
               </label>
               <label class="info">
-              *Zip Code: <input type="number" name="zipcode" id="zipcode" required>
+              *Zip Code: <input type="number" name="zipcode" required>
               </label>
           </fieldset>
           <fieldset>
             <legend>Storm Information</legend>
               <label class="storm">
-              Storm Date: <input type="date" name="storm_date" id="storm_date">
+              Storm Date: <input type="date" name="storm_date">
               </label>
               <label class="storm">
-              Storm Type: <input list="storm_type" type="list" name="storm_type" id="storm_type">
+              Storm Type: <input list="storm_type" name="storm_type">
                 <datalist id="storm_type">
                   <option value="Flash Flood"></option>
                   <option value="Hail"></option>
@@ -65,7 +65,7 @@
                 </datalist>
               </label>
               <label class="storm">
-                Storm Severity: <input type="range" name="storm_severity" id="storm_severity" min="1" max="10" step="1" value="5" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                Storm Severity: <input type="range" name="storm_severity" min="1" max="10" step="1" value="5" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
                 <span id="ratingvalue">5</span>
               </label>
               <label class="storm">
@@ -90,7 +90,7 @@
                 <span class="option">No</span>
                 </label>
                 <label class="top">
-                  Comments: <textarea name="comments" id="comments" type="textarea"></textarea>
+                  Comments: <textarea name="comments" type="textarea"></textarea>
                 </label>
           </fieldset>
           <input class="submit_button" type="submit" value="Report this Storm">
