@@ -13,6 +13,3 @@ var dateStr = day1[day] + ', ' + date + ' ' + month1[month] + ' ' + year;
 document.getElementById("dates").innerHTML = dateStr;
 document.getElementById("copyright").innerHTML = year;
 
-function adjustSeverity(rating) {
-    document.getElementById("ratingvalue").innerHTML = rating;
-}
