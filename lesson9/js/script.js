@@ -13,3 +13,31 @@ var dateStr = day1[day] + ', ' + date + ' ' + month1[month] + ' ' + year;
 document.getElementById("dates").innerHTML = dateStr;
 document.getElementById("copyright").innerHTML = year;
 
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+.then(function (response) {
+   return response.json();
+})
+.then(function (jsonObject) {
+   //console.table(jsonObject);  // temporary checking for valid response and data parsing
+   const towns = jsonObject['towns'];
+   for (let i = 0; i < towns.length; i++) {
+      let card = document.createElement('section');
+      let h2 = document.createElement('h2');
+      let image = document.createElement('img');
+      let  birthdate = document.createElement('div');
+      let  birthplace = document.createElement('div');
+      h2.textContent = towns[i].name + ' ' + towns[i].lastname;
+      birthdate.setAttribute('class', 'birth')
+      birthdate.textContent = 'Date of Birth: ' + towns[i].birthdate;
+      birthplace.setAttribute('class', 'birthplace')
+      birthplace.textContent = 'Place of Birth: ' + towns[i].birthplace;
+      image.setAttribute('src', towns[i].imageurl);
+      card.appendChild(h2);
+      card.appendChild(birthdate);
+      card.appendChild(birthplace);
+      card.appendChild(image);
+      document.querySelector('div.towns').appendChild(card);
+   }
+})
