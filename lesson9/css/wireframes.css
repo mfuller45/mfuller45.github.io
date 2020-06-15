@@ -1,0 +1,24 @@
+
+h2 {
+  font-size: 1.5em;
+  font-family: Century-Schoolbook;
+}
+
+img {
+  height: 800px;
+  width: auto;
+}
+
+@media only screen and (min-width: 32.5em) { 
+
+img {
+     width: 75%;
+}
+}
+
+@media only screen and (min-width: 60em) {
+
+img {
+     width: 85%;
+}
+}
