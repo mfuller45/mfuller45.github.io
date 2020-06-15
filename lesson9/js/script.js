@@ -24,19 +24,26 @@ fetch(requestURL)
    const towns = jsonObject['towns'];
    for (let i = 0; i < towns.length; i++) {
       let card = document.createElement('section');
-      let h2 = document.createElement('h2');
+      let name = document.createElement('h2');
+      let motto = document.createElement('h4');
       let image = document.createElement('img');
-      let  birthdate = document.createElement('div');
-      let  birthplace = document.createElement('div');
-      h2.textContent = towns[i].name + ' ' + towns[i].lastname;
-      birthdate.setAttribute('class', 'birth')
-      birthdate.textContent = 'Date of Birth: ' + towns[i].birthdate;
-      birthplace.setAttribute('class', 'birthplace')
-      birthplace.textContent = 'Place of Birth: ' + towns[i].birthplace;
-      image.setAttribute('src', towns[i].imageurl);
-      card.appendChild(h2);
-      card.appendChild(birthdate);
-      card.appendChild(birthplace);
+      let yearFounded = document.createElement('h3');
+      let currentPopulation = document.createElement('h3');
+      let averageRainfall = document.createElement('h3');
+      name.textContent = towns.name;
+      motto.textContent = towns.motto;
+      yearFounded.textContent = 'Year Founded: ' + towns.yearFounded;
+      yearFounded.setAttribute('class', 'yearFounded')
+      currentPopulation.setAttribute('class', 'currentPopulation')
+      currentPopulation.setAttribute('class', 'averageRainfall')
+      currentPopulation.textContent = 'Population: ' + towns.currentPopulation;
+      averageRainfall.textContent = 'Annual Rainfall: ' + towns.averageRainfall;
+      image.setAttribute('src', towns.imageurl);
+      card.appendChild(name);
+      card.appendChild(motto);
+      card.appendChild(yearFounded);
+      card.appendChild(currentPopulation);
+      card.appendChild(averageRainfall);
       card.appendChild(image);
       document.querySelector('div.towns').appendChild(card);
    }
