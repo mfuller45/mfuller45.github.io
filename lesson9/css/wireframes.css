@@ -8,10 +8,3 @@ img {
   height: 800px;
   width: auto;
 }
-
-@media only screen and (min-width: 60em) {
-
-img {
-     width: 85%;
-}
-}
