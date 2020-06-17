@@ -38,9 +38,9 @@ fetch(requestURL)
       currentPopulation.textContent = 'Population: ' + newTowns.currentPopulation;
       averageRainfall.textContent = 'Annual Rainfall: ' + newTowns.averageRainfall;
       yearFounded.textContent = 'Year Founded: ' + newTowns.yearFounded;
-      yearFounded.setAttribute('class', 'yearFounded')
-      currentPopulation.setAttribute('class', 'currentPopulation')
-      averageRainfall.setAttribute('class', 'averageRainfall')
+      yearFounded.setAttribute('class', 'yearFounded');
+      currentPopulation.setAttribute('class', 'currentPopulation');
+      averageRainfall.setAttribute('class', 'averageRainfall');
       image.setAttribute('src', newTowns.imageurl);
       image.setAttribute('alt', newTowns.name);
       card.appendChild(name);
@@ -51,4 +51,4 @@ fetch(requestURL)
       card.appendChild(image);
       document.querySelector('div.newTowns').appendChild(card);
    }
-})
+});
