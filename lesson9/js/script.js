@@ -22,7 +22,7 @@ fetch(requestURL)
    //console.table(jsonObject);  // temporary checking for valid response and data parsing
    const towns = jsonObject['towns'];
    const newTowns = towns.filter((town) => {
-      if(town.name == "Preston", town.name == "Soda Springs", town.name == "Fish Haven"){
+      if (town.name == "Preston", town.name == "Soda Springs", town.name == "Fish Haven") { return town
       }
    });
    for (let i = 0; i < newTowns.length; i++) {
