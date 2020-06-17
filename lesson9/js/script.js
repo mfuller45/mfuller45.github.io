@@ -21,11 +21,9 @@ fetch(requestURL)
 .then(function (jsonObject) {
    //console.table(jsonObject);  // temporary checking for valid response and data parsing
    const towns = jsonObject['towns'];
-   const newTowns = towns.filter((town) => {
-      if (town.name == "Preston", town.name == "Soda Springs", town.name == "Fish Haven") { return town
-      }
-   });
-   for (let i = 0; i < newTowns.length; i++) {
+  
+   for (let i = 0; i < towns.length; i++) {
+      if (towns[i].name == "Preston" || towns[i].name == "Fish Haven" || towns[i].name == "Soda Springs") {
       let card = document.createElement('section');
       let name = document.createElement('h2');
       let motto = document.createElement('h4');
@@ -33,22 +31,24 @@ fetch(requestURL)
       let yearFounded = document.createElement('h3');
       let currentPopulation = document.createElement('h3');
       let averageRainfall = document.createElement('h3');
-      name.textContent = newTowns.name;
-      motto.textContent = newTowns.motto;
-      currentPopulation.textContent = 'Population: ' + newTowns.currentPopulation;
-      averageRainfall.textContent = 'Annual Rainfall: ' + newTowns.averageRainfall;
-      yearFounded.textContent = 'Year Founded: ' + newTowns.yearFounded;
+      name.textContent = towns.name;
+      motto.textContent = towns.motto;
+      currentPopulation.textContent = 'Population: ' + towns.currentPopulation;
+      averageRainfall.textContent = 'Annual Rainfall: ' + towns.averageRainfall;
+      yearFounded.textContent = 'Year Founded: ' + towns.yearFounded;
       yearFounded.setAttribute('class', 'yearFounded');
       currentPopulation.setAttribute('class', 'currentPopulation');
       averageRainfall.setAttribute('class', 'averageRainfall');
-      image.setAttribute('src', newTowns.imageurl);
-      image.setAttribute('alt', newTowns.name);
+      image.setAttribute('src', towns.imageurl);
+      image.setAttribute('alt', towns.name);
       card.appendChild(name);
       card.appendChild(motto);
       card.appendChild(yearFounded);
       card.appendChild(currentPopulation);
       card.appendChild(averageRainfall);
       card.appendChild(image);
-      document.querySelector('div.newTowns').appendChild(card);
+      document.querySelector('div.cards').appendChild(card);
+      }
    }
 });
+
