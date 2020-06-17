@@ -14,7 +14,6 @@ document.getElementById("dates").innerHTML = dateStr;
 document.getElementById("copyright").innerHTML = year;
 
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
 fetch(requestURL)
 .then(function (response) {
    return response.json();
@@ -22,7 +21,11 @@ fetch(requestURL)
 .then(function (jsonObject) {
    //console.table(jsonObject);  // temporary checking for valid response and data parsing
    const towns = jsonObject['towns'];
-   for (let i = 0; i < towns.length; i++) {
+   const newTowns = towns.filter((town) => {
+      if(town.name=="Preston", town.name=="Soda Springs", town.name=="Fish Haven"){
+      }
+   });
+   for (let i = 0; i < newTowns.length; i++) {
       let card = document.createElement('section');
       let name = document.createElement('h2');
       let motto = document.createElement('h4');
@@ -30,21 +33,22 @@ fetch(requestURL)
       let yearFounded = document.createElement('h3');
       let currentPopulation = document.createElement('h3');
       let averageRainfall = document.createElement('h3');
-      name.textContent = towns.name;
-      motto.textContent = towns.motto;
-      yearFounded.textContent = 'Year Founded: ' + towns.yearFounded;
+      name.textContent = newTowns.name;
+      motto.textContent = newTowns.motto;
+      currentPopulation.textContent = 'Population: ' + newTowns.currentPopulation;
+      averageRainfall.textContent = 'Annual Rainfall: ' + newTowns.averageRainfall;
+      yearFounded.textContent = 'Year Founded: ' + newTowns.yearFounded;
       yearFounded.setAttribute('class', 'yearFounded')
       currentPopulation.setAttribute('class', 'currentPopulation')
-      currentPopulation.setAttribute('class', 'averageRainfall')
-      currentPopulation.textContent = 'Population: ' + towns.currentPopulation;
-      averageRainfall.textContent = 'Annual Rainfall: ' + towns.averageRainfall;
-      image.setAttribute('src', towns.imageurl);
+      averageRainfall.setAttribute('class', 'averageRainfall')
+      image.setAttribute('src', newTowns.imageurl);
+      image.setAttribute('alt', newTowns.name);
       card.appendChild(name);
       card.appendChild(motto);
       card.appendChild(yearFounded);
       card.appendChild(currentPopulation);
       card.appendChild(averageRainfall);
       card.appendChild(image);
-      document.querySelector('div.towns').appendChild(card);
+      document.querySelector('div.newTowns').appendChild(card);
    }
 })
