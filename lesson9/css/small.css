@@ -17,7 +17,7 @@ body {
 }
 
 .cards towncard {
-  width: 350px;
+  width: 325px;
   border: 1px solid #bbb;
   border-radius: 8px;
   background-color: #bfdee3;
@@ -165,5 +165,12 @@ p {
   font-size: 1em;
   color:	#05386b;
 }
+
+#wireframes {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+]
 
 
