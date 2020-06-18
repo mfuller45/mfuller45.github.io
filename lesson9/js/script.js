@@ -28,9 +28,9 @@ fetch(requestURL)
       let name = document.createElement('h2');
       let motto = document.createElement('h4');
       let image = document.createElement('img');
-      let yearFounded = document.createElement('h4');
-      let currentPopulation = document.createElement('h4');
-      let averageRainfall = document.createElement('h4');
+      let yearFounded = document.createElement('p');
+      let currentPopulation = document.createElement('p');
+      let averageRainfall = document.createElement('p');
       name.textContent = towns[i].name;
       motto.textContent = towns[i].motto;
       currentPopulation.textContent = 'Population: ' + towns[i].currentPopulation;
