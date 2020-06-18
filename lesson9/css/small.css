@@ -16,14 +16,14 @@ body {
   grid-gap: 5px;
 }
 
-.cards towncard {
+.cards section {
   margin: auto;
   border: 1px solid #bbb;
   border-radius: 8px;
   background-color: #bfdee3;
 }
 
-.cards towncard img {
+.cards section img {
   width: 100%;
   height: auto;
   padding: 0px;
