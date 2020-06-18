@@ -12,8 +12,6 @@
 
   .cards towncard {
     display: flex;
-    flex-direction: row;
-    height: 350px;
   }
 
   .cards towncard:nth-child(odd) {
