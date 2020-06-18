@@ -4,6 +4,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .cards towncard {
+    width: 325px;
+  }
   
   .heading h1 {
 		font-size: 3em;
