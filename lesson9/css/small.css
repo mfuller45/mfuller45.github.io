@@ -13,13 +13,13 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 5px;
 }
 
 .cards section {
-	max-width: 600px;
-  margin: .5rem auto;
-	border: 1px solid #bbb;
-  background-color: #eee;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background-color: #bfdee3;
 }
 
 #copyright {
