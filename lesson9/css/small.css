@@ -16,7 +16,7 @@ body {
   grid-gap: 5px;
 }
 
-.cards section {
+.cards towncard {
   border: 1px solid #bbb;
   border-radius: 8px;
   background-color: #bfdee3;

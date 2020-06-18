@@ -10,18 +10,14 @@
     width: 35%;
   }
 
-  .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .cards towncard {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
   }
 
-  .cards section:nth-child(odd) img {
-    grid-column: 2;
-  }
-
-  .cards section:nth-child(odd) text {
-    grid-column: 1;
-    grid-row: 1;
+  .cards towncard:nth-child(odd) {
+    flex-direction: row-reverse;
   }
 
   .contact_info {
