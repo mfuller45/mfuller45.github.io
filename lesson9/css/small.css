@@ -17,6 +17,7 @@ body {
 }
 
 .cards towncard {
+  margin: auto;
   width: 325px;
   border: 1px solid #bbb;
   border-radius: 8px;

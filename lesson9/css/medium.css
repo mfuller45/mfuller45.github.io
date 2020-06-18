@@ -10,6 +10,11 @@
     width: 35%;
   }
 
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .contact_info {
     grid-column: 2;
     grid-row: 1;
