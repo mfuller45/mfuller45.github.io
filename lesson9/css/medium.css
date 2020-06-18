@@ -10,14 +10,6 @@
     width: 35%;
   }
 
-  .cards towncard {
-    display: flex;
-  }
-
-  .cards towncard:nth-child(odd) {
-    flex-direction: row-reverse;
-  }
-
   .contact_info {
     grid-column: 2;
     grid-row: 1;
@@ -25,18 +17,6 @@
 
   .contactdiv {
     grid-template-columns: 1fr 1fr;
-  }
-
-  form input.submit_button {
-    border: none;
-    background-color: #5cdb95;
-    color: #05386b;
-    font-size: 1.5rem;
-    border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 96%;
-    max-width: 20rem;
   }
 
   footer {
@@ -71,16 +51,6 @@
   
   main {
     max-width: 1000px;
-  }
-
-  #map_link {
-    margin: auto;
-  }
-
-  #map {
-    grid-column: 1;
-    grid-row: 1;
-    height: 280px;
   }
 
   .nav_bar {

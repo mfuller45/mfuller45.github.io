@@ -17,9 +17,16 @@ body {
 }
 
 .cards towncard {
+  width: 350px;
   border: 1px solid #bbb;
   border-radius: 8px;
   background-color: #bfdee3;
+}
+
+.cards towncard img {
+  width: 100%;
+  height: auto;
+  padding: 0px;
 }
 
 #copyright {
