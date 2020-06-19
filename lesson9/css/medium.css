@@ -10,16 +10,16 @@
     width: 35%;
   }
 
-  section {
+  .cards section {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  section:nth-child(odd) img {
+  .cards section:nth-child(odd) img {
     grid-column: 1;
   }
 
-  section:nth-child(odd) #details {
+  .cards section:nth-child(odd) #details {
     grid-column: 2;
     grid-row: 1;
   }
