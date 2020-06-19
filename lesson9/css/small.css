@@ -84,6 +84,10 @@ header img {
   padding-bottom: 5px;
 }
 
+#homeTitle img {
+  width: 100%
+}
+
 h1 {
   font-family: Century-Schoolbook;
   font-size: 1.8em;
