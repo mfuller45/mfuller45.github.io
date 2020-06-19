@@ -31,6 +31,7 @@ fetch(requestURL)
       let yearFounded = document.createElement('p');
       let currentPopulation = document.createElement('p');
       let averageRainfall = document.createElement('p');
+      let details = document.createElement('div');
       name.textContent = towns[i].name;
       motto.textContent = towns[i].motto;
       currentPopulation.textContent = 'Population: ' + towns[i].currentPopulation;
@@ -38,12 +39,14 @@ fetch(requestURL)
       yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
       image.setAttribute('src', '/lesson9/images/' + towns[i].photo);
       image.setAttribute('alt', towns[i].name);
-      card.appendChild(name);
-      card.appendChild(motto);
-      card.appendChild(yearFounded);
-      card.appendChild(currentPopulation);
-      card.appendChild(averageRainfall);
+      details.setAttribute('id', 'details');
+      card.appendChild(details);
       card.appendChild(image);
+      details.appendChild(name);
+      details.appendChild(motto);
+      details.appendChild(yearFounded);
+      details.appendChild(currentPopulation);
+      details.appendChild(averageRainfall);
       document.querySelector('div.cards').appendChild(card);
       }
    }
