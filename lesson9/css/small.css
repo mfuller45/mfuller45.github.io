@@ -18,9 +18,9 @@ body {
 
 .cards section {
   margin: auto;
-  border: 1px solid #bbb;
+  border: 2px solid #000;
   border-radius: 8px;
-  background-color: #bfdee3;
+  background-color: #d4dec9;
 }
 
 .cards section img {
@@ -81,6 +81,7 @@ h1 {
   font-family: Century-Schoolbook;
   font-size: 1.8em;
   text-shadow: 1px 1px 1px #05386b;
+  color: #5cdb95;
 }
 
 h2 {
