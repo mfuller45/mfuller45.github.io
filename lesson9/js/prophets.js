@@ -20,6 +20,7 @@ fetch(requestURL)
       birthplace.setAttribute('class', 'birthplace')
       birthplace.textContent = 'Place of Birth: ' + prophets[i].birthplace;
       image.setAttribute('src', prophets[i].imageurl);
+      image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname);
       card.appendChild(h2);
       card.appendChild(birthdate);
       card.appendChild(birthplace);
