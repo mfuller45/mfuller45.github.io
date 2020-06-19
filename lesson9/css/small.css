@@ -25,9 +25,11 @@ body {
 
 .cards section img {
   border-radius: 8px;
-  width: 100%;
+  width: 80%;
   height: auto;
-  padding: 0px;
+  padding: 5px;
+  filter: blur(0em);
+  transition: filter 1s;
 }
 
 #copyright {
