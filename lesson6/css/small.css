@@ -45,10 +45,9 @@ body {
   color: #05386B;
 }
 
-/*.contactdiv img {
-  height: 200px;
-  margin: auto;
-} */
+.contactdiv h4 {
+  text-decoration: underline;
+}
 
 .contactdiv {
 	display: grid;
@@ -132,7 +131,7 @@ h3 {
 }
 
 h4 {
-  text-decoration: underline;
+  color: #05386b;
   font-family: 'Titillium Web', sans-serif;
 }
 

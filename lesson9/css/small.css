@@ -24,6 +24,7 @@ body {
 }
 
 .cards section img {
+  border-radius: 8px;
   width: 100%;
   height: auto;
   padding: 0px;
@@ -85,7 +86,7 @@ header img {
 }
 
 #homeTitle img {
-  width: 100%
+  width: 100%;
 }
 
 h1 {
@@ -110,8 +111,8 @@ h3 {
 }
 
 h4 {
-  text-decoration: underline;
   font-family: 'Titillium Web', sans-serif;
+  color: #05386B;
 }
 
 .section_head {
