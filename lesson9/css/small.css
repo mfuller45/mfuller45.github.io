@@ -77,6 +77,13 @@ header img {
   margin-bottom: 0px;
 }
 
+#homeTitle {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
 h1 {
   font-family: Century-Schoolbook;
   font-size: 1.8em;
