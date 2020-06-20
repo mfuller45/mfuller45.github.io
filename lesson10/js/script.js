@@ -21,3 +21,11 @@ if (day1[day] == 'Friday') {
 else {
     document.getElementById("announce").style.display = "none";
 }
+
+const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1"
+
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+});
