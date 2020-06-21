@@ -22,6 +22,7 @@ else {
     document.getElementById("announce").style.display = "none";
 }
 
+// Current Weather for Weather Summary
 const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1"
 
 fetch(apiURL)
@@ -34,3 +35,11 @@ fetch(apiURL)
     document.getElementById('humidity').innerHTML = town.main.humidity;
     document.getElementById('windspeed').innerHTML = Math.round(town.wind.speed);
 });
+
+// Five Day Forecast 
+const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1"
+
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((town) => {
+    console.log(town);
