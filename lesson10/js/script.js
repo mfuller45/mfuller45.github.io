@@ -39,39 +39,43 @@ fetch(apiURL)
 // Five Day Forecast 
 function prestonForecast(id) {
     const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + id + "&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1";
-    fetch(apiURL)
-    .then((response) => response.json())
-    .then((town) => {
-       console.log(town);
-       const townList = town.list;
-       let daycount = 0;
-       for (let i = 0; i < town.list.length; i++ ) {
-          let day = townList[i].dt_txt;
-          if (day.substr(11, 19) == '12:00:00') {
-             daycount += 1;
-             let dateParts = day.substr(0,10).split('-');
-             let month = monthAbbrNames[+dateParts[1]];
-             let date = month + " " + +dateParts[2];
-             let dateElement = 'day' + daycount;
-             document.getElementById(dateElement).innerHTML = date;
- 
-             // Get description
-             let descriptionLower = townList[i].weather[0].description;
-             let description = descriptionLower.charAt(0).toUpperCase() + descriptionLower.slice(1);
-             let descriptionElement = 'condition' + daycount;
-             document.getElementById(descriptionElement).innerHTML = description;
- 
-             // Get high
-             let temp = Math.round(townList[i].main.temp_max) + " &#176;F";
-             let tempElement = 'temp' + daycount;
-             document.getElementById(tempElement).innerHTML = temp;
- 
-             // Get icon
-             const imagesrc = 'https://openweathermap.org/img/w/' + townList[i].weather[0].icon + '.png';
-             let imageElement = 'icon' + daycount;
-             document.getElementById(imageElement).setAttribute('src', imagesrc);
-             document.getElementById(imageElement).setAttribute('alt', description);
-          }
-       }
-    });
- }
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((town) => {
+    console.log(town);
+    const townList = town.list;
+    let counter = 0;
+    for (let i = 0; i < townList.length; i++ ) {
+        let day = townList[i].dt_txt;
+        if (day.substr(11, 19) == '18:00:00') {
+            counter++
+            /*Get correct day for forecast*/
+            /*Display as Month/Day*/
+            const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let monthDate = parseInt((day[5] + day[6]) - 1);
+            let date = day[8] + day[9];
+            let month = months[monthDate];
+            let fullDate = month + " " + date;
+            let dateElement = 'date' + counter;
+            document.getElementById(dateElement).innerHTML = fullDate;
+
+            /*Get description*/
+            let discriptionLower = townList[i].weather[0].description;
+            let discription = discriptionLower.charAt(0).toUpperCase() + discriptionLower.slice(1);
+            let discriptionElement = 'condition' + counter;
+            document.getElementById(discriptionElement).innerHTML = discription;
+
+            /*Get temp-max*/
+            let temp = Math.round(townList[i].main.temp_max) + " &#176;F";
+            let tempElement = 'day' + counter + '_weather';
+            document.getElementById(tempElement).innerHTML = temp;
+
+            /*Icon for weather*/
+            const imagesrc = 'https://openweathermap.org/img/w/' + townList[i].weather[0].icon + '.png';
+            let imageElement = 'weather_icon' + counter;
+            document.getElementById(imageElement).setAttribute('src', imagesrc);
+            document.getElementById(imageElement).setAttribute('alt', discription);
+        }
+    }
+  });
+}
