@@ -32,5 +32,5 @@ fetch(apiURL)
     document.getElementById('currently').innerHTML = description.charAt(0).toUpperCase() + description.slice(1);
     document.getElementById('temp').innerHTML = Math.round(town.main.temp);
     document.getElementById('humidity').innerHTML = town.main.humidity;
-    document.getElementById('windpseed').innerHTML = Math.round(town.wind.speed);
+    document.getElementById('windspeed').innerHTML = Math.round(town.wind.speed);
 });
