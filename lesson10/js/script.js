@@ -49,8 +49,7 @@ fetch(apiURL)
         let day = townList[i].dt_txt;
         if (day.substr(11, 19) == '18:00:00') {
             counter++
-            /*Get correct day for forecast*/
-            /*Display as Month/Day*/
+            /*Get day for forecast*/     
             const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
             let monthDate = parseInt((day[5] + day[6]) - 1);
             let date = day[8] + day[9];
@@ -60,21 +59,21 @@ fetch(apiURL)
             document.getElementById(dateElement).innerHTML = fullDate;
 
             /*Get description*/
-            let discriptionLower = townList[i].weather[0].description;
-            let discription = discriptionLower.charAt(0).toUpperCase() + discriptionLower.slice(1);
-            let discriptionElement = 'condition' + counter;
-            document.getElementById(discriptionElement).innerHTML = discription;
+            let descriptionLower = townList[i].weather[0].description;
+            let description = descriptionLower.charAt(0).toUpperCase() + descriptionLower.slice(1);
+            let descriptionElement = 'condition' + counter;
+            document.getElementById(descriptionElement).innerHTML = description;
 
             /*Get temp-max*/
             let temp = Math.round(townList[i].main.temp_max) + " &#176;F";
             let tempElement = 'day' + counter + '_weather';
             document.getElementById(tempElement).innerHTML = temp;
 
-            /*Icon for weather*/
+            /*Get icon for weather*/
             const imagesrc = 'https://openweathermap.org/img/w/' + townList[i].weather[0].icon + '.png';
             let imageElement = 'weather_icon' + counter;
             document.getElementById(imageElement).setAttribute('src', imagesrc);
-            document.getElementById(imageElement).setAttribute('alt', discription);
+            document.getElementById(imageElement).setAttribute('alt', description);
         }
     }
   });
