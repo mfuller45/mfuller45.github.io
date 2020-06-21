@@ -42,6 +42,7 @@ function prestonForecast(id) {
     fetch(apiURL)
     .then((response) => response.json())
     .then((town) => {
+       console.log(town);
        const townList = town.list;
        let daycount = 0;
        for (let i = 0; i < town.list.length; i++ ) {
