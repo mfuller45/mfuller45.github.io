@@ -37,9 +37,3 @@ fetch(apiURL)
 });
 
 // Five Day Forecast 
-const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1"
-
-fetch(apiURL)
-  .then((response) => response.json())
-  .then((town) => {
-    console.log(town);
