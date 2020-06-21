@@ -26,6 +26,11 @@ const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=
 
 fetch(apiURL)
   .then((response) => response.json())
-  .then((jsObject) => {
-    console.log(jsObject);
+  .then((town) => {
+    console.log(town);
+    let description = town.weather[0].description;
+    document.getElementById('currently').innerHTML = description.charAt(0).toUpperCase() + description.slice(1);
+    document.getElementById('temp').innerHTML = Math.round(town.main.temp);
+    document.getElementById('humidity').innerHTML = town.main.humidity;
+    document.getElementById('windpseed').innerHTML = Math.round(town.wind.speed);
 });
