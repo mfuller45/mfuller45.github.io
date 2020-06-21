@@ -38,7 +38,7 @@ fetch(apiURL)
 
 // Five Day Forecast 
 function prestonForecast(id) {
-    "https://api.openweathermap.org/data/2.5/forecast?id=" + id + "&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1";
+    const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + id + "&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1";
     fetch(apiURL)
     .then((response) => response.json())
     .then((town) => {
