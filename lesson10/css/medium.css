@@ -43,8 +43,10 @@
 		font-size: larger;
   }
 
-  #degrees1, #degrees2, #degrees3, #degrees4, #degrees5 {
-    color: #05386b;
+  .forecast1, .forecast2, .forecast3, .forecast4, .forecast5 {
+    margin: 3px;
+    border: solid thick #05386b;
+    padding: 3px;
   }
   
   .forecastdiv {
@@ -53,6 +55,7 @@
 
   #fiveDay {
     display: grid;
+    text-align: center;
     gap: 5px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     color: #05386b;
