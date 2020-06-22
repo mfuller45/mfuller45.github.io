@@ -49,7 +49,7 @@
 
   .forecast1, .forecast2, .forecast3, .forecast4, .forecast5 {
     margin: 5px;
-    border: solid thick #05386b;
+    border: solid 1px #05386b;
     color: #05386b;
     font-family: Century-Schoolbook;
     font-weight: bold;
