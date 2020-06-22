@@ -19,6 +19,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  #condition1, #condition2, #condition3, #condition4, #condition5 {
+    padding-bottom: 3px;
+  }
+
   h1 {
     font-size: 2.5em;
     margin-top: 0px;
@@ -44,10 +48,12 @@
   }
 
   .forecast1, .forecast2, .forecast3, .forecast4, .forecast5 {
-    margin: 3px;
+    margin: 5px;
     border: solid thick #05386b;
     color: #05386b;
-    padding: 3px;
+    font-family: Century-Schoolbook;
+    font-weight: bold;
+    padding: 5px;
     text-align: center;
   }
   
@@ -108,6 +114,10 @@
     padding: 1rem;
     box-shadow: 0 0 30px #111;
     opacity: .8;
+  }
+
+  #temp1, #temp2, #temp3, #temp4, #temp5 {
+    padding-bottom: 3px;
   }
   
 }
