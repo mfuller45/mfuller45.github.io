@@ -42,9 +42,20 @@
 		letter-spacing: 1.5pt;
 		font-size: larger;
   }
+
+  #degrees1, #degrees2, #degrees3, #degrees4, #degrees5 {
+    color: #05386b;
+  }
   
   .forecastdiv {
     display: block;
+  }
+
+  #fiveDay {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color: #05386b;
   }
 
   footer {

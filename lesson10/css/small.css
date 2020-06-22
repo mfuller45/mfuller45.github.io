@@ -58,25 +58,12 @@ body {
 	border: 1px solid #000;
 }
 
-#degrees1, #degrees2, #degrees3, #degrees4, #degrees5 {
-  color: #05386b;
-}
-
 #fiveDay {
-  margin: 0 auto;
-  width: 700px;
-  text-align: center;
-  color: #05386b;
+  display: none;
 }
 
 .forecastdiv {
   display: none;
-}
-
-#forecastDay {
-  background-color: #8ee4af;
-  color: #05386b;
-  font-family: Century-Gothic;
 }
 
 header {
