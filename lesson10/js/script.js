@@ -37,44 +37,42 @@ fetch(apiURL)
 });
 
 // Five Day Forecast 
-function prestonForecast(id) {
-    const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + id + "&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1";
-fetch(apiURL)
+const apiURL_2 = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1";
+
+fetch(apiURL_2)
   .then((response) => response.json())
   .then((town) => {
     console.log(town);
     const townList = town.list;
-    let counter = 0;
-    for (let i = 0; i < townList.length; i++ ) {
-        let day = townList[i].dt_txt;
-        if (day.substr(11, 19) == '18:00:00') {
-            counter++
-            /*Get day for forecast*/     
+    let daycount = 0;
+      for (let i = 0; i < town.list.length; i++ ) {
+         let day = townList[i].dt_txt;
+         if (day.substr(11, 19) == '12:00:00') {
+            daycount += 1;
             const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
             let monthDate = parseInt((day[5] + day[6]) - 1);
-            let date = day[8] + day[9];
+            let dateParts = day.substr(0,10).split('-');
             let month = months[monthDate];
-            let fullDate = month + " " + date;
-            let dateElement = 'date' + counter;
-            document.getElementById(dateElement).innerHTML = fullDate;
+            let date = month + " " + +dateParts[2];
+            let dateElement = 'day' + daycount;
+            document.getElementById(dateElement).innerHTML = date;
 
-            /*Get description*/
+            // Get description
             let descriptionLower = townList[i].weather[0].description;
             let description = descriptionLower.charAt(0).toUpperCase() + descriptionLower.slice(1);
-            let descriptionElement = 'condition' + counter;
+            let descriptionElement = 'condition' + daycount;
             document.getElementById(descriptionElement).innerHTML = description;
 
-            /*Get temp-max*/
+            // Get high
             let temp = Math.round(townList[i].main.temp_max) + " &#176;F";
-            let tempElement = 'day' + counter + '_weather';
+            let tempElement = 'temp' + daycount;
             document.getElementById(tempElement).innerHTML = temp;
 
-            /*Get icon for weather*/
+            // Get icon
             const imagesrc = 'https://openweathermap.org/img/w/' + townList[i].weather[0].icon + '.png';
-            let imageElement = 'weather_icon' + counter;
+            let imageElement = 'icon' + daycount;
             document.getElementById(imageElement).setAttribute('src', imagesrc);
             document.getElementById(imageElement).setAttribute('alt', description);
-        }
-    }
-  });
-}
+         }
+      }
+   });
