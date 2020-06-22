@@ -57,18 +57,18 @@ fetch(apiURL_2)
             let dateElement = 'day' + daycount;
             document.getElementById(dateElement).innerHTML = date;
 
-            // Get description
+            // Get weather description
             let descriptionLower = townList[i].weather[0].description;
             let description = descriptionLower.charAt(0).toUpperCase() + descriptionLower.slice(1);
             let descriptionElement = 'condition' + daycount;
             document.getElementById(descriptionElement).innerHTML = description;
 
-            // Get high
+            // Get high temp
             let temp = Math.round(townList[i].main.temp_max) + " &#176;F";
             let tempElement = 'temp' + daycount;
             document.getElementById(tempElement).innerHTML = temp;
 
-            // Get icon
+            // Get weather icon
             const imagesrc = 'https://openweathermap.org/img/w/' + townList[i].weather[0].icon + '.png';
             let imageElement = 'icon' + daycount;
             document.getElementById(imageElement).setAttribute('src', imagesrc);
