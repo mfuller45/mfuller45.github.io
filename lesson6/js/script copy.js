@@ -1,8 +1,7 @@
-//Hamburger icon
 function toggleMenu() {
     document.getElementsByClassName("nav_bar")[0].classList.toggle("responsive");
    }
-//Get Footer Date
+ 
 const day1 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const month1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 var d = new Date();
@@ -14,7 +13,7 @@ var dateStr = day1[day] + ', ' + date + ' ' + month1[month] + ' ' + year;
 document.getElementById("dates").innerHTML = dateStr;
 document.getElementById("copyright").innerHTML = year;
 
-//Friday Announcement
+
 if (day1[day] == 'Friday') {
     document.getElementById("announce").innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
     document.getElementById("announce").style.display = "block";
@@ -23,7 +22,7 @@ else {
     document.getElementById("announce").style.display = "none";
 }
 
-// Current Weather for Weather Summary
+//Weather Summary
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1";
 
 fetch(apiURL)
@@ -36,6 +35,9 @@ fetch(apiURL)
     document.getElementById('humidity').innerHTML = town.main.humidity;
     document.getElementById('windspeed').innerHTML = Math.round(town.wind.speed);
 });
+
+//Get days of the week for 5 day forecast table
+
 
 //5 day Forecast
 const apiURL_forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1"
