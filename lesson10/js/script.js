@@ -44,10 +44,10 @@ function forecastDays() {
     var weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     var d = new Date();
     let day1 = d.getDay();
-    let day2 = day1 + 1;
-    let day3 = day2 + 1;
-    let day4 = day3 + 1;
-    let day5 = day4 + 1;
+    let day2 = weekdays[day1] + 1;
+    let day3 = weekdays[day2] + 1;
+    let day4 = weekdays[day3] + 1;
+    let day5 = weekdays[day4] + 1;
     document.getElementById("day1").innerHTML = day1;
     document.getElementById("day2").innerHTML = day2;
     document.getElementById("day3").innerHTML = day3;
