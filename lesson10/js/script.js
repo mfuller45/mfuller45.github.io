@@ -69,8 +69,8 @@ fetch(apiURL_forecast)
             var img = document.createElement("img");
             img.setAttribute('src','https://openweathermap.org/img/w/' + forecastData[i].weather[0].icon + '.png');
             img.setAttribute('alt',forecastData[i].weather[0].description)
-            var br = document.createElement("br");
-            var temp = document.createElement("span");
+            let br = document.createElement("br");
+            let temp = document.createElement("span");
             temp.textContent = Math.round(forecastData[i].main.temp) + ' °F'
             let description = document.createElement("div");
             description.textContent = forecastData[i].weather[0].description;
