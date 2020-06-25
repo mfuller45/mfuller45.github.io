@@ -50,17 +50,17 @@ fetch(apiURL_forecast)
     .then(response=>response.json())
     .then((town) => {
         console.log(town);
-        let forecastTableData = town.list.filter((element)=>element.dt_txt.includes("18:00:00"))
-        for (let i = 0; i < forecastTableData.length; i++) {
+        let forecastData = town.list.filter((element)=>element.dt_txt.includes("18:00:00"))
+        for (let i = 0; i < forecastData.length; i++) {
             var tableBox = document.createElement('td');
             var img = document.createElement("img");
-            img.setAttribute('src','https://openweathermap.org/img/w/' + forecastTableData[i].weather[0].icon + '.png');
-            img.setAttribute('alt',forecastTableData[i].weather[0].description)
+            img.setAttribute('src','https://openweathermap.org/img/w/' + forecastData[i].weather[0].icon + '.png');
+            img.setAttribute('alt',forecastData[i].weather[0].description)
             var br = document.createElement("br");
             var temp = document.createElement("span");
-            temp.textContent = Math.round(forecastTableData[i].main.temp) + ' °F'
+            temp.textContent = Math.round(forecastData[i].main.temp) + ' °F'
             let description = document.createElement("div");
-            description.textContent = forecastTableData[i].weather[0].description;
+            description.textContent = forecastData[i].weather[0].description;
             tableBox.append(img,br,temp,description)
             forecastTable.appendChild(tableBox)
         }
