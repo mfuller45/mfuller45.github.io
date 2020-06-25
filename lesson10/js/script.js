@@ -40,7 +40,20 @@ fetch(apiURL)
 
 //Get days of the week for 5 day forecast table
 
-
+function forecastDays() {
+    var weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var d = new Date();
+    let day1 = d.getDay();
+    let day2 = day1 + 1;
+    let day3 = day2 + 1;
+    let day4 = day3 + 1;
+    let day5 = day4 + 1;
+    document.getElementById("day1").innerHTML = day1
+    document.getElementById("day2").innerHTML = day2
+    document.getElementById("day3").innerHTML = day3
+    document.getElementById("day4").innerHTML = day4
+    document.getElementById("day5").innerHTML = day5
+}
 
 //5 day Forecast
 const apiURL_forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1"
