@@ -2,7 +2,7 @@
 function toggleMenu() {
     document.getElementsByClassName("nav_bar")[0].classList.toggle("responsive");
    }
-   
+
 //Get Footer Date
 const day1 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const month1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -37,6 +37,17 @@ fetch(apiURL)
     document.getElementById('humidity').innerHTML = town.main.humidity;
     document.getElementById('windspeed').innerHTML = Math.round(town.wind.speed);
 });
+
+//Get days of the week for 5 day forecast table
+
+function WeekDay(date){
+  var weekdays = new Array(
+      "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+  );
+  var day = (date).getDay();
+  return weekdays[day];
+}
+document.getElementById("forecastDay")
 
 //5 day Forecast
 const apiURL_forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1"
