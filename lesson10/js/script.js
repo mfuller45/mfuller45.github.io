@@ -48,11 +48,11 @@ function forecastDays() {
     let day3 = day2 + 1;
     let day4 = day3 + 1;
     let day5 = day4 + 1;
-    document.getElementById("day1").innerHTML = day1
-    document.getElementById("day2").innerHTML = day2
-    document.getElementById("day3").innerHTML = day3
-    document.getElementById("day4").innerHTML = day4
-    document.getElementById("day5").innerHTML = day5
+    document.getElementById("day1").innerHTML = day1;
+    document.getElementById("day2").innerHTML = day2;
+    document.getElementById("day3").innerHTML = day3;
+    document.getElementById("day4").innerHTML = day4;
+    document.getElementById("day5").innerHTML = day5;
 }
 
 //5 day Forecast
