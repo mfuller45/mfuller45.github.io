@@ -47,7 +47,7 @@ function WeekDay(date){
   var day = (date).getDay();
   return weekdays[day];
 }
-document.getElementById("forecastDay")
+document.getElementById("day1")
 
 //5 day Forecast
 const apiURL_forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1"
