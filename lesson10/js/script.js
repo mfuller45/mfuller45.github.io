@@ -2,6 +2,7 @@
 function toggleMenu() {
     document.getElementsByClassName("nav_bar")[0].classList.toggle("responsive");
    }
+   
 //Get Footer Date
 const day1 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const month1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
