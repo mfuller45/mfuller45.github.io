@@ -59,11 +59,20 @@ body {
 }
 
 #fiveDay {
-  display: none;
+  margin: 0 auto;
+  width: 700px;
+  text-align: center;
+  color: #05386b;
 }
 
 .forecastdiv {
   display: none;
+}
+
+#forecastDay {
+  background-color: #8ee4af;
+  color: #05386b;
+  font-family: Century-Gothic;
 }
 
 header {

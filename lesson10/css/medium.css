@@ -19,10 +19,6 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  #condition1, #condition2, #condition3, #condition4, #condition5 {
-    padding-bottom: 3px;
-  }
-
   h1 {
     font-size: 2.5em;
     margin-top: 0px;
@@ -47,25 +43,8 @@
 		font-size: larger;
   }
 
-  .forecast1, .forecast2, .forecast3, .forecast4, .forecast5 {
-    margin: 5px;
-    border: solid 1px #05386b;
-    color: #05386b;
-    font-family: Century-Schoolbook;
-    font-weight: bold;
-    padding: 5px;
-    text-align: center;
-  }
-  
   .forecastdiv {
     display: block;
-  }
-
-  #fiveDay {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    color: #05386b;
   }
 
   footer {
@@ -114,10 +93,6 @@
     padding: 1rem;
     box-shadow: 0 0 30px #111;
     opacity: .8;
-  }
-
-  #temp1, #temp2, #temp3, #temp4, #temp5 {
-    padding-bottom: 3px;
   }
   
 }
