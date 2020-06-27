@@ -35,6 +35,29 @@ body {
   background-color: #EDF5E1;
 }
 
+.cards {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+}
+
+.cards section {
+  margin: auto;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: #d4dec9;
+}
+
+.cards section img {
+  border-radius: 8px;
+  width: 80%;
+  height: auto;
+  padding: 5px;
+  filter: blur(0em);
+  transition: filter 1s;
+}
+
 .contact_info {
   grid-column: 1;
   margin: auto;
@@ -56,6 +79,11 @@ body {
   margin-bottom: 15px;
   padding: 10px;
 	border: 1px solid #000;
+}
+
+#comments {
+  height: 85px;
+  width: 300px;
 }
 
 #copyright {
@@ -97,6 +125,70 @@ body {
   text-align: center;
 }
 
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #05386b;
+  border-radius: 10px;
+  padding: .5rem 2%;
+}
+
+form legend {
+  color: #05386B;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-size: 1.2rem;
+}
+
+form label.top, form label.info, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #05386B;
+  font-size: .8rem;
+}
+
+form label.info input:required {
+  border-left: red solid 6px;
+}
+
+form label.info input:required:valid {
+  border-left: green solid 6px;
+}
+
+form label.top input, form label.info input, form label.storm select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #000;
+  border-radius: 4px;
+  padding: .5rem;
+  color: #05386B;
+  width: 100%;
+  max-width: 20rem;
+  background-color: #ffffff;
+}
+
+form label.radios {
+  display: block;
+  padding-top: 1em;
+}
+
+form label.storm {
+  display: block;
+  padding: .75rem 0;
+  color: #05386B;
+}
+
+form input.submit_button {
+  border: none;
+  background-color: #5cdb95;
+  color: #05386b;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 2rem 5%;
+  width: 96%;
+  max-width: 20rem;
+}
+
 footer {
   background-color:#379683;
   color: #05386B;
@@ -106,6 +198,28 @@ footer {
   margin: 0 auto;
   padding-top: 10px;
   border-radius: 15px;
+}
+
+#gallery_imgs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+#gallery_imgs figure {
+  margin: 0;
+  padding: 0;
+}
+
+#gallery_imgs figcaption {
+  font-family: Century-Schoolbook;
+  font-size: 1em;
+  color: #05386B;
+  text-align: center;
+}
+
+.galleryImage {
+  width: 100%;
 }
 
 header {
@@ -135,6 +249,17 @@ header img {
   margin-bottom: 0px;
 }
 
+#homeTitle {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+#homeTitle img {
+  width: 100%;
+}
+
 h1 {
   font-family: Century-Schoolbook;
   font-size: 1.8em;
@@ -158,6 +283,15 @@ h3 {
 h4 {
   color: #05386b;
   font-family: 'Titillium Web', sans-serif;
+}
+
+img[data-src] {
+  filter: blur(0.4em);
+}
+
+img {
+  filter: blur(0em);
+  transition: filter 0.5s;
 }
 
 .section_head {
@@ -257,6 +391,12 @@ p {
   color: #05386b;
   font-family: Century-Schoolbook;
   font-size: 1.2em;
+}
+
+#wireframes {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 

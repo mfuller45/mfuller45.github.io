@@ -10,12 +10,61 @@
     width: 35%;
   }
 
+  .cards section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards section:nth-child(odd) img {
+    grid-column: 1;
+  }
+
+  .cards section:nth-child(odd) #details {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
   .contact_info {
     grid-column: 2;
     grid-row: 1;
   }
 
   .contactdiv {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  form input.submit_button {
+    border: none;
+    background-color: #5cdb95;
+    color: #05386b;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+  }
+
+  .forecasts {
+    padding: 3px;
+    margin: 2px;
+    border: 2px solid #05386b;
+  }
+
+  .forecastdiv {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+
+  footer {
+    border-radius: 15px;
+    height: 55px;
+    max-width: 1000px;
+  }
+
+  #gallery_imgs {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -41,25 +90,6 @@
 	.motto {
 		letter-spacing: 1.5pt;
 		font-size: larger;
-  }
-
-  .forecasts {
-    padding: 3px;
-    margin: 2px;
-    border: 2px solid #05386b;
-  }
-
-  .forecastdiv {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-  }
-
-  footer {
-    border-radius: 15px;
-    height: 55px;
-    max-width: 1000px;
   }
 
   main {
