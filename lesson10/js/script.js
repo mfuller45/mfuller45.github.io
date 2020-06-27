@@ -57,7 +57,7 @@ fetch(apiURL_forecast)
     let day = 0;
 	forecastData.forEach(forecast => {
 	  let x = new Date(forecast.dt_txt);
-	  document.getElementById('temp1').textContent = Math.round(forecastData[day].main.temp);
+	  document.getElementById('temp1').textContent = Math.round(forecastData[day].main.temp) + ' °F';
 	  document.getElementById('day1').textContent = weekdays[x.getDay()];
 	  day++;	  
 	});
