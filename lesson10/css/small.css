@@ -58,9 +58,21 @@ body {
 	border: 1px solid #000;
 }
 
+#copyright {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#dates {
+  font-size: 1.0em;
+  font-family: 'Titillium Web', sans-serif;
+  padding-top: 5px;
+}
+
 #day1, #day2, #day3, #day4, #day5 {
   background-color: #8ee4af;
   font-family: Century-Schoolbook;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 #fiveDay {
@@ -71,8 +83,27 @@ body {
   font-family: Century-Schoolbook;
 }
 
+#forecastTitle {
+  text-align: center;
+}
+
 .forecastdiv {
   display: none;
+}
+
+.forecastdiv h3, .articlediv h3 {
+  text-align: center;
+}
+
+footer {
+  background-color:#379683;
+  color: #05386B;
+  font-family: Century-Gothic;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  border-radius: 15px;
 }
 
 header {
@@ -120,10 +151,6 @@ h3 {
   font-size: 1.2em;
   color: #5cdb95;
   text-shadow: .5px .5px .5px #05386b;
-}
-
-.forecastdiv h3, .articlediv h3 {
-  text-align: center;
 }
 
 h4 {
@@ -214,33 +241,20 @@ nav ul li a.active{
 	background-color: #8EE4AF;
 }
 
-.responsive li {
-	display: block;
-}
-
 p {
   font-family: Century-Schoolbook;
   font-size: 1em;
   color:	#5CDB95;
 }
 
-footer {
-  background-color:#379683;
-  color: #05386B;
-  font-family: Century-Gothic;
-  font-size: 16px;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 10px;
-  border-radius: 15px;
+.responsive li {
+	display: block;
 }
 
-#copyright {
-  font-family: 'Titillium Web', sans-serif;
+#temp1, #temp2, #temp3, #temp4, #temp5 {
+  color: #05386b;
+  font-family: Century-Schoolbook;
+  font-size: 1.2em;
 }
 
-#dates {
-  font-size: 1.0em;
-  font-family: 'Titillium Web', sans-serif;
-  padding-top: 5px;
-}
+

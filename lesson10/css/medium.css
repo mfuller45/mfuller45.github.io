@@ -43,8 +43,17 @@
 		font-size: larger;
   }
 
+  .forecasts {
+    padding: 3px;
+    margin: 2px;
+    border: 2px solid #05386b;
+  }
+
   .forecastdiv {
-    display: block;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
   }
 
   footer {
