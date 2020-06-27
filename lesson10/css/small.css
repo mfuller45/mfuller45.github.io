@@ -58,21 +58,21 @@ body {
 	border: 1px solid #000;
 }
 
+#day1, #day2, #day3, #day4, #day5 {
+  background-color: #8ee4af;
+  font-family: Century-Schoolbook;
+}
+
 #fiveDay {
   margin: 0 auto;
-  width: 700px;
+  width: 800px;
   text-align: center;
   color: #05386b;
+  font-family: Century-Schoolbook;
 }
 
 .forecastdiv {
   display: none;
-}
-
-#forecastDay {
-  background-color: #8ee4af;
-  color: #05386b;
-  font-family: Century-Gothic;
 }
 
 header {
