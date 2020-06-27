@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Fuller">
+    <meta name="description" content="Preston Town Weather Page">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="/lesson10/css/normalize.css">
+    <link rel="stylesheet" href="/lesson10/css/small.css">
+    <link rel="stylesheet" href="/lesson10/css/medium.css">
+    <link rel="stylesheet" href="/lesson10/css/large.css">      
+    <title>Preston Town Weather</title>
+  </head>
+  <body>
+    <div id="announce" style="display: block;"></div>
+    <header>
+      <img src="/lesson10/images/weather_logo2.png" alt="Weather Site Logo">
+      <section class="heading">
+        <h1>Good Time Weather</h1>
+        <div class="motto">"All the weather for those good times"</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="nav_bar">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="/lesson11/index.html">Home</a></li>
+        <li><a class="active" href="/lesson11/preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+        <li><a href="/lesson11/gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2 class= "section_head">Preston</h2>
+      <div class="herodiv">
+        <picture>
+          <source media="(max-width: 400px)" srcset="/lesson10/images/prestonHero_400.jpg">
+          <source media="(max-width: 800px)" srcset="/lesson10/images/prestonHero_800.jpg">
+          <img src="/lesson10/images/prestonHero_1200.jpg" alt="Preston Farmland">
+        </picture>
+				<section class="summary">
+          <h3>Weather Summary</h3>
+            <p>Currently: 
+              <span id="currently"></span>
+            </p>
+            <p>Temp: 
+              <span id="temp"></span>
+            &#176;F</p>
+            <p>Wind Chill: 
+              <span id="windchill"></span>
+            </p>
+            <p>Humidity: 
+              <span id="humidity"></span>
+            %</p>
+            <p>Wind Speed: 
+              <span id="windspeed"></span>
+            mph</p>
+  			</section>
+      </div>
+      <h3 id="forecastTitle">5 Day Forecast</h3>
+      <div class="forecastdiv">
+        <div class="forecasts">
+          <div id="day1"></div>
+          <img src="#" alt="" id="img1">
+          <div id="temp1"></div>
+        </div>
+        <div class="forecasts">
+          <div id="day2"></div>
+          <img src="#" alt="" id="img2">
+          <div id="temp2"></div>
+        </div>
+        <div class="forecasts">
+          <div id="day3"></div>
+          <img src="#" alt="" id="img3">
+          <div id="temp3"></div>
+        </div>
+        <div class="forecasts">
+          <div id="day4"></div>
+          <img src="#" alt="" id="img4">
+          <div id="temp4"></div>
+        </div>
+        <div class="forecasts">
+          <div id="day5"></div>
+          <img src="#" alt="" id="img5">
+          <div id="temp5"></div>
+        </div>
+			</div>
+      <div class="articlediv">
+        <picture>
+          <source media="(max-width: 400px)" srcset="/lesson10/images/lightning_storm_400.jpg">
+          <source media="(max-width: 800px)" srcset="/lesson10/images/lightning_storm_800.jpg">
+          <img id="article_img" src="/lesson10/images/lightning_storm_1200.jpg" alt="Storm Image">
+        </picture>
+        <h3>Articles</h3>
+        <p>A blast of winter weather is forecast to hit East Idaho on Sunday night thanks to a fast-moving cold front.
+
+        The National Weather Service has issued alerts calling for snow, rain and winds of up to 45 mph in East Idaho on Sunday night as the cold front passes through.
+          
+        The Salmon, Island Park, Driggs, Victor and Tetonia areas are forecast to be hardest hit by the cold front's precipitation and will likely receive 4 to 5 inches of snow on Sunday night. East Idaho's other higher elevation areas are forecast to receive 1 to 3 inches of snow.</p>
+          
+        <p>East Idaho's lower elevations including the Pocatello, Chubbuck, American Falls, Aberdeen, Fort Hall, Blackfoot, Idaho Falls, Ammon, Rigby, Rexburg, Preston and Malad areas could receive rain, light snow or a rain-snow mix on Sunday night with less than a half-inch of snow accumulation expected.
+
+        It's possible that the rain, snow and high winds caused by the cold front could linger into Monday morning in some areas of East Idaho.--<a href="https://www.idahostatejournal.com/news/local/snow-rain-and-high-winds-in-forecast-for-east-idaho/article_8cd89df7-ff5a-55df-a0e7-b6b79eb7ad56.html">Idaho State Journal</a></p>
+      </div>
+      <div class="contactdiv">
+        <a id="map_link" href="https://www.google.com/maps/@42.0997416,-111.9153445,13z">
+          <img id="map" src="/lesson10/images/preston_map.jpg" alt="Preston Map">
+        </a>
+        <div class="contact_info">
+          <h4>Contact Information</h4>
+          <h3>1234 Storm Avenue</h3>
+          <h3>Boise, Idaho 83707</h3>
+          <h3>986-222-1234</h3>
+          <h3>contact@goodtimeweather.com</h3>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        &copy;<span id="copyright"></span> | Michael Fuller | Arizona | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      </div>
+      <span id="dates"></span>
+    </footer>
+    <script src="/lesson10/js/script.js"></script>
+    <script src="/lesson10/js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+      WebFont.load({google: {families: ['Fira Sans', 'Titillium Web']}});
+    </script>
+  </body>
+</html>
