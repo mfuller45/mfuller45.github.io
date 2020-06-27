@@ -40,41 +40,25 @@ fetch(apiURL)
 
 //Get days of the week for 5 day forecast table
 
-function forecastDays() {
-    var weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var d = new Date();
-    let day1 = d.getDay();
-    let day2 = weekdays[day1] + 1;
-    let day3 = weekdays[day2] + 1;
-    let day4 = weekdays[day3] + 1;
-    let day5 = weekdays[day4] + 1;
-    document.getElementById("day1").innerHTML = day1;
-    document.getElementById("day2").innerHTML = day2;
-    document.getElementById("day3").innerHTML = day3;
-    document.getElementById("day4").innerHTML = day4;
-    document.getElementById("day5").innerHTML = day5;
-}
 
 //5 day Forecast
 const apiURL_forecast = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1"
-let forecastTable = document.getElementById("forecasts");
-forecastTable.innerHTML=""
+
 fetch(apiURL_forecast)
-    .then(response=>response.json())
-    .then((town) => {
-        console.log(town);
-        let forecastData = town.list.filter((element)=>element.dt_txt.includes("18:00:00"))
-        for (let i = 0; i < forecastData.length; i++) {
-            var table = document.createElement('td');
-            var img = document.createElement("img");
-            img.setAttribute('src','https://openweathermap.org/img/w/' + forecastData[i].weather[0].icon + '.png');
-            img.setAttribute('alt',forecastData[i].weather[0].description)
-            let br = document.createElement("br");
-            let temp = document.createElement("span");
-            temp.textContent = Math.round(forecastData[i].main.temp) + ' °F'
-            let description = document.createElement("div");
-            description.textContent = forecastData[i].weather[0].description;
-            table.append(img,br,temp,description)
-            forecastTable.appendChild(table)
-        }
-    })
+    .then(response => response.json())
+    .then((jsObject) => {
+        console.log(jsObject);
+        const forecastData = jsObject.list.filter((element)=>element.dt_txt.includes('18:00:00'));
+
+	console.log(forecastData);
+
+	const weekdays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+
+    let day = 0;
+	forecastData.forEach(forecast => {
+	  let x = new Date(forecast.dt_txt);
+	  document.getElementById('temp1').textContent = Math.round(forecastData[day].main.temp);
+	  document.getElementById('day1').textContent = weekdays[x.getDay()];
+	  day++;	  
+	});
+});
