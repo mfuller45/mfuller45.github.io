@@ -13,8 +13,10 @@ fetch(apiURL_forecast)
     let day = 0;
 	forecastData.forEach(forecast => {
 	  let x = new Date(forecast.dt_txt);
-	  document.getElementById('temp1').textContent = Math.round(forecastData[day].main.temp) + ' °F';
-	  document.getElementById('day1').textContent = weekdays[x.getDay()];
+    document.getElementById('temp'+(day+1)).textContent = Math.round(forecast.main.temp) + ' °F';
+    document.getElementById('img'+(day+1)).src = "https://openweathermap.org/img/wn/"+ forecast.weather[0].icon +"@2x.png";
+    document.getElementById('img'+(day+1)).alt = forecast.weather[0].description
+	  document.getElementById('day'+(day+1)).textContent = weekdays[x.getDay()];
 	  day++;	  
 	});
 });
