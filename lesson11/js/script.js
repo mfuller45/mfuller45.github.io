@@ -64,7 +64,7 @@ fetch(apiURL_forecast)
 });
 
 //Get town events section information
-const requestURL = 'https://raw.githubusercontent.com/trentonsouth/trentonsouth.github.io/master/lesson11/data/towndata.json';
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
  .then(function (response) {
@@ -73,12 +73,12 @@ fetch(requestURL)
  .then(function (jsonObject) {
    const towns = jsonObject['towns'];
    for (let i = 0; i < towns.length; i++ ) {
-       if (towns[i].name == town) {
+       if (towns[i].name == 'Preston') {
            let events = towns[i].events;
            for (let i=0; i < events.length; i++) {
                let event = document.createElement('p');
                event.innerHTML = events[i];
-               document.querySelector('#events').appendChild(event);
+               document.querySelector('.events').appendChild(event);
            }
        }
    }
