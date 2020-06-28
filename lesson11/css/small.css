@@ -105,6 +105,12 @@ body {
   text-align: center;
 }
 
+.events {
+  border: 1px solid #000;
+  padding: 10px;
+  color: #05386b;
+}
+
 #fiveDay {
   margin: 0 auto;
   width: 800px;
