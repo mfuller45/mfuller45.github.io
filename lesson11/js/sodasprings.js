@@ -15,15 +15,6 @@ var dateStr = day1[day] + ', ' + date + ' ' + month1[month] + ' ' + year;
 document.getElementById("dates").innerHTML = dateStr;
 document.getElementById("copyright").innerHTML = year;
 
-//Friday Announcement
-if (day1[day] == 'Friday') {
-  document.getElementById("announce").innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.";
-  document.getElementById("announce").style.display = "block";
-}
-else {
-  document.getElementById("announce").style.display = "none";
-}
-
 // Current Weather for Weather Summary
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1";
 
