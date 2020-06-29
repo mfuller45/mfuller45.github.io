@@ -108,6 +108,12 @@ body {
 .events {
   border: 1px solid #000;
   padding: 10px;
+  margin: 15px auto;
+  text-align: center;
+  width: 75%;
+}
+
+.events p {
   color: #05386b;
 }
 
