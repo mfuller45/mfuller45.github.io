@@ -127,6 +127,7 @@ body {
 
 #forecastTitle {
   text-align: center;
+  display: none;
 }
 
 .forecastdiv {
