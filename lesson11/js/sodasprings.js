@@ -69,7 +69,7 @@ fetch(requestURL)
         for (let i=0; i < events.length; i++) {
         let event = document.createElement('p');
         event.innerHTML = events[i];
-        document.querySelector('townEvents').appendChild(event);
+        document.querySelector('.townEvents').appendChild(event);
       }
     }
    }
