@@ -115,11 +115,6 @@ body {
   font-family: Century-Schoolbook;
 }
 
-#forecastTitle {
-  text-align: center;
-  display: none;
-}
-
 .forecastdiv {
   display: none;
 }
