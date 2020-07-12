@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Fuller">
+    <meta name="description" content="Scoots Home Page">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="/final/css/normalize.css">
+    <link rel="stylesheet" href="/final/css/small.css">
+    <link rel="stylesheet" href="/final/css/medium.css">
+    <link rel="stylesheet" href="/final/css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">    
+    <title>Scoots Home</title>
+  </head>
+  <body>
+    <header>
+      <img src="/final/images/scoots_logo.png" alt="Scoots Company Logo">
+      <section class="heading">
+        <h1>SCOOTS Motor Scooter Rentals</h1>
+        <div class="motto">"Rentals to tour your dream locations"</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="nav_bar">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a class="active" href="/final/index.html">Home</a></li>
+        <li><a href="#">Rentals</a></li>
+        <li><a href="#">Reservations</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div id="homeTitle">
+        <img src="/final/images/cozumel.jpg" alt="Cozumel">
+        <h2>Welcome to SCOOTS Rentals</h2>
+      </div>
+      <div class="cards"></div>
+    </main>
+    <footer>
+      <div>
+        &copy;<span id="copyright"></span> | Michael Fuller | Arizona | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      </div>
+      <span id="dates"></span>
+    </footer>
+    <script src="/final/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+    </script>
+    <script>
+      WebFont.load({google: {families: ['Bangers', 'Roboto Slab']}});
+    </script>
+  </body>
+</html>
