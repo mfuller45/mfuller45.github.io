@@ -1,9 +1,5 @@
 @media only screen and (min-width: 32.5em) {
 
-  #announce {
-    height: 25px;
-  }
-
   #article_img {
     padding-left: 5px;
     float: right;
@@ -29,13 +25,19 @@
     grid-row: 1;
   }
 
+  .contactdiv iframe{
+    grid-column: 1;
+    grid-row: 1;
+    height: 280px;
+  }
+
   .contactdiv {
     grid-template-columns: 1fr 1fr;
   }
 
   form input.submit_button {
     border: none;
-    background-color: #5cdb95;
+    background-color: #5C9EAD;
     color: #05386b;
     font-size: 1.5rem;
     border-radius: 1rem;
@@ -101,16 +103,6 @@
 
   main {
     max-width: 1000px;
-  }
-
-  #map_link {
-    margin: auto;
-  }
-
-  #map {
-    grid-column: 1;
-    grid-row: 1;
-    height: 280px;
   }
 
   .nav_bar {

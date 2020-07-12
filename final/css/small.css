@@ -56,7 +56,11 @@ body {
 
 .contact_info h3, .contact_info h4 {
   text-align: center;
-  color: #05386B;
+  color: #326273;
+}
+
+.contactdiv iframe {
+  margin: auto;
 }
 
 .contactdiv h4 {
@@ -79,12 +83,12 @@ body {
 }
 
 #copyright {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 #dates {
   font-size: 1.0em;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Roboto Slab', serif;
   padding-top: 5px;
 }
 
@@ -167,7 +171,7 @@ form label.storm {
 
 form input.submit_button {
   border: none;
-  background-color: #5cdb95;
+  background-color: #5C9EAD;
   color: #05386b;
   font-size: 1.5rem;
   border-radius: 1rem;
@@ -249,7 +253,7 @@ header img {
 }
 
 h1 {
-  font-family: Century-Schoolbook;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.8em;
 }
 
@@ -261,15 +265,15 @@ h2 {
 }
 
 h3 {
-  font-family: Century-Schoolbook;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.2em;
-  color: #5cdb95;
+  color: #326773;
   text-shadow: .5px .5px .5px #05386b;
 }
 
 h4 {
   color: #05386b;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 img[data-src] {
@@ -303,11 +307,6 @@ main {
   font-size: .9em;
   letter-spacing: 1pt;
   color: #326273;
-}
-
-#map {
-  margin: auto;
-  border: 2px solid #05386b;
 }
 
 nav {
