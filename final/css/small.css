@@ -3,16 +3,6 @@ a {
   font-weight: bold;
 }
 
-#announce {
-  display: none;
-  background-color: #5cdb95;
-  color: #05386B;
-  text-align: center;
-  font-size: 1.2em;
-  padding: 5px;
-  font-weight: bold;
-}
-
 .articlediv p {
   color: #05386B;
 }
@@ -32,8 +22,8 @@ a {
 
 body {
   margin: 0 auto;
-  font-family: Century-Schoolbook;
-  background-color: #EDF5E1;
+  font-family: 'Roboto Slab', serif;
+  background-color: #FFFFFF;
 }
 
 .cards {
@@ -221,12 +211,12 @@ footer {
 }
 
 header {
-  color: #5CDB95;
+  color: #326273;
   align-items:center;
   justify-content: center;
   display: flex;
   padding: 5px 0;
-  font-family: Century-Gothic;
+  font-family: 'Bangers', cursive;
 }
 
 header img {
@@ -243,7 +233,7 @@ header img {
 
 .heading h1 {
   font-size: 1.8em;
-  font-family: Century-Schoolbook;
+  font-family: 'Bangers', cursive;
   margin-bottom: 0px;
 }
 
@@ -261,13 +251,12 @@ header img {
 h1 {
   font-family: Century-Schoolbook;
   font-size: 1.8em;
-  text-shadow: 1px 1px 1px #05386b;
 }
 
 h2 {
   font-size: 1.5em;
-  font-family: Century-Schoolbook;
-  color: #5cdb95;
+  font-family: 'Roboto Slab', serif;
+  color: #326773;
   text-shadow: 1px 1px 1px #05386b;
 }
 
@@ -313,7 +302,7 @@ main {
   font-style: italic;
   font-size: .9em;
   letter-spacing: 1pt;
-  color: #379683;
+  color: #326273;
 }
 
 #map {
@@ -323,12 +312,12 @@ main {
 
 nav {
 	margin: 0 auto;
-  background-color: #5CDB95;
+  background-color: #E39774;
   border-radius: 15px;
 }
 
 nav ul li a.active{
-  background-color: #379683;
+  background-color: #5C9EAD;
 }
 
 .nav_bar {
@@ -350,19 +339,19 @@ nav ul li a.active{
 	padding: 0.75rem;
 	text-align: center;
 	text-decoration: none;
-	color: #05386B;
+	color: #326773;
 	font-weight: 700;
 }
 
 .nav_bar a:hover {
 	color: #05386B;
-	background-color: #8EE4AF;
+	background-color: #5C9EAD;
 }
 
 p {
-  font-family: Century-Schoolbook;
+  font-family: 'Roboto Slab', serif;
   font-size: 1em;
-  color:	#5CDB95;
+  color:	#326773;
 }
 
 .responsive li {
