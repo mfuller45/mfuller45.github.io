@@ -32,11 +32,34 @@
       </ul>
     </nav>
     <main>
-      <div id="homeTitle">
-        <img src="/final/images/cozumel.jpg" alt="Cozumel">
-        <h2>Welcome to SCOOTS Rentals</h2>
+      <h2>SCOOTS Contacts & Locations</h2>
+      <div class="contactdiv">
+        <a id="map_link" href="https://www.google.com/maps/@42.0997416,-111.9153445,13z">
+          <img id="map" src="/lesson11/images/preston_map.jpg" alt="Preston Map">
+        </a>
+        <div class="contact_info">
+          <h4>Contact Information</h4>
+          <h3>1234 Storm Avenue</h3>
+          <h3>Boise, Idaho 83707</h3>
+          <h3>986-222-1234</h3>
+          <h3>contact@goodtimeweather.com</h3>
+        </div>
       </div>
-      <div class="cards"></div>
+        <form method="GET" action="thanks.html">
+          <fieldset>
+            <legend>Contact Us Here</legend>
+              <label class="info">
+              *Full Name: <input type="text" name="fullname" title="Please have at least 3 letters entered" pattern="^[a-zA-Z\s\-\.]{3,}$" required>
+              </label>
+              <label class="info">
+              Email: <input type="email" name="email" placeholder="info@SCOOTS.com">
+              </label>
+              <label class="top">Comments: </label>
+              <textarea name="comments" id="comments">
+              </textarea>
+          </fieldset>
+          <input class="submit_button" type="submit" value="Submit Comment">
+        </form>
     </main>
     <footer>
       <div>

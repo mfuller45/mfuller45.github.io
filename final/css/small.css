@@ -1,5 +1,5 @@
 a {
-  color: #05386B;
+  color: #326273;
   font-weight: bold;
 }
 
@@ -178,9 +178,9 @@ form input.submit_button {
 }
 
 footer {
-  background-color:#379683;
-  color: #05386B;
-  font-family: Century-Gothic;
+  background-color: #5C9EAD;
+  color: #326273;
+  font-family: 'Roboto Slab', serif;
   font-size: 16px;
   text-align: center;
   margin: 0 auto;
@@ -344,7 +344,7 @@ nav ul li a.active{
 }
 
 .nav_bar a:hover {
-	color: #05386B;
+	color: #326773;
 	background-color: #5C9EAD;
 }
 
@@ -399,10 +399,5 @@ p {
   width: 85%;
 }
 
-#wireframes {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-align: center;
-}
 
 
