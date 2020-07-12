@@ -3,16 +3,6 @@ a {
   font-weight: bold;
 }
 
-#announce {
-  display: none;
-  background-color: #5cdb95;
-  color: #05386B;
-  text-align: center;
-  font-size: 1.2em;
-  padding: 5px;
-  font-weight: bold;
-}
-
 .articlediv p {
   color: #05386B;
 }
@@ -32,8 +22,8 @@ a {
 
 body {
   margin: 0 auto;
-  font-family: Century-Schoolbook;
-  background-color: #EDF5E1;
+  font-family: 'Roboto Slab', serif;
+  background-color: #ffffff;
 }
 
 .cards {
@@ -188,9 +178,9 @@ form input.submit_button {
 }
 
 footer {
-  background-color:#379683;
-  color: #05386B;
-  font-family: Century-Gothic;
+  background-color: #5C9EAD;
+  color: #326273;
+  font-family: 'Roboto Slab', serif;
   font-size: 16px;
   text-align: center;
   margin: 0 auto;
@@ -221,12 +211,12 @@ footer {
 }
 
 header {
-  color: #5CDB95;
+  color: #5C9EAD;
   align-items:center;
   justify-content: center;
   display: flex;
   padding: 5px 0;
-  font-family: Century-Gothic;
+  font-family: 'Bangers', cursive;
 }
 
 header img {
@@ -323,7 +313,7 @@ main {
 
 nav {
 	margin: 0 auto;
-  background-color: #5CDB95;
+  background-color: #E39774;
   border-radius: 15px;
 }
 
@@ -350,7 +340,7 @@ nav ul li a.active{
 	padding: 0.75rem;
 	text-align: center;
 	text-decoration: none;
-	color: #05386B;
+	color: #326273;
 	font-weight: 700;
 }
 
@@ -360,9 +350,9 @@ nav ul li a.active{
 }
 
 p {
-  font-family: Century-Schoolbook;
+  font-family: 'Roboto Slab', serif;
   font-size: 1em;
-  color:	#5CDB95;
+  color:	#326273;
 }
 
 .responsive li {
