@@ -3,21 +3,17 @@ a {
   font-weight: bold;
 }
 
-.articlediv p {
+.rentalInfo p {
   color: #05386B;
 }
 
-.articlediv {
+.rentalInfo {
 	display: block;
 	margin-top: 15px;
 	padding: 10px;
   border: 1px solid #000;
   box-shadow: 1px 1px #05386b;
   color: #05386B;
-}
-
-#article_img {
-  width: 100%;
 }
 
 body {
