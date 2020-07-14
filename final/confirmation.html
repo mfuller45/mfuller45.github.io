@@ -32,9 +32,30 @@
       </ul>
     </nav>
     <main>
-        <h2>SCOOTS Rentals Comfirmation</h2>
+        <h2>SCOOTS Rentals Confirmation</h2>
       </div>
-      <div class="cards"></div>
+      <h2>Thank you for your reservation!</h2>
+      <p>We have received your reservation and will reach out to you within 24 - 48 hours if additional information is needed.</p>
+      <p>Please pay the minimum $50 dollar security deposit below to secure your reservation.
+      </p>
+      <fieldset>
+        <legend>Deposit Information</legend>
+          <label class="info">
+          *Full Name: <input type="text" name="fullname" title="Please have at least 3 letters entered" pattern="^[a-zA-Z\s\-\.]{3,}$" required>
+          </label>
+          <label class="deposit">
+            Card Type: <select name="card" id="card">
+            <option selected disabled>Select Card....</option>
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Discover">Discover</option>
+            <option value="American Express">American Express</option>
+            </select>
+          </label> 
+          <label class="info">Amount: </label>
+          <input type="number" value="50.00" min="50" step="1.00" data-number-to-fixed="2" class="currency" id="amount" />
+          <input class="submit_button" type="submit" value="Pay Now">
+      </fieldset>
     </main>
     <footer>
       <div>
