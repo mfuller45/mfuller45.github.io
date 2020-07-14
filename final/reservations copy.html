@@ -48,10 +48,10 @@
         <p>* Payment via Google Pay, cash, credit card, debit card, or PayPal.</p>
         <p>* Rentals may be returned to either location.</p>
       </div>
-        <h2>Reserve your rental here!</h2>
+        <h2>Stormy Weather? Report it here</h2>
         <form method="GET" action="confirmation.html">
             <fieldset>
-              <legend>Your Information</legend>
+              <legend>Rental Information</legend>
                 <label class="info">
                 *Full Name: <input type="text" name="fullname" title="Please have at least 3 letters entered" pattern="^[a-zA-Z\s\-\.]{3,}$" required>
                 </label>
@@ -62,44 +62,26 @@
                 *Phone: <input type="tel" name="phone" title="Please write 10 numbers or more" placeholder="123-456-7890" required>
                 </label>
                 <label class="info">
-                *Number of People: <input type="number" name="people" required>
+                *Zip Code: <input type="number" name="zipcode" required>
                 </label>
-                <label class="info">
-                  State/Country: <input type="text" name="country" title="Please have at least 3 letters entered" pattern="^[a-zA-Z\s\-\.]{3,}$">
-                </label>
-                <label class="rental">
-                  Cruise Line: <select name="cruise" id="cruise">
-                  <option selected disabled>Select....</option>
-                  <option value="Princess">Princess</option>
-                  <option value="Carnival">Carnival</option>
-                  <option value="Royal Caribbean">Royal Caribbean</option>
-                  <option value="Other">Other</option>
-                  <option value="N/A">N/A</option>
-                  </select>
-                </label> 
             </fieldset>
             <fieldset>
-              <legend>Rental Information</legend>
-                <label class="rental">
-                  Rental Type: <select name="rental_type" id="rental_type">
-                  <option selected disabled>Select....</option>
-                  <option value="Honda Metro Scooter">Honda Metro Scooter</option>
-                  <option value="Honda Dio Scooter">Honda Dio Scooter</option>
-                  <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
-                  <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
-                  <option value="Jeep Wrangler 4-door with A/C">Jeep Wrangler 4-door with A/C</option>
-                  <option value="Jeep Wrangler 2-door">Jeep Wrangler 2-door</option>
-                  </select>
-                </label> 
-                <label class="info">Date of Rental: </label>
-                  <input type="date" id="rental_date" name="date">
-                <label class="info">
-                  *Rental Period(in hours): <input type="number" name="period" required>
-                </label>
-                <label class="top">Special Accommodations/Comments: </label>
-                <textarea name="comments" id="comments"></textarea>
+              <legend>Additional Information</legend>
+                <div>User in Danger Level:</div>
+                  <label class="radios"><input type="radio" name="user_level" value="yes">
+                  <span class="option">Yes</span>
+                  </label>
+                  <label class="radios"><input type="radio" name="user_level" value="maybe">
+                  <span class="option">Maybe</span>
+                  </label>
+                  <label class="radios"><input type="radio" name="user_level" value="no">
+                  <span class="option">No</span>
+                  </label>
+                  <label class="top">Comments: </label>
+                  <textarea name="comments" id="comments">
+                  </textarea>
             </fieldset>
-            <input class="submit_button" type="submit" value="Reserve Now">
+            <input class="submit_button" type="submit" value="Report this Storm">
         </form>
     </main>
     <footer>
