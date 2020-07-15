@@ -3,19 +3,6 @@ a {
   font-weight: bold;
 }
 
-.rentalInfo p {
-  color: #05386B;
-}
-
-.rentalInfo {
-	display: block;
-	margin-top: 15px;
-	padding: 10px;
-  border: 1px solid #000;
-  box-shadow: 1px 1px #05386b;
-  color: #05386B;
-}
-
 body {
   margin: 0 auto;
   font-family: 'Roboto Slab', serif;
@@ -345,6 +332,19 @@ p {
   color:	#326773;
 }
 
+.rentalInfo p {
+  color: #05386B;
+}
+
+.rentalInfo {
+	display: block;
+	margin-top: 15px;
+	padding: 10px;
+  border: 1px solid #000;
+  box-shadow: 1px 1px #05386b;
+  color: #05386B;
+}
+
 .responsive li {
 	display: block;
 }
@@ -369,6 +369,23 @@ p {
   color: #05386b;
   font-family: Century-Schoolbook;
   font-size: 1.2em;
+}
+
+.tours p {
+  color: #05386B;
+}
+
+.tours {
+	display: block;
+	margin-top: 15px;
+	padding: 10px;
+  border: 1px solid #000;
+  box-shadow: 1px 1px #05386b;
+  color: #05386B;
+}
+
+#tours_img {
+  width: 100%;
 }
 
 .townEvents {
