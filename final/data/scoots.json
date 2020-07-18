@@ -7,7 +7,7 @@
       "full2": "$35",
       "half2": "$25",
       "persons": 1,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg"
+      "image": "metro.jpg"
     },
     {
       "name": "Honda Dio Scooter",
@@ -16,7 +16,7 @@
       "full2": "$45",
       "half2": "$35",
       "persons": 2,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg"
+      "image": "dio.png"
     },
     {
       "name": "Honda PCX150 Scooter",
@@ -25,7 +25,7 @@
       "full2": "$55",
       "half2": "$45",
       "persons": 2,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg"
+      "image": "pcx.png"
     },
     {
       "name": "Honda Pioneer ATV",
@@ -34,7 +34,7 @@
       "full2": "$80",
       "half2": "$60",
       "persons": 4,
-      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg"
+      "image": "atv.jpg"
     },
     {
       "name": "Jeep Wrangler - 4 door with A/C",
@@ -43,7 +43,7 @@
       "full2": "$125",
       "half2": "$85",
       "persons": 5,
-      "imageurl": "jeep4door.png"
+      "image": "jeep4door.png"
     },
     {
       "name": "Jeep Wrangler - 2 door",
