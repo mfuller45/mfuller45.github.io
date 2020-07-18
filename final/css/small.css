@@ -350,7 +350,6 @@ p {
 }
 
 .summary {
-	position: absolute;
   top: 0px;
   font-size: .75em;
 	background: radial-gradient(#eee, #EDF5E1);
