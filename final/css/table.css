@@ -1,28 +1,10 @@
 
-body {
-  margin: 0 auto;
-  background-color: #FFFFFF;
-}
-
 caption {
   background-color: #7fb9c2;
   font-size: 1.5em;
   font-weight: bold;
   padding: 8px;
   box-shadow: 8px 8px 12px #5e9097;  
-}
-
-header {
-  align-items:center;
-  justify-content: center;
-  display: flex;
-  padding: 5px 0;
-}
-
-h1 {
-  font-family: Ubuntu, sans-serif;
-  font-size: 1.8em;
-  text-shadow: 1px 1px 1px #05386b;
 }
 
 tfoot tr td {
@@ -62,7 +44,7 @@ tr:nth-child(5) td:nth-child(1) {
 }
 
 #Sales {
-  font-family: Ubuntu, sans-serif;
+  font-family: 'Roboto Slab', serif;
   margin: 0 auto;
   text-align: center;
   border: solid 1px #cdcdcd;
