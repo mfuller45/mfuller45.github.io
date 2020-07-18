@@ -10,6 +10,7 @@ body {
 }
 
 .cards {
+  margin: 0 auto;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
@@ -17,6 +18,7 @@ body {
 }
 
 .cards section {
+  width: 400px;
   margin: auto;
   border: 2px solid #000;
   border-radius: 8px;

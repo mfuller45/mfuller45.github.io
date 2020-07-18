@@ -4,11 +4,6 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .cards section {
-    display: block;
-    width: 325px;
-  }
-
   #gallery_imgs {
     grid-template-columns: 1fr 1fr 1fr;
   }
