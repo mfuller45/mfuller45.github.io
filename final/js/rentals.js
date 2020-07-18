@@ -5,4 +5,5 @@ fetch(rentals)
   .then((jsObject) => {
     console.log(jsObject);
     document.getElementById('rhd1').innerHTML = rentals[0].half1;
+    document.getElementById('rfd1').innerHTML = rentals[0].full1;
 });
