@@ -168,12 +168,14 @@ footer {
 }
 
 #gallery_imgs {
+  margin-top: 5px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
 }
 
 #gallery_imgs figure {
+  width: 250px;
   margin: 0;
   padding: 0;
 }
