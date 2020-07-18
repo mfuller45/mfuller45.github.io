@@ -93,10 +93,6 @@ body {
   font-family: Century-Schoolbook;
 }
 
-.forecastdiv {
-  display: none;
-}
-
 .forecastdiv h3, .articlediv h3 {
   text-align: center;
 }
