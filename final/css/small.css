@@ -364,12 +364,6 @@ p {
   font-weight: bolder;
 }
 
-#temp1, #temp2, #temp3, #temp4, #temp5 {
-  color: #05386b;
-  font-family: Century-Schoolbook;
-  font-size: 1.2em;
-}
-
 .tours p {
   color: #05386B;
 }
@@ -388,24 +382,6 @@ p {
   width: 100%;
 }
 
-.townEvents {
-  border: 2px solid #000;
-  box-shadow: 5px 5px #05386b;
-  margin: 15px auto;
-  text-align: center;
-  width: 50%;
-}
-
-.townEvents p {
-  color: #05386b;
-}
-
-.townEvents hr {
-  background-color: #05386b;
-  color: #05386b;
-  height: 1.5px;
-  width: 85%;
-}
 
 
 
