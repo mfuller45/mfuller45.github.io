@@ -24,25 +24,29 @@ fetch(apiURL)
     document.getElementById('currently').innerHTML = description.charAt(0).toUpperCase() + description.slice(1);
     document.getElementById('temp').innerHTML = Math.round(town.main.temp);
     document.getElementById('humidity').innerHTML = town.main.humidity;
-    document.getElementById('windspeed').innerHTML = Math.round(town.wind.speed);
 });
 
 // 5 day forecast
 
 const apiURL_forecast = "https://api.openweathermap.org/data/2.5/forecast?id=3530103&units=imperial&APPID=da923bb8ec61575a7dfe5e3106bb43c1"
 
+const fiveDays = new Date();
+fiveDays.setDate(fiveDays.getDate() + 5);
+const fiveDayString = fiveDays.getFullYear() + '-' + ((fiveDays.getMonth() + 1) < 10 ? ('0' + (fiveDays.getMonth() + 1)) : (fiveDays.getMonth() + 1)) + '-' + (fiveDays.getDate() < 10 ? ('0' + fiveDays.getDate()) : fiveDays.getDate()) + ' 12:00:00';
 fetch(apiURL_forecast)
     .then(response => response.json())
     .then((jsObject) => {
         console.log(jsObject);
-        const forecastData = jsObject.list.filter((element)=>element.dt_txt.includes('12:00:00'));
+        const forecastData = jsObject.list.filter((element) => element.dt_txt.includes(fiveDayString));
 
-	console.log(forecastData);
+
+	console.log('test2',forecastData);
 
 	const weekdays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
     let day = 0;
 	forecastData.forEach(forecast => {
+        console.log('test',forecast);
 	  let x = new Date(forecast.dt_txt);
     document.getElementById('temp'+(day+1)).textContent = Math.round(forecast.main.temp) + ' °F';
     document.getElementById('img'+(day+1)).src = "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
