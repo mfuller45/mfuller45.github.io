@@ -35,10 +35,6 @@ tr:nth-child(even) {
   background: #E7FFED;
 }
 
-tr:nth-child(5) td:nth-child(1) {
-  font-style: italic;
-}
-
 #Info {
   font-family: 'Roboto Slab', serif;
   margin: 0 auto;

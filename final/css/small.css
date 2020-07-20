@@ -215,7 +215,6 @@ footer {
 }
 
 #gallery_imgs figure {
-  width: 250px;
   margin: 0;
   padding: 0;
 }
@@ -300,19 +299,6 @@ img[data-src] {
 img {
   filter: blur(0em);
   transition: filter 0.5s;
-}
-
-.section_head {
-  text-align: center;
-  color: #5CDB95;
-}
-
-.herodiv {
-	margin: 10px auto;
-  position: relative;}
-  
-.herodiv img {
-  width: 100%;
 }
 
 main {
