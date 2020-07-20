@@ -40,13 +40,13 @@ fetch(apiURL_forecast)
         const forecastData = jsObject.list.filter((element) => element.dt_txt.includes(fiveDayString));
 
 
-	console.log('test2',forecastData);
+	console.log(forecastData);
 
 	const weekdays = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
 
     let day = 0;
 	forecastData.forEach(forecast => {
-        console.log('test',forecast);
+        console.log(forecast);
 	  let x = new Date(forecast.dt_txt);
     document.getElementById('temp'+(day+1)).textContent = Math.round(forecast.main.temp) + ' °F';
     document.getElementById('img'+(day+1)).src = "https://openweathermap.org/img/w/" + forecast.weather[0].icon + ".png";
