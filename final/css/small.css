@@ -18,8 +18,6 @@ body {
 }
 
 .cards section {
-  width: 400px;
-  margin: auto;
   border: 2px solid #000;
   border-radius: 8px;
   background-color: #d4dec9;
@@ -85,6 +83,39 @@ body {
   font-size: 1.2em;
   font-weight: bolder;
   text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
 }
 
 #fiveDay {
@@ -333,7 +364,7 @@ p {
 }
 
 .rentalInfo p {
-  color: #05386B;
+  color: #326773;
 }
 
 .rentalInfo {
@@ -342,7 +373,16 @@ p {
 	padding: 10px;
   border: 1px solid #000;
   box-shadow: 1px 1px #05386b;
-  color: #05386B;
+  color: #326773;
+}
+
+.rentalInfoHome {
+  width: 400px;
+  margin-top: 15px;
+	padding: 10px;
+  border: 1px solid #000;
+  box-shadow: 1px 1px #05386b;
+  color: #326773;
 }
 
 .responsive li {
@@ -381,6 +421,7 @@ p {
 #tours_img {
   width: 100%;
 }
+
 
 
 
