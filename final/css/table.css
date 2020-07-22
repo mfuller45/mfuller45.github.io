@@ -1,6 +1,6 @@
 
 caption {
-  background-color: #628CA6;
+  background-color: #5C9EAD;
   font-size: 1.5em;
   font-weight: bold;
   padding: 8px;
@@ -8,14 +8,14 @@ caption {
 }
 
 tfoot tr td {
-  background-color: #FFFFFF;
+  background-color: #5C9EAD;
   text-align: center;
   font-size: .7em;
   padding: 5px;
 }
 
 th {
-  background-color: #628CA6;
+  background-color: #5C9EAD;
   color: #FFFFFF;
   font-weight: bold;
   padding: 5px;
@@ -28,11 +28,11 @@ td {
 }
 
 tr:nth-child(odd) {
-  background: #E7F0ED;
+  background: #5C9EAD;
 }
 
 tr:nth-child(even) {
-  background: #E7FFED;
+  background: #E39774;
 }
 
 #Info {
@@ -40,6 +40,7 @@ tr:nth-child(even) {
   margin: 0 auto;
   width: 100%;
   text-align: center;
+  margin-top: 5px;
   border: solid 1px #cdcdcd;
   border-collapse: collapse;
   box-shadow: 8px 8px 12px #5e9097;
