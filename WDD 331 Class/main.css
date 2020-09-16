@@ -87,11 +87,15 @@
   main {
     background-color: #FAEBD7;
   }
+
+  nav {
+    padding-right: 15px;
+  }
   
   nav ul {
     text-align: right;
     list-style-type: none;
-    padding-left: 300px;
+    padding-left: 250px;
   }
 
   nav ul li a:link, a:visited {
