@@ -36,6 +36,7 @@
   }
 
   body {
+    background-color: #FAEBD7;
     margin: 0 auto;
   }
   
@@ -75,13 +76,8 @@
   
   main {
     background-color: #FAEBD7;
-    margin: auto;
   }
   
-  nav {
-    margin: 0;
-  }
-
   nav ul {
     text-align: right;
     list-style-type: none;
