@@ -1,27 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
 
 @media only screen and (max-width: 32.5em) {
-  a:link, a:visited {
-    color: #FAEBD7;
+  article h2 a:link, a:visited {
+    color: #000000;
     text-decoration: none;
   }
 
-  a:active {
-    color: #DEB887
+  article h2 a:active {
+    color: #DEB887;
   }
 
-  a:hover {
-    color: #ffffff;
+  article h2 a:hover {
+    color: #6495ED;
     text-decoration: underline;
   }
   
+  article p a:link, a:visited {
+    color: #6495ED;
+    text-decoration: none;
+  }
+
+  article p a:active {
+    color: #DEB887;
+  }
+
+  article p a:hover {
+    text-decoration: underline;
+  }
+
   body {
     margin: 0 auto;
   }
   
   header {
     background-color: #6495ED;
-    justify-content: right;
   }
   
   header h1 {
@@ -30,28 +42,27 @@
     font-family: 'Lora', serif;
   }
 
-  header h1 a {
+  header h1 a:link, a:visited{
     color: #FAEBD7;
+    text-decoration: none;
+  }
+
+  header h1 a:active {
+    color: #DEB887
+  }
+
+  header h1 a:hover {
+    color: #ffffff;
+    text-decoration: underline;
   }
   
   h1 {
-    font-family: Century-Schoolbook;
     font-size: 1.8em;
   }
   
   h2 {
     font-size: 1.5em;
-    font-family: Century-Schoolbook;
-    color: #5cdb95;
-  }
-  
-  img[data-src] {
-    filter: blur(0.4em);
-  }
-  
-  img {
-    filter: blur(0em);
-    transition: filter 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   main {
@@ -66,28 +77,30 @@
   nav ul {
     list-style-type: none;
   }
+
+  nav ul li a:link, a:visited {
+    color: #FAEBD7;
+    text-decoration: none;
+  }
+
+  nav ul li a:active {
+    color: #DEB887
+  }
+
+  nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
   
   p {
-    font-family: Century-Schoolbook;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    color:	#5CDB95;
+    color:	#000000;
   }
   
 }
 
 @media only screen and (min-width: 32.5em) {
-  a:link, a:visited {
-    color: #FAEBD7;
-    text-decoration: none;
-  }
 
-  a:active {
-    color: #DEB887
-  }
-
-  a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-  }
 }
 
