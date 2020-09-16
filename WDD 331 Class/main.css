@@ -1,25 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
 
 @media only screen and (max-width: 32.5em) {
-  a {
+  a:link, a:visited {
     color: #FAEBD7;
     text-decoration: none;
+  }
 
+  a:active {
+    color: #DEB887
+  }
+
+  a:hover {
+    color: #ffffff;
+    text-decoration: underline;
   }
   
   body {
     margin: 0 auto;
-  }
-  
-  footer {
-    background-color:#379683;
-    color: #05386B;
-    font-family: Century-Gothic;
-    font-size: 16px;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 10px;
-    border-radius: 15px;
   }
   
   header {
@@ -64,8 +61,10 @@
   
   nav {
     margin: 0 auto;
-    background-color: #5CDB95;
-    border-radius: 15px;
+  }
+
+  nav ul {
+    list-style-type: none;
   }
   
   p {
@@ -77,6 +76,18 @@
 }
 
 @media only screen and (min-width: 32.5em) {
-  
+  a:link, a:visited {
+    color: #FAEBD7;
+    text-decoration: none;
+  }
+
+  a:active {
+    color: #DEB887
+  }
+
+  a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
 }
 
