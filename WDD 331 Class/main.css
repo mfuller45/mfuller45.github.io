@@ -6,6 +6,7 @@
     width: 85%;
     background-color: #ffffff;
     box-shadow: 1px 1px #888888;
+    text-align: left;
   }
 
   article h2 a:link, a:visited {
@@ -20,6 +21,10 @@
   article h2 a:hover {
     color: #6495ED;
     text-decoration: underline;
+  }
+
+  article img {
+    width: 85%;
   }
 
   article p a:link, a:visited {
