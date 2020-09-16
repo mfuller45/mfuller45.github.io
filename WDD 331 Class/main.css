@@ -179,7 +179,7 @@
 
   div {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 30% 70%;
   }
   
   header {
@@ -190,7 +190,7 @@
   header h1 {
     text-align: right;
     color: #FAEBD7;
-    font-size: 1.8em;
+    font-size: 2em;
     font-family: 'Lora', serif;
     margin: 25px;
   }
@@ -214,7 +214,7 @@
   }
   
   h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-family: Helvetica, sans-serif;
   }
   
@@ -252,15 +252,15 @@
   }
 
   .post-content {
-    margin: 10px;
+    margin: 25px;
   }
   
   p {
     font-family: Arial, sans-serif;
-    font-size: .8em;
+    font-size: 1em;
     font-weight: 550;
     color:	#000000;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
   }
   
 }
