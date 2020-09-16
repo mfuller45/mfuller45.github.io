@@ -14,7 +14,7 @@
     color: #6495ED;
     text-decoration: underline;
   }
-  
+
   article p a:link, a:visited {
     color: #6495ED;
     text-decoration: none;
@@ -40,6 +40,7 @@
     color: #FAEBD7;
     font-size: 1.8em;
     font-family: 'Lora', serif;
+    float: right;
   }
 
   header h1 a:link, a:visited{
@@ -62,7 +63,7 @@
   
   h2 {
     font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
   }
   
   main {
@@ -71,10 +72,11 @@
   }
   
   nav {
-    margin: 0 auto;
+    margin: 0;
   }
 
   nav ul {
+    padding-left: 300px;
     list-style-type: none;
   }
 
@@ -93,7 +95,7 @@
   }
   
   p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 1em;
     color:	#000000;
   }
