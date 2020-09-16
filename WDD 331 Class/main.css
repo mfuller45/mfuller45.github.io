@@ -55,6 +55,7 @@
     font-size: 1.8em;
     font-family: 'Lora', serif;
     float: right;
+    margin-right: 25px;
   }
 
   header h1 a:link, a:visited{
