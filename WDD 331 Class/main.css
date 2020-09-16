@@ -24,6 +24,7 @@
   }
 
   article img {
+    margin: 10px;
     width: 85%;
   }
 
@@ -43,6 +44,10 @@
   body {
     background-color: #FAEBD7;
     margin: 0 auto;
+  }
+
+  figure {
+    margin-left: ;
   }
   
   header {
@@ -126,6 +131,7 @@
     font-size: .8em;
     font-weight: 550;
     color:	#000000;
+    padding-bottom: 5px;
   }
   
 }
