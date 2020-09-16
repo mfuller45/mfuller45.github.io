@@ -1,113 +1,103 @@
-a {
-  color: #05386B;
-  font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+
+@media only screen and (max-width: 32.5em) {
+  a {
+    color: #05386B;
+    font-weight: bold;
+  }
+  
+  body {
+    margin: 0 auto;
+    font-family: Century-Schoolbook;
+    background-color: #EDF5E1;
+  }
+  
+  footer {
+    background-color:#379683;
+    color: #05386B;
+    font-family: Century-Gothic;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-radius: 15px;
+  }
+  
+  header {
+    color: #5CDB95;
+    align-items:center;
+    justify-content: center;
+    display: flex;
+    padding: 5px 0;
+    font-family: Century-Gothic;
+  }
+  
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .heading h1 {
+    font-size: 1.8em;
+    font-family: Century-Schoolbook;
+    margin-bottom: 0px;
+  }
+  
+  h1 {
+    font-family: Century-Schoolbook;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 1px #05386b;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    font-family: Century-Schoolbook;
+    color: #5cdb95;
+    text-shadow: 1px 1px 1px #05386b;
+  }
+  
+  h3 {
+    font-family: Century-Schoolbook;
+    font-size: 1.2em;
+    color: #5cdb95;
+    text-shadow: .5px .5px .5px #05386b;
+  }
+  
+  h4 {
+    color: #05386b;
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  img[data-src] {
+    filter: blur(0.4em);
+  }
+  
+  img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+  
+  
+  main {
+    margin: auto;
+  }
+  
+  
+  nav {
+    margin: 0 auto;
+    background-color: #5CDB95;
+    border-radius: 15px;
+  }
+  
+  
+  p {
+    font-family: Century-Schoolbook;
+    font-size: 1em;
+    color:	#5CDB95;
+  }
+  
 }
-
-
-
-body {
-  margin: 0 auto;
-  font-family: Century-Schoolbook;
-  background-color: #EDF5E1;
-}
-
-
-
-
-
-
-
-
-
-footer {
-  background-color:#379683;
-  color: #05386B;
-  font-family: Century-Gothic;
-  font-size: 16px;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 10px;
-  border-radius: 15px;
-}
-
-
-
-header {
-  color: #5CDB95;
-  align-items:center;
-  justify-content: center;
-  display: flex;
-  padding: 5px 0;
-  font-family: Century-Gothic;
-}
-
-
-
-.heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.heading h1 {
-  font-size: 1.8em;
-  font-family: Century-Schoolbook;
-  margin-bottom: 0px;
-}
-
-h1 {
-  font-family: Century-Schoolbook;
-  font-size: 1.8em;
-  text-shadow: 1px 1px 1px #05386b;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-family: Century-Schoolbook;
-  color: #5cdb95;
-  text-shadow: 1px 1px 1px #05386b;
-}
-
-h3 {
-  font-family: Century-Schoolbook;
-  font-size: 1.2em;
-  color: #5cdb95;
-  text-shadow: .5px .5px .5px #05386b;
-}
-
-h4 {
-  color: #05386b;
-  font-family: 'Titillium Web', sans-serif;
-}
-
-img[data-src] {
-  filter: blur(0.4em);
-}
-
-img {
-  filter: blur(0em);
-  transition: filter 0.5s;
-}
-
-
-main {
-  margin: auto;
-}
-
-
-nav {
-	margin: 0 auto;
-  background-color: #5CDB95;
-  border-radius: 15px;
-}
-
-
-p {
-  font-family: Century-Schoolbook;
-  font-size: 1em;
-  color:	#5CDB95;
-}
-
 
 @media only screen and (min-width: 32.5em) {
   
