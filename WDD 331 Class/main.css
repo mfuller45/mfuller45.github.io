@@ -24,12 +24,13 @@
   }
   
   header {
-    color: #5CDB95;
+    background-color: #6495ED;
+    color: #ffffff;
     align-items:center;
     justify-content: center;
     display: flex;
     padding: 5px 0;
-    font-family: Century-Gothic;
+    font-family: 'Lora', serif;
   }
   
   .heading {
