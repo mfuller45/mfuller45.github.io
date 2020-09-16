@@ -136,6 +136,7 @@
 
 @media only screen and (min-width: 32.5em) {
   article {
+    grid-column: 2;
     margin: auto;
     width: 85%;
     background-color: #ffffff;
@@ -178,6 +179,11 @@
   body {
     background-color: #FAEBD7;
     margin: 0 auto;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   
   header {
