@@ -112,6 +112,14 @@
     text-decoration: underline;
   }
   
+  .post-date {
+    padding: 5px;
+  }
+
+  .post-content {
+    margin: 10px;
+  }
+  
   p {
     font-family: Arial, sans-serif;
     font-size: .8em;
