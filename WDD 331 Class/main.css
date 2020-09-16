@@ -3,7 +3,7 @@
 @media only screen and (max-width: 32.5em) {
   article {
     margin: auto;
-    max-width: 400px;
+    width: 85%;
     background-color: #ffffff;
     box-shadow: 1px 1px #888888;
   }
@@ -42,6 +42,7 @@
   
   header {
     background-color: #6495ED;
+    padding-top: 5px;
   }
   
   header h1 {
@@ -63,6 +64,10 @@
   header h1 a:hover {
     color: #ffffff;
     text-decoration: underline;
+  }
+
+  hr {
+    width: 80%;
   }
   
   h1 {
