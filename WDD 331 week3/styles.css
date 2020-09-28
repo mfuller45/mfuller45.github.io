@@ -11,6 +11,10 @@ body {
 }
 @media (min-width: 500px) {
   #contactform {
+    width: width;
+    max-width: max-width;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
     max-width: 700px;
     margin-left: auto;
@@ -19,6 +23,10 @@ body {
 }
 @media (min-width: 701px) {
   #contactform {
+    width: width;
+    max-width: max-width;
+    margin-left: auto;
+    margin-right: auto;
     width: 70%;
     max-width: 900px;
     margin-left: auto;

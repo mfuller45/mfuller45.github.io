@@ -10,6 +10,14 @@ $headlines-color: white;
 $break-small: 500px;
 $break-medium: 701px;
 
+
+@mixin center ($width, $max-width: 960px) {
+  width: $width;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   background-color: $body-background-color;          
 }
@@ -22,6 +30,7 @@ body {
   }
   @media (min-width: $break-small) {
      & {
+       @include center(width, max-width);
         width: 90%;
         max-width: 700px;
         margin-left: auto;
@@ -30,6 +39,7 @@ body {
   }
   @media (min-width: $break-medium) {
      & {
+       @include center(width, max-width);
        width: 70%;
        max-width: 900px;
        margin-left: auto;
@@ -46,11 +56,4 @@ body {
   -webkit-flex-flow: $axis $wrap;
   -ms-flex-flow: $axis $wrap;
   flex-flow: $axis $wrap;
-}
-
-@mixin center ($width, $max-width: 960px) {
-  width: $width;
-  max-width: $max-width;
-  margin-left: auto;
-  margin-right: auto;
 }
