@@ -1,5 +1,10 @@
 // Variables 
 
+// breakpoint sizes
+$break-small: 20em;
+$break-medium: 31em;
+$break-large: 60em;
+
 // colors
 $body-background-color: darkred;
 $form-background-color: white;
@@ -10,42 +15,12 @@ $headlines-color: white;
 $break-small: 500px;
 $break-medium: 701px;
 
-
+//mixins 
 @mixin center ($width, $max-width: 960px) {
   width: $width;
   max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
-}
-
-body {
-  background-color: $body-background-color;          
-}
-
-#contactform {
-  background-color: $form-background-color;
-  input, textarea {
-      background-color: $input-color;
-      flex: 2;
-  }
-  @media (min-width: $break-small) {
-     & {
-       @include center(width, max-width);
-        width: 90%;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto; 
-      } 
-  }
-  @media (min-width: $break-medium) {
-     & {
-       @include center(width, max-width);
-       width: 70%;
-       max-width: 900px;
-       margin-left: auto;
-       margin-right: auto;
-     }
-  }
 }
 
 @mixin flex-container($axis, $wrap: nowrap) {
@@ -57,3 +32,55 @@ body {
   -ms-flex-flow: $axis $wrap;
   flex-flow: $axis $wrap;
 }
+
+@mixin breakpoint($break) {
+  @if $break == large {
+  @media (min-width: $break-large) { @content; }
+  }
+  @else if $break == medium {
+  @media (min-width: $break-medium) { @content; }
+  }
+  @else if $break == small {
+  @media (min-width: $break-small) { @content; }
+  } @else {
+  @media ($break) { @content; }
+  }
+  } 
+
+  body {
+    background-color: $body-background-color;
+}
+
+#contactform >{
+    background-color: $form-background-color;
+     a:hover {
+        background-color: antiquewhite;
+    }
+    input, textarea {
+        background-color: $input-color;
+        flex: 2;
+    }
+    @include breakpoint(medium) { @include center(700px) }
+    @include breakpoint(large) {  @include center(900px, 70%) }
+}
+
+#contactform fieldset>div {
+    @include flex-container(column);
+    
+    label {
+            flex: 1;
+            text-align: left;
+        }
+    @include breakpoint(medium) {
+        @include flex-container(row);
+        justify-content: space-between;
+        margin-bottom: 1em;
+        label {
+            text-align: right;
+            margin-right: 1em;
+        }
+    }
+               
+}
+
+
