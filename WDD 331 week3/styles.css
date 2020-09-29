@@ -1,17 +1,32 @@
-/* Error: expected ";".
- *    ,
- * 59 |   @include breakpoint(medium) { @include center(90%, 700px), background: $body-background-color; }
- *    |                                                            ^
- *    '
- *   styles.scss 59:60  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a    \2577 \a 59 \2502    @include breakpoint(medium) { @include center(90%, 700px), background: $body-background-color; }\d\a    \2502                                                             ^\a    \2575 \a   styles.scss 59:60  root stylesheet';
+body {
+  background-color: darkred;
 }
+
+#contactform > {
+  background-color: white;
+}
+#contactform > a:hover {
+  background-color: antiquewhite;
+}
+#contactform > input, #contactform > textarea {
+  background-color: white;
+  flex: 2;
+}
+@media (min-width: 31em) {
+  #contactform > {
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 60em) {
+  #contactform > {
+    width: 70%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
