@@ -1,6 +1,6 @@
 // Variables 
 
-// breakpoint sizes
+//set breakpoint sizes
 $break-small: 20em;
 $break-medium: 31em;
 $break-large: 60em;
@@ -10,10 +10,6 @@ $body-background-color: darkred;
 $form-background-color: white;
 $input-color: white;
 $headlines-color: white;
-
-// breakpoints
-$break-small: 500px;
-$break-medium: 701px;
 
 //mixins 
 @mixin center ($width, $max-width: 960px) {
@@ -45,42 +41,23 @@ $break-medium: 701px;
   } @else {
   @media ($break) { @content; }
   }
-  } 
+} 
 
-  body {
-    background-color: $body-background-color;
+body {
+  background-color: $body-background-color;          
 }
 
 #contactform >{
-    background-color: $form-background-color;
-     a:hover {
-        background-color: antiquewhite;
-    }
-    input, textarea {
-        background-color: $input-color;
-        flex: 2;
-    }
-    @include breakpoint(medium) { @include center(700px) }
-    @include breakpoint(large) {  @include center(900px, 70%) }
-}
-
-#contactform fieldset>div {
-    @include flex-container(column);
-    
-    label {
-            flex: 1;
-            text-align: left;
-        }
-    @include breakpoint(medium) {
-        @include flex-container(row);
-        justify-content: space-between;
-        margin-bottom: 1em;
-        label {
-            text-align: right;
-            margin-right: 1em;
-        }
-    }
-               
+  background-color: $form-background-color;
+   a:hover {
+      background-color: antiquewhite;
+  }
+  input, textarea {
+      background-color: $input-color;
+      flex: 2;
+  }
+  @include breakpoint(medium) { @include center(90%, 700px) }
+  @include breakpoint(large) { @include center(70%, 900px) }
 }
 
 
