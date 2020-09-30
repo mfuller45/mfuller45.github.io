@@ -1,13 +1,13 @@
 //colors
-$color1: #ffffff;
-$color2: #888888;
-$color3: #000000;
+$color1: #fff;
+$color2: #888;
+$color3: #000;
 $color4: #deb887;
 $color5: #6495ed;
 $color6: #faebd7;
 
 //mixins
-@mixin box-shadow($horizontal: 5px, $vertical: 5px, $color: #000000) {
+@mixin box-shadow($horizontal: 5px, $vertical: 5px, $color: $color2) {
   -webkit-box-shadow: $horizontal $vertical $color;
   -moz-box-shadow: $horizontal $vertical $color;
   box-shadow: $horizontal $vertical $color;
@@ -19,7 +19,7 @@ $color6: #faebd7;
 		margin: auto;
 		width: 85%;
 		background-color: $color1;
-		@include box-shadow;
+		@include box-shadow(2px);
 		text-align: left;
 		img {
 			margin: 10px;
@@ -27,6 +27,10 @@ $color6: #faebd7;
 		}
 		h2 a {
 			&:link {
+				color: $color3;
+				text-decoration: none;
+			}
+			&:visited {
 				color: $color3;
 				text-decoration: none;
 			}
@@ -40,6 +44,10 @@ $color6: #faebd7;
 		}
 		p a {
 			&:link {
+				color: $color5;
+				text-decoration: none;
+			}
+			&:visited {
 				color: $color5;
 				text-decoration: none;
 			}
@@ -66,6 +74,10 @@ $color6: #faebd7;
 			margin: 15px;
 			a {
 				&:link {
+					color: $color6;
+					text-decoration: none;
+				}
+				&:visited {
 					color: $color6;
 					text-decoration: none;
 				}
@@ -102,6 +114,10 @@ $color6: #faebd7;
 					color: $color6;
 					text-decoration: none;
 				}
+				&:visited {
+					color: $color6;
+					text-decoration: none;
+				}
 				&:active {
 					color: $color4;
 				}
@@ -125,16 +141,6 @@ $color6: #faebd7;
 		color: $color3;
 		padding-bottom: 5px;
 	}
-	a:visited {
-		color: $color3;
-		text-decoration: none;
-		color: $color5;
-		text-decoration: none;
-		color: $color6;
-		text-decoration: none;
-		color: $color6;
-		text-decoration: none;
-	}
 }
 @media only screen and(min-width: 32.5em) {
 	article {
@@ -142,7 +148,7 @@ $color6: #faebd7;
 		margin: 10px auto;
 		width: 85%;
 		background-color: $color1;
-		@include box-shadow;
+		@include box-shadow(2px);
 		text-align: left;
 		img {
 			margin: 10px;
@@ -150,6 +156,10 @@ $color6: #faebd7;
 		}
 		h2 a {
 			&:link {
+				color: $color3;
+				text-decoration: none;
+			}
+			&:visited {
 				color: $color3;
 				text-decoration: none;
 			}
@@ -163,6 +173,10 @@ $color6: #faebd7;
 		}
 		p a {
 			&:link {
+				color: $color5;
+				text-decoration: none;
+			}
+			&:visited {
 				color: $color5;
 				text-decoration: none;
 			}
@@ -193,6 +207,10 @@ $color6: #faebd7;
 			margin: 25px;
 			a {
 				&:link {
+					color: $color6;
+					text-decoration: none;
+				}
+				&:visited {
 					color: $color6;
 					text-decoration: none;
 				}
@@ -229,6 +247,10 @@ $color6: #faebd7;
 					color: $color6;
 					text-decoration: none;
 				}
+				&:visited {
+					color: $color6;
+					text-decoration: none;
+				}
 				&:active {
 					color: $color4;
 				}
@@ -252,15 +274,4 @@ $color6: #faebd7;
 		color: $color3;
 		padding-bottom: 10px;
 	}
-	a:visited {
-		color: $color3;
-		text-decoration: none;
-		color: $color5;
-		text-decoration: none;
-		color: $color6;
-		text-decoration: none;
-		color: $color6;
-		text-decoration: none;
-	}
 }
-
