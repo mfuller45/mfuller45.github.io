@@ -6,14 +6,20 @@ $color4: #deb887;
 $color5: #6495ed;
 $color6: #faebd7;
 
+//mixins
+@mixin box-shadow($horizontal: 5px, $vertical: 5px, $color: #000000) {
+  -webkit-box-shadow: $horizontal $vertical $color;
+  -moz-box-shadow: $horizontal $vertical $color;
+  box-shadow: $horizontal $vertical $color;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
 @media only screen and(max-width: 32.5em) {
 	article {
 		margin: auto;
 		width: 85%;
 		background-color: $color1;
-		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-		box-shadow: 1px 1px $color2;
+		@include box-shadow;
 		text-align: left;
 		img {
 			margin: 10px;
@@ -136,8 +142,7 @@ $color6: #faebd7;
 		margin: 10px auto;
 		width: 85%;
 		background-color: $color1;
-		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-		box-shadow: 1px 1px $color2;
+		@include box-shadow;
 		text-align: left;
 		img {
 			margin: 10px;
