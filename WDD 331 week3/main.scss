@@ -19,7 +19,7 @@ $color6: #faebd7;
 		margin: auto;
 		width: 85%;
 		background-color: $color1;
-		@include box-shadow(2px);
+		@include box-shadow(2px, 2px);
 		text-align: left;
 		img {
 			margin: 10px;
@@ -142,13 +142,14 @@ $color6: #faebd7;
 		padding-bottom: 5px;
 	}
 }
+/*---------------------------Medium and Large Screen View-----------------------*/
 @media only screen and(min-width: 32.5em) {
 	article {
 		grid-column: 2;
 		margin: 10px auto;
 		width: 85%;
 		background-color: $color1;
-		@include box-shadow(2px);
+		@include box-shadow(2px, 2px);
 		text-align: left;
 		img {
 			margin: 10px;

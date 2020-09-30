@@ -4,9 +4,9 @@
     margin: auto;
     width: 85%;
     background-color: #fff;
-    -webkit-box-shadow: 2px 5px #888;
-    -moz-box-shadow: 2px 5px #888;
-    box-shadow: 2px 5px #888;
+    -webkit-box-shadow: 2px 2px #888;
+    -moz-box-shadow: 2px 2px #888;
+    box-shadow: 2px 2px #888;
     text-align: left;
   }
   article img {
@@ -130,15 +130,16 @@
     padding-bottom: 5px;
   }
 }
+/*---------------------------Medium and Large Screen View-----------------------*/
 @media only screen and (min-width: 32.5em) {
   article {
     grid-column: 2;
     margin: 10px auto;
     width: 85%;
     background-color: #fff;
-    -webkit-box-shadow: 2px 5px #888;
-    -moz-box-shadow: 2px 5px #888;
-    box-shadow: 2px 5px #888;
+    -webkit-box-shadow: 2px 2px #888;
+    -moz-box-shadow: 2px 2px #888;
+    box-shadow: 2px 2px #888;
     text-align: left;
   }
   article img {
