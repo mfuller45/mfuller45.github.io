@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Oswald:wght@300&display=swap');
+
+// variables
+
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #F4A261; // orange
+$color-2: #006D77; // dark blue
+$color-3: #E76F51; // red
+$color-4: #83C5BE; // light blue
+$color-5: #EDF6F9; // light blue background
+$column-size: 60%;
+$column-two-size: 40%;
+$padding-size: 1em;
+$margin-top: -2em;
+// additional colors
+
+$success: #E9C46A; // yellow
+$alert: $color-3; // red
+
+// fonts
+$primary-font: 'Fredericka the Great', Times New Roman, serif;
+$secondary-font: 'Oswald', Helvetica, sans-serif;
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+
+body { 
+	background-color: $color-5;
+	color: $color-5;
+	}
+
+p { 
+	font-family: $secondary-font;
+	color: $color-5;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $primary-font;
+	color: $color-5;
+}
+
+//grid 
+
+.page-wrapper {
+  display:grid;
+}
+
+header {
+	background-color: $color-4;
+	color: $color-5;
+  text-align: center;
+  padding: 20px;
+}
+
+.summary {
+  background-color: $color-4;
+	color: $color-5;
+  text-align: center;
+  margin-top: -20px;
+  padding-bottom: 10px;
+}
+
+.summary p {
+  background-color: $color-4;
+	color: $color-5;
+}
+
+.preamble, .explanation {
+  background-color: $color-3;
+  width: 100%;
+  padding: $padding-size;
+  text-align: center;
+}
+
+.explanation {
+ margin-top: $margin-top;
+ width: 100%;
+}
+
+.participation, .benefits, .design-archives, .zen-resources {
+  background-color: $success;
+}
+
+.design-archives, .zen-resources {
+  width: $column-two-size;
+  padding: $padding-size;
+}
+
+.participation, .benefits {
+  width: $column-size;
+  padding: $padding-size;
+}
+
+.benefits {
+  margin-top: $margin-top;
+}
+
+.requirements, .design-selection {
+  background-color: $color-1;
+}
+
+.requirements {
+  width: $column-size;
+  padding: $padding-size;
+}
+
+.design-selection {
+  width: $column-two-size;
+  padding: $padding-size;
+  grid-column: 2/3;
+}
+
+a:link {  
+	text-decoration: none; 
+	color: $color-5;
+	}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: $color-5;
+	}
+
+a:hover {
+	text-decoration: none;
+	color: $color-2;
+	}
+
+a:active { 
+	text-decoration: none;
+	color: $color-3;
+}
+
+
+
+
+
+
+
