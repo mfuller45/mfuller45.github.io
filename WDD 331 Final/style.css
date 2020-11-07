@@ -1,112 +1,214 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Oswald:wght@300&display=swap");
-html {
-  margin: 0;
-  padding: 0;
-}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #EDF6F9;
+  }
 
-body {
-  background-color: #EDF6F9;
-  color: #EDF6F9;
-}
+  p {
+    font-family: "Oswald", Helvetica, sans-serif;
+    color: #EDF6F9;
+  }
 
-p {
-  font-family: "Oswald", Helvetica, sans-serif;
-  color: #EDF6F9;
-}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Fredericka the Great", Times New Roman, serif;
+    color: #EDF6F9;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Fredericka the Great", Times New Roman, serif;
-  color: #EDF6F9;
-}
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-.page-wrapper {
-  display: grid;
-}
+  header {
+    background-color: #83C5BE;
+    color: #EDF6F9;
+    text-align: center;
+    padding: 20px;
+  }
 
-header {
-  background-color: #83C5BE;
-  color: #EDF6F9;
-  text-align: center;
-  padding: 20px;
-}
+  .summary {
+    background-color: #83C5BE;
+    color: #EDF6F9;
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 10px;
+  }
 
-.summary {
-  background-color: #83C5BE;
-  color: #EDF6F9;
-  text-align: center;
-  margin-top: -20px;
-  padding-bottom: 10px;
-}
+  .summary p {
+    background-color: #83C5BE;
+    color: #EDF6F9;
+  }
 
-.summary p {
-  background-color: #83C5BE;
-  color: #EDF6F9;
-}
+  .preamble, .explanation {
+    background-color: #E76F51;
+    padding: 1em;
+    text-align: center;
+  }
 
-.preamble, .explanation {
-  background-color: #E76F51;
-  width: 100%;
-  padding: 1em;
-  text-align: center;
-}
+  .explanation {
+    margin-top: -2em;
+  }
 
-.explanation {
-  margin-top: -2em;
-  width: 100%;
-}
+  .participation, .benefits, .design-archives, .zen-resources {
+    background-color: #E9C46A;
+  }
 
-.participation, .benefits, .design-archives, .zen-resources {
-  background-color: #E9C46A;
-}
+  .design-archives, .zen-resources {
+    padding: 1em;
+  }
 
-.design-archives, .zen-resources {
-  width: 40%;
-  padding: 1em;
-}
+  .participation, .benefits {
+    padding: 1em;
+  }
 
-.participation, .benefits {
-  width: 60%;
-  padding: 1em;
-}
+  .benefits {
+    margin-top: -2em;
+  }
 
-.benefits {
-  margin-top: -2em;
-}
+  .requirements, .design-selection {
+    background-color: #F4A261;
+  }
 
-.requirements, .design-selection {
-  background-color: #F4A261;
-}
+  .requirements {
+    padding: 1em;
+  }
 
-.requirements {
-  width: 60%;
-  padding: 1em;
-}
+  .design-selection {
+    padding: 1em;
+    grid-column: 2/3;
+  }
 
-.design-selection {
-  width: 40%;
-  padding: 1em;
-  grid-column: 2/3;
-}
+  a:link {
+    text-decoration: none;
+    color: #EDF6F9;
+  }
 
-a:link {
-  text-decoration: none;
-  color: #EDF6F9;
-}
+  a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #EDF6F9;
+  }
 
-a:visited {
-  font-weight: bold;
-  text-decoration: none;
-  color: #EDF6F9;
-}
+  a:hover {
+    text-decoration: none;
+    color: #006D77;
+  }
 
-a:hover {
-  text-decoration: none;
-  color: #006D77;
+  a:active {
+    text-decoration: none;
+    color: #E76F51;
+  }
 }
+@media screen and (min-width: 769px) {
+  html {
+    margin: 0;
+    padding: 0;
+  }
 
-a:active {
-  text-decoration: none;
-  color: #E76F51;
+  body {
+    background-color: #EDF6F9;
+    color: #EDF6F9;
+  }
+
+  p {
+    font-family: "Oswald", Helvetica, sans-serif;
+    color: #EDF6F9;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Fredericka the Great", Times New Roman, serif;
+    color: #EDF6F9;
+  }
+
+  .page-wrapper {
+    display: grid;
+  }
+
+  header {
+    background-color: #83C5BE;
+    color: #EDF6F9;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .summary {
+    background-color: #83C5BE;
+    color: #EDF6F9;
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 10px;
+  }
+
+  .summary p {
+    background-color: #83C5BE;
+    color: #EDF6F9;
+  }
+
+  .preamble, .explanation {
+    background-color: #E76F51;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .explanation {
+    margin-top: -2em;
+    width: 100%;
+  }
+
+  .participation, .benefits, .design-archives, .zen-resources {
+    background-color: #E9C46A;
+  }
+
+  .design-archives, .zen-resources {
+    width: 40%;
+    padding: 1em;
+  }
+
+  .participation, .benefits {
+    width: 60%;
+    padding: 1em;
+  }
+
+  .benefits {
+    margin-top: -2em;
+  }
+
+  .requirements, .design-selection {
+    background-color: #F4A261;
+  }
+
+  .requirements {
+    width: 60%;
+    padding: 1em;
+  }
+
+  .design-selection {
+    width: 40%;
+    padding: 1em;
+    grid-column: 2/3;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #EDF6F9;
+  }
+
+  a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #EDF6F9;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #006D77;
+  }
+
+  a:active {
+    text-decoration: none;
+    color: #E76F51;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

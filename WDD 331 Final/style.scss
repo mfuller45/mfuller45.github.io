@@ -22,118 +22,226 @@ $alert: $color-3; // red
 $primary-font: 'Fredericka the Great', Times New Roman, serif;
 $secondary-font: 'Oswald', Helvetica, sans-serif;
 
-html {
-	margin: 0;
-	padding: 0;
-	}
+@media screen and (max-width: 768px) {
 
-body { 
-	background-color: $color-5;
-	color: $color-5;
-	}
-
-p { 
-	font-family: $secondary-font;
-	color: $color-5;
-	}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: $primary-font;
-	color: $color-5;
+  body { 
+    background-color: $color-5;
+    }
+  
+  p { 
+    font-family: $secondary-font;
+    color: $color-5;
+    }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-font;
+    color: $color-5;
+  }
+  
+  //grid 
+  
+  .page-wrapper {
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  
+  header {
+    background-color: $color-4;
+    color: $color-5;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .summary {
+    background-color: $color-4;
+    color: $color-5;
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 10px;
+  }
+  
+  .summary p {
+    background-color: $color-4;
+    color: $color-5;
+  }
+  
+  .preamble, .explanation {
+    background-color: $color-3;
+    padding: $padding-size;
+    text-align: center;
+  }
+  
+  .explanation {
+   margin-top: $margin-top;
+  }
+  
+  .participation, .benefits, .design-archives, .zen-resources {
+    background-color: $success;
+  }
+  
+  .design-archives, .zen-resources {
+    padding: $padding-size;
+  }
+  
+  .participation, .benefits {
+    padding: $padding-size;
+    text-align: center;
+  }
+  
+  .benefits {
+    margin-top: $margin-top;
+  }
+  
+  .requirements, .design-selection {
+    background-color: $color-1;
+  }
+  
+  .requirements {
+    padding: $padding-size;
+    text-align: center;
+  }
+  
+  .design-selection {
+    padding: $padding-size;
+    grid-column: 2/3;
+  }
+  
+  a:link {  
+    text-decoration: none; 
+    color: $color-5;
+    }
+  
+  a:visited { 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: $color-5;
+    }
+  
+  a:hover {
+    text-decoration: none;
+    color: $color-2;
+    }
+  
+  a:active { 
+    text-decoration: none;
+    color: $color-3;
+  }
 }
 
-//grid 
+@media screen and (min-width: 769px) {
 
-.page-wrapper {
-  display:grid;
+  html {
+    margin: 0;
+    padding: 0;
+    }
+  
+  body { 
+    background-color: $color-5;
+    color: $color-5;
+    }
+  
+  p { 
+    font-family: $secondary-font;
+    color: $color-5;
+    }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-font;
+    color: $color-5;
+  }
+  
+  //grid 
+  
+  .page-wrapper {
+    display:grid;
+  }
+  
+  header {
+    background-color: $color-4;
+    color: $color-5;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .summary {
+    background-color: $color-4;
+    color: $color-5;
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 10px;
+  }
+  
+  .summary p {
+    background-color: $color-4;
+    color: $color-5;
+  }
+  
+  .preamble, .explanation {
+    background-color: $color-3;
+    width: 100%;
+    padding: $padding-size;
+    text-align: center;
+  }
+  
+  .explanation {
+   margin-top: $margin-top;
+   width: 100%;
+  }
+  
+  .participation, .benefits, .design-archives, .zen-resources {
+    background-color: $success;
+  }
+  
+  .design-archives, .zen-resources {
+    width: $column-two-size;
+    padding: $padding-size;
+  }
+  
+  .participation, .benefits {
+    width: $column-size;
+    padding: $padding-size;
+  }
+  
+  .benefits {
+    margin-top: $margin-top;
+  }
+  
+  .requirements, .design-selection {
+    background-color: $color-1;
+  }
+  
+  .requirements {
+    width: $column-size;
+    padding: $padding-size;
+  }
+  
+  .design-selection {
+    width: $column-two-size;
+    padding: $padding-size;
+    grid-column: 2/3;
+  }
+  
+  a:link {  
+    text-decoration: none; 
+    color: $color-5;
+    }
+  
+  a:visited { 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: $color-5;
+    }
+  
+  a:hover {
+    text-decoration: none;
+    color: $color-2;
+    }
+  
+  a:active { 
+    text-decoration: none;
+    color: $color-3;
+  }
 }
-
-header {
-	background-color: $color-4;
-	color: $color-5;
-  text-align: center;
-  padding: 20px;
-}
-
-.summary {
-  background-color: $color-4;
-	color: $color-5;
-  text-align: center;
-  margin-top: -20px;
-  padding-bottom: 10px;
-}
-
-.summary p {
-  background-color: $color-4;
-	color: $color-5;
-}
-
-.preamble, .explanation {
-  background-color: $color-3;
-  width: 100%;
-  padding: $padding-size;
-  text-align: center;
-}
-
-.explanation {
- margin-top: $margin-top;
- width: 100%;
-}
-
-.participation, .benefits, .design-archives, .zen-resources {
-  background-color: $success;
-}
-
-.design-archives, .zen-resources {
-  width: $column-two-size;
-  padding: $padding-size;
-}
-
-.participation, .benefits {
-  width: $column-size;
-  padding: $padding-size;
-}
-
-.benefits {
-  margin-top: $margin-top;
-}
-
-.requirements, .design-selection {
-  background-color: $color-1;
-}
-
-.requirements {
-  width: $column-size;
-  padding: $padding-size;
-}
-
-.design-selection {
-  width: $column-two-size;
-  padding: $padding-size;
-  grid-column: 2/3;
-}
-
-a:link {  
-	text-decoration: none; 
-	color: $color-5;
-	}
-
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: $color-5;
-	}
-
-a:hover {
-	text-decoration: none;
-	color: $color-2;
-	}
-
-a:active { 
-	text-decoration: none;
-	color: $color-3;
-}
-
 
 
 
