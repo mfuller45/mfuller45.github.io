@@ -51,6 +51,15 @@ $secondary-font: 'Oswald', Helvetica, sans-serif;
     text-align: center;
     padding: 20px;
   }
+
+  footer {
+    background-color: $color-4;
+    text-align: center;
+  }
+
+  footer a {
+    margin: 0 0.5em;
+}
   
   .summary {
     background-color: $color-4;
@@ -163,6 +172,10 @@ $secondary-font: 'Oswald', Helvetica, sans-serif;
     padding: 20px;
   }
   
+  footer {
+    background-color: $color-4;
+  }
+
   .summary {
     background-color: $color-4;
     color: $color-5;
