@@ -137,6 +137,10 @@
     background-color: #83C5BE;
   }
 
+  footer a {
+    margin: 0 0.5em;
+  }
+
   .summary {
     background-color: #83C5BE;
     color: #EDF6F9;
