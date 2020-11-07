@@ -60,19 +60,19 @@ $secondary-font: 'Oswald', Helvetica, sans-serif;
   footer a {
     margin: 0 0.5em;
 }
-  
-  .summary {
+
+.summary {
+  background-color: $color-4;
+  color: $color-5;
+  text-align: center;
+  margin-top: -20px;
+  padding-bottom: 10px;
+
+  p {
     background-color: $color-4;
     color: $color-5;
-    text-align: center;
-    margin-top: -20px;
-    padding-bottom: 10px;
   }
-  
-  .summary p {
-    background-color: $color-4;
-    color: $color-5;
-  }
+}
   
   .preamble, .explanation {
     background-color: $color-3;
@@ -114,26 +114,25 @@ $secondary-font: 'Oswald', Helvetica, sans-serif;
     padding: $padding-size;
   }
   
-  a:link {  
-    text-decoration: none; 
-    color: $color-5;
-    }
-  
-  a:visited { 
-    font-weight: bold; 
-    text-decoration: none; 
-    color: $color-5;
-    }
-  
-  a:hover {
-    text-decoration: none;
-    color: $color-2;
-    }
-  
-  a:active { 
-    text-decoration: none;
-    color: $color-3;
-  }
+  a {
+		&:link {
+			text-decoration: none;
+			color: $color-5;
+		}
+		&:visited {
+			font-weight: bold;
+			text-decoration: none;
+			color: $color-5;
+		}
+		&:hover {
+			text-decoration: none;
+			color: $color-2;
+		}
+		&:active {
+			text-decoration: none;
+			color: $color-3;
+		}
+	}
 }
 
 @media screen and (min-width: 769px) {
@@ -170,17 +169,17 @@ $secondary-font: 'Oswald', Helvetica, sans-serif;
   }
 
   .summary {
-    background-color: $color-4;
-    color: $color-5;
-    text-align: center;
-    margin-top: -20px;
+		background-color: $color-4;
+		color: $color-5;
+		text-align: center;
+		margin-top: -20px;
     padding-bottom: 10px;
-  }
-  
-  .summary p {
-    background-color: $color-4;
-    color: $color-5;
-  }
+    
+		p {
+			background-color: $color-4;
+			color: $color-5;
+		}
+	}
   
   .preamble, .explanation {
     background-color: $color-3;
@@ -226,27 +225,26 @@ $secondary-font: 'Oswald', Helvetica, sans-serif;
     padding: $padding-size;
     grid-column: 2/3;
   }
-  
-  a:link {  
-    text-decoration: none; 
-    color: $color-5;
-    }
-  
-  a:visited { 
-    font-weight: bold; 
-    text-decoration: none; 
-    color: $color-5;
-    }
-  
-  a:hover {
-    text-decoration: none;
-    color: $color-2;
-    }
-  
-  a:active { 
-    text-decoration: none;
-    color: $color-3;
-  }
+
+  a {
+		&:link {
+			text-decoration: none;
+			color: $color-5;
+		}
+		&:visited {
+			font-weight: bold;
+			text-decoration: none;
+			color: $color-5;
+		}
+		&:hover {
+			text-decoration: none;
+			color: $color-2;
+		}
+		&:active {
+			text-decoration: none;
+			color: $color-3;
+		}
+	}
 }
 
 
