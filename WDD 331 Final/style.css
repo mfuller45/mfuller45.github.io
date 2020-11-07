@@ -2,6 +2,7 @@
 @media screen and (max-width: 768px) {
   body {
     background-color: #EDF6F9;
+    margin: 0;
   }
 
   p {
@@ -42,7 +43,6 @@
     margin-top: -20px;
     padding-bottom: 10px;
   }
-
   .summary p {
     background-color: #83C5BE;
     color: #EDF6F9;
@@ -109,6 +109,7 @@
 @media screen and (min-width: 769px) {
   body {
     background-color: #EDF6F9;
+    margin: 0;
   }
 
   p {
@@ -143,7 +144,6 @@
     margin-top: -20px;
     padding-bottom: 10px;
   }
-
   .summary p {
     background-color: #83C5BE;
     color: #EDF6F9;
