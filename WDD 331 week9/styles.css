@@ -1032,9 +1032,25 @@ img {
 }
 
 .common-header {
+  display: flex;
   background-color: #0076b6;
   height: 60px;
-  text-decoration-color: white;
+  color: #ffffff;
+}
+
+.site-banner__left {
+  position: relative;
+}
+
+.site-banner__right {
+  position: relative;
+}
+
+.icon-byui-logo {
+  background-color: #000000;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
 }
 
 .container {
