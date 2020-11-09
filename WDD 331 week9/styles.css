@@ -1031,6 +1031,12 @@ img {
   border: 0;
 }
 
+body {
+  color: #020202;
+  font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
+  font-weight: 400;
+}
+
 .common-header {
   display: flex;
   background-color: #0076b6;
