@@ -34,6 +34,10 @@ img {
   border: 0;
 }
 
+a, a:hover {
+  text-decoration: none;
+}
+
 body {
   color: #020202;
   font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
@@ -77,6 +81,16 @@ body {
   margin: 0;
   padding: 10px 20px;
   color: #ffffff;
+}
+
+.resources-links {
+  display: block;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #B4B3B5;
+  border-left: 1px solid #B4B3B5;
+  border-right: 1px solid #B4B3B5;
+  color: #0076B6;
+  padding: 8px 20px;
 }
 
 .site-content {
