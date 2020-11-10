@@ -1086,15 +1086,10 @@
   }
 
   .icon-byui-logo {
-    display: flex;
-    margin: auto;
-    height: 100%;
-    width: 100%;
     background-color: #000000;
-    color: #ffffff;
   }
 
-  .icon-search, .icon-audience, .icon-menu {
+  .icon-search, .icon-audience, .icon-menu, .icon-byui-logo {
     font-size: 30px;
     color: #ffffff;
   }
