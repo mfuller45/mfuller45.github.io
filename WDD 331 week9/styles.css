@@ -25,7 +25,7 @@
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  speak: none;
+  speak-as: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1060,14 +1060,12 @@
   }
 
   header {
-    background-color: #0076B6;
     margin-bottom: 30px;
     position: relative;
     top: 0;
     left: 0;
     right: 0;
     z-index: 2;
-    height: 60px;
   }
 
   header .left-banner {
@@ -1084,6 +1082,11 @@
   header .right-banner {
     position: absolute;
     padding: 15px 0 0 205px;
+  }
+
+  header .common-header {
+    background-color: #0076B6;
+    height: 60px;
   }
 
   header .site-header {
