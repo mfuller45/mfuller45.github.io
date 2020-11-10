@@ -1045,7 +1045,7 @@
     text-decoration: none;
   }
 
-  body {
+  body h1 {
     color: #020202;
     font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
     font-weight: 400;
@@ -1091,11 +1091,17 @@
 
   header .site-header {
     background-color: #EAEAEA;
-    text-align: left;
     border-bottom: 1px solid #727272;
-    padding: 0 10px;
+    text-align: center;
+  }
+
+  .site-name {
     font-size: 20px;
-    font-weight: 300;
+    margin: 0;
+  }
+
+  .site-name a {
+    color: #000000;
   }
 
   .icon-byui-logo {
