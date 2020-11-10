@@ -308,10 +308,18 @@ header .site-header {
 }
 
 .site-content {
+  display: grid;
   padding: 0 10px;
 }
 
-.div-spacing, .class-spacing, .aside-spacing {
+.aside-spacing {
+  grid-column: 2 / 4;
+  grid-row: 1;
+  margin-bottom: 30px;
+}
+
+.div-spacing, .class-spacing {
+  grid-column: 1;
   margin-bottom: 30px;
 }
 }
