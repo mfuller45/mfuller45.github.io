@@ -1071,9 +1071,10 @@
   }
 
   header .left-banner {
+    background-color: #000000;
     position: absolute;
     height: 60px;
-    width: 25%;
+    padding: 15px;
   }
 
   header form {
@@ -1082,7 +1083,16 @@
 
   header .right-banner {
     position: absolute;
-    margin: 15px 0 0 205px;
+    padding: 15px 0 0 205px;
+  }
+
+  header .site-header {
+    background-color: #EAEAEA;
+    text-align: left;
+    border-bottom: 1px solid #727272;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 300;
   }
 
   .icon-byui-logo {
