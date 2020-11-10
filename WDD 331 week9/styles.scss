@@ -81,16 +81,26 @@ header .left-banner {
   height: 60px;
 }
 
-.site-banner__right {
-  float: right;
+header form {
+  display: none;
 }
 
-header .icon-byui-logo {
+header .right-banner {
+  position: absolute;
+  margin: 15px 0 0 205px;
+}
+
+.icon-byui-logo {
   display: flex;
   margin: auto;
   height: 100%;
   width: 100%;
   background-color: #000000;
+  color: #ffffff;
+}
+
+.icon-search, .icon-audience, .icon-menu {
+  font-size: 30px;
   color: #ffffff;
 }
 
@@ -137,4 +147,9 @@ header .icon-byui-logo {
 .div-spacing, .class-spacing, .aside-spacing {
   margin-bottom: 30px;
 }
+
+}
+
+@media screen and (min-width: $sm-break + 1) {
+
 }
