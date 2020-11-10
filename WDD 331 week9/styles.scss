@@ -59,11 +59,17 @@ body {
   font-style: normal;
 }
 
+.caption {
+  margin: 0;
+  border: 1px solid #B4B3B5;
+}
+
 .common-header {
   display: flex;
   background-color: #0076b6;
   height: 60px;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .site-banner__left {
