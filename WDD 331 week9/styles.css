@@ -1008,99 +1008,105 @@
   content: "";
 }
 
-*,
+@media screen and (max-width: 48em) {
+  *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-img {
-  max-width: 100%;
-}
+  .hidden-image-sm {
+    display: none;
+  }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
+  img {
+    max-width: 100%;
+  }
 
-.article {
-  padding: 25px 0;
-  border-top: 1px solid #B4B3B5;
-}
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
 
-a, a:hover {
-  text-decoration: none;
-}
+  .article {
+    padding: 25px 0;
+    border-top: 1px solid #B4B3B5;
+  }
 
-body {
-  color: #020202;
-  font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  font-style: normal;
-}
+  a, a:hover {
+    text-decoration: none;
+  }
 
-.common-header {
-  display: flex;
-  background-color: #0076b6;
-  height: 60px;
-  color: #ffffff;
-}
+  body {
+    color: #020202;
+    font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+  }
 
-.site-banner__left {
-  position: relative;
-}
+  .common-header {
+    display: flex;
+    background-color: #0076b6;
+    height: 60px;
+    color: #ffffff;
+  }
 
-.site-banner__right {
-  position: relative;
-}
+  .site-banner__left {
+    position: relative;
+  }
 
-.icon-byui-logo {
-  background-color: #000000;
-  color: #ffffff;
-  height: 100%;
-  width: 100%;
-}
+  .site-banner__right {
+    position: relative;
+  }
 
-.container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
+  .icon-byui-logo {
+    background-color: #000000;
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+  }
 
-.resources-heading {
-  background-color: #727272;
-  border: 1px solid #727272;
-  font-size: 22px;
-  margin: 0;
-  padding: 10px 20px;
-  color: #ffffff;
-}
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-.resources-links {
-  display: block;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #B4B3B5;
-  border-left: 1px solid #B4B3B5;
-  border-right: 1px solid #B4B3B5;
-  color: #0076B6;
-  padding: 8px 20px;
-}
+  .resources-heading {
+    background-color: #727272;
+    border: 1px solid #727272;
+    font-size: 22px;
+    margin: 0;
+    padding: 10px 20px;
+    color: #ffffff;
+  }
 
-.site-content {
-  padding: 0 10px;
-}
+  .resources-links {
+    display: block;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #B4B3B5;
+    border-left: 1px solid #B4B3B5;
+    border-right: 1px solid #B4B3B5;
+    color: #0076B6;
+    padding: 8px 20px;
+  }
 
-.div-spacing, .class-spacing, .aside-spacing {
-  margin-bottom: 30px;
+  .site-content {
+    padding: 0 10px;
+  }
+
+  .div-spacing, .class-spacing, .aside-spacing {
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

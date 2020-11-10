@@ -1,7 +1,11 @@
 @import 'typography';
 @import 'icons';
 
+// variables
 $sm-break: 48em;
+
+@media screen and (max-width: $sm-break) {
+
 // colors
 $dark-gray: #727272;
 $med-gray: #b4b3b5;
@@ -17,6 +21,10 @@ $byui-blue: #056cb6;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.hidden-image-sm {
+  display: none;
 }
 
 img {
@@ -104,4 +112,5 @@ body {
 
 .div-spacing, .class-spacing, .aside-spacing {
   margin-bottom: 30px;
+}
 }
