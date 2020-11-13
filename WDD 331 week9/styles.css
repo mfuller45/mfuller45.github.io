@@ -1306,8 +1306,8 @@
   }
 
   .aside-spacing {
-    grid-column: 3/4;
-    grid-row: 1;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
   }
 
   .div-spacing, .class-spacing {
@@ -1316,12 +1316,12 @@
   }
 
   .div-spacing1 {
-    flex: 0 0 33.3%;
+    flex: 0 0 33.33%;
     max-width: 33.33%;
   }
 
   .div-spacing2 {
-    flex: 0 0 33.3%;
+    flex: 0 0 33.33%;
     max-width: 33.33%;
   }
 
