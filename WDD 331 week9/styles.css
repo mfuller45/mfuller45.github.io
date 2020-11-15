@@ -1045,6 +1045,10 @@
     text-decoration: none;
   }
 
+  body {
+    margin: auto;
+  }
+
   body h1 {
     color: #020202;
     font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
@@ -1114,7 +1118,6 @@
   }
 
   .container {
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1150,11 +1153,13 @@
   }
 
   .site-content {
-    padding: 0 10px;
+    padding: 0px;
+    padding-right: 10px;
   }
 
-  .item1, .item7, .item5 {
+  .item1, .item7, .item5, .message {
     margin-bottom: 30px;
+    padding: 5px;
   }
 
   .item6 {
@@ -1220,10 +1225,6 @@
   header {
     margin-bottom: 30px;
     position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
   }
 
   header .left-banner {
