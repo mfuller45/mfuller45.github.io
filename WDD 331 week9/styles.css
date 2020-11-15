@@ -1153,8 +1153,12 @@
     padding: 0 10px;
   }
 
-  .div-spacing, .class-spacing, .aside-spacing {
+  .item1, .item7, .item5 {
     margin-bottom: 30px;
+  }
+
+  .item6 {
+    display: none;
   }
 }
 @media screen and (min-width: 49em) {
@@ -1166,12 +1170,17 @@
     box-sizing: border-box;
   }
 
-  .hidden-image-sm {
-    display: none;
+  .item1 img, .item2 img, .item3 img, .item4 img {
+    max-width: 100%;
   }
 
-  img {
-    max-width: 100%;
+  .item7 img {
+    height: 150px;
+    width: auto;
+  }
+
+  .message img {
+    width: 100%;
   }
 
   .sr-only {
@@ -1295,7 +1304,7 @@
     padding: 8px 20px;
   }
 
-  .aside-spacing2 .links {
+  .item6 .links {
     border-bottom: 1px solid #B4B3B5;
     font-weight: 700;
     color: #020202;
@@ -1307,6 +1316,31 @@
     padding-left: 0;
   }
 
+  .message {
+    grid-column: 2;
+    grid-row: 4;
+    width: 300px;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    margin: 0px 5px;
+    padding-bottom: 15px;
+  }
+
+  .message-title {
+    color: #0076c6;
+    font-size: 16px;
+    padding: 0px 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .message p {
+    font-size: 16px;
+    padding: 0px 20px;
+    padding-top: 20px;
+  }
+
   .newsroom-btn {
     float: right;
     background-color: #0076b6;
@@ -1316,12 +1350,13 @@
     padding: 6px;
     font-size: 15px;
     border-radius: 3px;
+    margin-right: 10px;
   }
 
   .site-content {
     display: grid;
     grid-template-columns: 75% 25%;
-    gap: 10px;
+    gap: 20px;
     padding: 0 10px;
   }
 
@@ -1332,31 +1367,31 @@
     padding: 0 10px;
   }
 
-  .aside-spacing {
+  .item5 {
     grid-column: 2;
     grid-row: 1;
   }
 
-  .aside-spacing2 {
+  .item6 {
     grid-column: 2;
     grid-row: 2;
   }
 
-  .div-spacing, .class-spacing {
+  .item1, .item7 {
     grid-column: 1;
   }
 
-  .div-spacing1 {
+  .item2 {
     grid-column: 1;
     grid-row: 1;
   }
 
-  .div-spacing2 {
+  .item3 {
     grid-column: 2;
     grid-row: 1;
   }
 
-  .div-spacing3 {
+  .item4 {
     grid-column: 3;
     grid-row: 1;
   }
